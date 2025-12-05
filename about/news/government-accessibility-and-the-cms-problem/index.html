@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/about/">About</a>
+                    
+                
+            
+                
+                    
+                    
+                        > <a href="/about/news/">News</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Government Accessibility and the CMS Problem</h1>
+<p>Content Management Systems (CMS) are the backbone of most government websites, but they often create significant barriers to accessibility compliance. Here's how government agencies can address CMS accessibility challenges and create workflows that produce accessible content by default.</p>
+<h2>The CMS Accessibility Challenge</h2>
+<h3>Why CMSs Matter for Accessibility</h3>
+<p>Content management systems control how government information reaches citizens:</p>
+<ul>
+<li><strong>Content creation workflows</strong> determine whether authors can create accessible content</li>
+<li><strong>Publishing processes</strong> affect whether accessibility features make it to published pages</li>
+<li><strong>Template systems</strong> influence the accessibility of site-wide navigation and structure</li>
+<li><strong>Editor interfaces</strong> must be accessible to government employees with disabilities</li>
+</ul>
+<h3>Common CMS Accessibility Problems</h3>
+<h4>Inaccessible Authoring Interfaces</h4>
+<p>Many government CMS platforms have:</p>
+<ul>
+<li><strong>Poor keyboard navigation</strong> preventing employees with disabilities from creating content</li>
+<li><strong>Inaccessible rich text editors</strong> that don't work with screen readers or voice recognition</li>
+<li><strong>Missing accessibility guidance</strong> leaving content authors without necessary information</li>
+<li><strong>Complex workflows</strong> that create barriers for users with cognitive disabilities</li>
+</ul>
+<h4>Content Quality Issues</h4>
+<p>CMS platforms often enable creation of inaccessible content:</p>
+<ul>
+<li><strong>No alt text enforcement</strong> allowing images to be published without descriptions</li>
+<li><strong>Poor heading structure</strong> with inadequate guidance on proper heading hierarchy</li>
+<li><strong>Color contrast failures</strong> in templates and user-generated content</li>
+<li><strong>Inaccessible forms</strong> created through CMS form builders</li>
+</ul>
+<h4>Technical Implementation Problems</h4>
+<ul>
+<li><strong>Theme accessibility issues</strong> with government sites using inaccessible templates</li>
+<li><strong>Plugin/module conflicts</strong> where accessibility features interfere with functionality</li>
+<li><strong>Performance problems</strong> affecting assistive technology compatibility</li>
+<li><strong>Mobile accessibility failures</strong> in responsive design implementations</li>
+</ul>
+<h2>Government-Specific CMS Challenges</h2>
+<h3>Compliance Requirements</h3>
+<p>Government agencies must navigate:</p>
+<ul>
+<li><strong>Section 508 compliance</strong> for all public-facing content and authoring tools</li>
+<li><strong>WCAG 2.1 AA standards</strong> as specified in updated Section 508 requirements</li>
+<li><strong>Procurement constraints</strong> limiting CMS options to approved platforms</li>
+<li><strong>Security requirements</strong> that can conflict with accessibility tools and testing</li>
+</ul>
+<h3>Multi-User Environments</h3>
+<p>Government websites involve diverse content contributors:</p>
+<ul>
+<li><strong>Subject matter experts</strong> who may lack web accessibility training</li>
+<li><strong>Part-time contributors</strong> who use the CMS infrequently and need simplified workflows</li>
+<li><strong>Contractors and vendors</strong> who may not understand government accessibility requirements</li>
+<li><strong>Multiple approval levels</strong> where accessibility issues can be introduced at any stage</li>
+</ul>
+<h3>Legacy System Constraints</h3>
+<p>Many agencies work within:</p>
+<ul>
+<li><strong>Outdated CMS versions</strong> lacking modern accessibility features</li>
+<li><strong>Custom modifications</strong> that break accessibility in core CMS functionality</li>
+<li><strong>Integration requirements</strong> with other government systems that may not prioritize accessibility</li>
+<li><strong>Budget limitations</strong> preventing upgrades to more accessible CMS platforms</li>
+</ul>
+<h2>CMS Platform Analysis</h2>
+<h3>Drupal in Government</h3>
+<h4>Accessibility Strengths</h4>
+<ul>
+<li><strong>Core accessibility</strong> with WCAG 2.1 AA compliance built into Drupal core</li>
+<li><strong>Accessible admin interface</strong> enabling content creation by users with disabilities</li>
+<li><strong>Semantic HTML output</strong> producing accessible markup by default</li>
+<li><strong>Strong community</strong> with active accessibility working group and expertise</li>
+</ul>
+<h4>Implementation Considerations</h4>
+<pre><code class="language-php">// Example: Enforcing alt text in Drupal
+function mymodule_form_alter(&amp;$form, &amp;$form_state, $form_id) {
+  if ($form_id == 'node_article_form') {
+    $form['field_image']['widget'][0]['alt']['#required'] = TRUE;
+    $form['field_image']['widget'][0]['alt']['#description'] = 
+      t('Required: Describe the image for users who cannot see it.');
+  }
+}
+</code></pre>
+<h4>Government Adoption</h4>
+<ul>
+<li><strong>Federal agencies</strong> using Drupal for accessibility compliance</li>
+<li><strong>State and local</strong> governments leveraging Drupal's accessibility features</li>
+<li><strong>Shared modules</strong> for government-specific accessibility requirements</li>
+<li><strong>Training resources</strong> tailored to government content authoring needs</li>
+</ul>
+<h3>WordPress Accessibility</h3>
+<h4>Plugin Ecosystem</h4>
+<p>WordPress accessibility relies heavily on plugins:</p>
+<ul>
+<li><strong>WP Accessibility Plugin</strong> addressing core WordPress accessibility issues</li>
+<li><strong>Accessibility Checker</strong> scanning content for common problems</li>
+<li><strong>Admin interface improvements</strong> making WordPress usable with assistive technology</li>
+</ul>
+<h4>Government Considerations</h4>
+<pre><code class="language-php">// Example: WordPress accessibility enhancement
+function government_accessibility_enhancements() {
+  // Enforce alt text requirement
+  add_filter('wp_handle_upload_prefilter', 'require_alt_text');
+  
+  // Add accessibility help text
+  add_action('media_upload_form', 'add_accessibility_guidance');
+  
+  // Check color contrast in customizer
+  add_action('customize_controls_print_scripts', 'add_contrast_checker');
+}
+</code></pre>
+<h3>Enterprise CMS Solutions</h3>
+<h4>Government-Specific Platforms</h4>
+<ul>
+<li><strong>Acquia Government Cloud</strong> with built-in accessibility features</li>
+<li><strong>Adobe Experience Manager</strong> configured for government compliance</li>
+<li><strong>Sitecore Government</strong> with accessibility workflow integration</li>
+<li><strong>Custom government CMSs</strong> built specifically for agency needs</li>
+</ul>
+<h2>Solutions and Best Practices</h2>
+<h3>1. Accessible Authoring Workflows</h3>
+<h4>Content Creation Process</h4>
+<pre><code>1. Accessibility-first templates
+   ↓
+2. Guided content entry with accessibility prompts
+   ↓
+3. Real-time accessibility checking
+   ↓
+4. Accessibility review before publishing
+   ↓
+5. Post-publication monitoring
+</code></pre>
+<h4>Implementation Example</h4>
+<pre><code class="language-javascript">// CMS accessibility workflow integration
+class AccessibilityWorkflow {
+  validateContent(content) {
+    const issues = [];
+    
+    // Check for alt text
+    if (this.hasImages(content) &amp;&amp; !this.hasAltText(content)) {
+      issues.push('Images missing alt text');
+    }
+    
+    // Validate heading structure  
+    if (!this.hasProperHeadings(content)) {
+      issues.push('Heading structure needs improvement');
+    }
+    
+    // Check color contrast
+    if (!this.meetsContrastRequirements(content)) {
+      issues.push('Color contrast insufficient');
+    }
+    
+    return issues;
+  }
+}
+</code></pre>
+<h3>2. Author Training Integration</h3>
+<h4>Built-in Guidance</h4>
+<ul>
+<li><strong>Contextual help</strong> explaining accessibility requirements within the CMS interface</li>
+<li><strong>Real-time feedback</strong> alerting authors to accessibility issues as they create content</li>
+<li><strong>Progressive disclosure</strong> providing detailed guidance when needed without cluttering the interface</li>
+<li><strong>Success examples</strong> showing authors what good accessible content looks like</li>
+</ul>
+<h4>Training Workflows</h4>
+<pre><code class="language-html">&lt;!-- Example: Accessibility prompt in CMS --&gt;
+&lt;div class=&quot;accessibility-guidance&quot;&gt;
+  &lt;h3&gt;Image Accessibility&lt;/h3&gt;
+  &lt;p&gt;Alt text should describe the image content and function:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Descriptive:&lt;/strong&gt; &quot;Chart showing 25% increase in employment&quot;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Not decorative labels:&lt;/strong&gt; Avoid &quot;image&quot; or &quot;photo&quot;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Context-appropriate:&lt;/strong&gt; Consider how the image relates to surrounding text&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>3. Technical Implementation</h3>
+<h4>Accessibility-First Themes</h4>
+<p>Government CMS themes should include:</p>
+<ul>
+<li><strong>Semantic HTML structures</strong> providing proper document outline and navigation</li>
+<li><strong>WCAG 2.1 AA compliance</strong> meeting government accessibility requirements</li>
+<li><strong>Keyboard navigation</strong> with proper focus management and visible focus indicators</li>
+<li><strong>Screen reader optimization</strong> with appropriate ARIA labels and announcements</li>
+</ul>
+<h4>Custom CMS Modules/Plugins</h4>
+<pre><code class="language-php">// Example: Drupal accessibility enforcement module
+class AccessibilityEnforcement {
+  
+  public function validateNode($node) {
+    $errors = [];
+    
+    // Require alt text for images
+    foreach ($node-&gt;field_images as $image) {
+      if (empty($image-&gt;alt)) {
+        $errors[] = 'Alt text required for all images';
+      }
+    }
+    
+    // Validate heading structure
+    if (!$this-&gt;validateHeadingStructure($node-&gt;body-&gt;value)) {
+      $errors[] = 'Heading structure must be hierarchical';
+    }
+    
+    return $errors;
+  }
+}
+</code></pre>
+<h4>Automated Testing Integration</h4>
+<ul>
+<li><strong>Pre-publication testing</strong> running accessibility scans before content goes live</li>
+<li><strong>Continuous monitoring</strong> checking published content for accessibility regressions</li>
+<li><strong>Reporting dashboards</strong> showing accessibility compliance across the entire site</li>
+<li><strong>Integration with development workflows</strong> connecting CMS accessibility with broader compliance efforts</li>
+</ul>
+<h2>Case Study: Federal Agency CMS Transformation</h2>
+<h3>Initial State</h3>
+<p>A federal agency approached CivicActions with:</p>
+<ul>
+<li><strong>Legacy CMS</strong> producing significant accessibility barriers</li>
+<li><strong>Untrained content authors</strong> creating inaccessible content</li>
+<li><strong>No accessibility workflow</strong> with issues discovered only during audits</li>
+<li><strong>Compliance pressure</strong> from oversight agencies and user complaints</li>
+</ul>
+<h3>Implementation Strategy</h3>
+<h4>Phase 1: CMS Accessibility Audit</h4>
+<ul>
+<li><strong>Comprehensive testing</strong> of existing CMS platform and workflows</li>
+<li><strong>Author interviews</strong> understanding current content creation processes</li>
+<li><strong>Technical analysis</strong> identifying specific accessibility barriers in the CMS</li>
+<li><strong>Compliance gap analysis</strong> documenting requirements versus current capabilities</li>
+</ul>
+<h4>Phase 2: Workflow Redesign</h4>
+<ul>
+<li><strong>Accessibility-first templates</strong> ensuring good structure by default</li>
+<li><strong>Author training program</strong> with role-specific accessibility guidance</li>
+<li><strong>Quality assurance integration</strong> with accessibility checks at multiple workflow stages</li>
+<li><strong>Tool implementation</strong> adding accessibility testing directly into the CMS</li>
+</ul>
+<h4>Phase 3: Continuous Improvement</h4>
+<ul>
+<li><strong>Monitoring and measurement</strong> tracking accessibility compliance over time</li>
+<li><strong>Author feedback</strong> refining workflows based on user experience</li>
+<li><strong>Technology updates</strong> keeping pace with evolving accessibility standards</li>
+<li><strong>Knowledge sharing</strong> documenting lessons learned for other agencies</li>
+</ul>
+<h3>Results Achieved</h3>
+<ul>
+<li><strong>94% reduction</strong> in accessibility issues in published content</li>
+<li><strong>Author confidence</strong> increased with integrated training and guidance</li>
+<li><strong>Compliance improvement</strong> meeting Section 508 requirements consistently</li>
+<li><strong>Efficiency gains</strong> with fewer post-publication accessibility fixes needed</li>
+</ul>
+<h2>Technology Recommendations</h2>
+<h3>CMS Selection Criteria</h3>
+<p>When choosing a CMS for government use, prioritize:</p>
+<ul>
+<li><strong>Core accessibility compliance</strong> with WCAG 2.1 AA support built-in</li>
+<li><strong>Accessible authoring interface</strong> enabling content creation by users with disabilities</li>
+<li><strong>Accessibility workflow features</strong> like alt text enforcement and heading validation</li>
+<li><strong>Government community</strong> with agencies sharing accessibility solutions and expertise</li>
+</ul>
+<h3>Essential CMS Features</h3>
+<ul>
+<li><strong>Alt text enforcement</strong> preventing publication of images without descriptions</li>
+<li><strong>Heading structure validation</strong> ensuring proper document outline</li>
+<li><strong>Color contrast checking</strong> identifying insufficient contrast in content and templates</li>
+<li><strong>Form accessibility</strong> creating accessible forms through CMS form builders</li>
+<li><strong>Link accessibility</strong> ensuring meaningful link text and proper context</li>
+</ul>
+<h3>Integration Requirements</h3>
+<ul>
+<li><strong>Accessibility testing APIs</strong> connecting with tools like axe-core and Pa11y</li>
+<li><strong>Compliance reporting</strong> generating documentation for Section 508 requirements</li>
+<li><strong>User testing coordination</strong> supporting evaluation with people who have disabilities</li>
+<li><strong>Training integration</strong> providing accessibility guidance within the authoring workflow</li>
+</ul>
+<h2>Future Directions</h2>
+<h3>AI-Assisted Accessibility</h3>
+<p>Emerging CMS features include:</p>
+<ul>
+<li><strong>Automated alt text generation</strong> with human review and editing capability</li>
+<li><strong>Content accessibility scoring</strong> providing real-time feedback on accessibility compliance</li>
+<li><strong>Smart content suggestions</strong> helping authors improve accessibility while writing</li>
+<li><strong>Predictive accessibility</strong> identifying potential issues before content is published</li>
+</ul>
+<h3>Government CMS Innovation</h3>
+<ul>
+<li><strong>Cross-agency collaboration</strong> sharing accessibility modules and best practices</li>
+<li><strong>Open source development</strong> contributing government-specific accessibility features back to CMS communities</li>
+<li><strong>Standards integration</strong> building compliance with evolving accessibility requirements</li>
+<li><strong>User research</strong> involving people with disabilities in CMS design and testing</li>
+</ul>
+<h3>Policy and Procurement</h3>
+<ul>
+<li><strong>Accessibility requirements</strong> in government CMS procurement specifications</li>
+<li><strong>Vendor accountability</strong> holding CMS providers responsible for accessibility compliance</li>
+<li><strong>Shared services</strong> providing accessible CMS platforms across multiple agencies</li>
+<li><strong>Training standardization</strong> developing government-wide CMS accessibility training programs</li>
+</ul>
+<h2>Getting Started</h2>
+<h3>For Agencies Using Existing CMSs</h3>
+<ol>
+<li><strong>Audit current accessibility</strong> of both authoring interface and published content</li>
+<li><strong>Identify workflow improvements</strong> that can be implemented immediately</li>
+<li><strong>Train content authors</strong> on accessibility principles and CMS-specific techniques</li>
+<li><strong>Implement incremental improvements</strong> while planning for major upgrades</li>
+</ol>
+<h3>For Agencies Selecting New CMSs</h3>
+<ol>
+<li><strong>Include accessibility in RFP requirements</strong> with specific compliance criteria</li>
+<li><strong>Test with real users</strong> including government employees with disabilities</li>
+<li><strong>Evaluate long-term accessibility support</strong> from CMS vendors and communities</li>
+<li><strong>Plan for training and change management</strong> ensuring successful accessibility adoption</li>
+</ol>
+<h3>Resources for Implementation</h3>
+<ul>
+<li><strong>CMS accessibility guides</strong>: Platform-specific implementation documentation</li>
+<li><strong>Government communities</strong>: Agencies sharing CMS accessibility solutions</li>
+<li><strong>Vendor support</strong>: Working with CMS providers on accessibility improvements</li>
+<li><strong>Training programs</strong>: Building internal expertise in accessible content creation</li>
+</ul>
+<p>The CMS accessibility problem in government is solvable through careful platform selection, workflow design, and author training. By addressing accessibility systematically at the content management level, agencies can create sustainable processes that produce accessible content by default rather than requiring expensive post-publication remediation.</p>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Format: Comprehensive analysis with technical examples and case study</li>
+<li>Priority: Normal value - addresses common government accessibility challenge</li>
+<li>Action: No changes needed - content preserved as-is per audit recommendation</li>
+<li>Provides practical guidance for government agencies struggling with CMS accessibility challenges</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            
+            <p><strong>Audit notes:</strong> No changes its perfect</p>
+            
+            
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

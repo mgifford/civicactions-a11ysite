@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/about/">About</a>
+                    
+                
+            
+                
+                    
+                    
+                        > <a href="/about/news/">News</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>CivicActions Creates Open Product Accessibility Template</h1>
+<p>CivicActions has developed and released an open source template to help organizations create comprehensive product accessibility documentation, making it easier for teams to communicate accessibility features and compliance status.</p>
+<h2>The Need for Accessible Product Documentation</h2>
+<p>Product accessibility information is often scattered across multiple documents or missing entirely, making it difficult for:</p>
+<ul>
+<li><strong>Procurement teams</strong> to evaluate accessibility compliance</li>
+<li><strong>Development teams</strong> to understand accessibility requirements</li>
+<li><strong>Users with disabilities</strong> to learn about available accessibility features</li>
+<li><strong>Legal and compliance teams</strong> to document accessibility efforts</li>
+</ul>
+<h2>What's in the Template</h2>
+<p>The open source template provides a structured approach to documenting:</p>
+<h3>Accessibility Conformance Information</h3>
+<ul>
+<li><strong>WCAG 2.1 compliance level</strong> and detailed conformance claims</li>
+<li><strong>Section 508 compliance</strong> status for government customers</li>
+<li><strong>Assistive technology compatibility</strong> testing results</li>
+<li><strong>Known limitations</strong> and planned improvements</li>
+</ul>
+<h3>User-Focused Feature Documentation</h3>
+<ul>
+<li><strong>Available accessibility features</strong> described in plain language</li>
+<li><strong>How to enable and use</strong> accessibility settings</li>
+<li><strong>Keyboard shortcuts</strong> and alternative interaction methods</li>
+<li><strong>Contact information</strong> for accessibility support</li>
+</ul>
+<h3>Technical Implementation Details</h3>
+<ul>
+<li><strong>Accessibility API support</strong> (ARIA, platform-specific APIs)</li>
+<li><strong>Testing methodology</strong> and tools used for validation</li>
+<li><strong>Third-party component accessibility</strong> assessment</li>
+<li><strong>Update and maintenance processes</strong> for accessibility features</li>
+</ul>
+<h3>Legal and Compliance Framework</h3>
+<ul>
+<li><strong>Accessibility policy</strong> statements and organizational commitment</li>
+<li><strong>Feedback mechanisms</strong> for users to report accessibility issues</li>
+<li><strong>Remediation timeline</strong> commitments for identified issues</li>
+<li><strong>Training and awareness programs</strong> for development teams</li>
+</ul>
+<h2>Key Benefits</h2>
+<h3>For Organizations</h3>
+<ul>
+<li><strong>Streamlined documentation process</strong> with consistent formatting and structure</li>
+<li><strong>Reduced legal risk</strong> through comprehensive accessibility documentation</li>
+<li><strong>Improved vendor relationships</strong> with clear accessibility communication</li>
+<li><strong>Enhanced team coordination</strong> around accessibility requirements</li>
+</ul>
+<h3>For the Community</h3>
+<ul>
+<li><strong>Open source availability</strong> allows customization for specific needs</li>
+<li><strong>Industry standardization</strong> through shared documentation practices</li>
+<li><strong>Knowledge sharing</strong> about effective accessibility communication</li>
+<li><strong>Collaborative improvement</strong> through community contributions</li>
+</ul>
+<h2>Template Components</h2>
+<h3>Core Documentation Sections</h3>
+<ol>
+<li><strong>Executive Summary</strong> - High-level accessibility overview</li>
+<li><strong>Conformance Statement</strong> - Detailed WCAG and Section 508 compliance</li>
+<li><strong>Feature Guide</strong> - User-facing accessibility functionality</li>
+<li><strong>Technical Specifications</strong> - Implementation details for developers</li>
+<li><strong>Support Information</strong> - Contact details and feedback processes</li>
+</ol>
+<h3>Supporting Resources</h3>
+<ul>
+<li><strong>Accessibility testing checklist</strong> for validation workflows</li>
+<li><strong>User persona examples</strong> including people with disabilities</li>
+<li><strong>Implementation timeline template</strong> for accessibility improvements</li>
+<li><strong>Training material suggestions</strong> for team capability building</li>
+</ul>
+<h2>Implementation Guidance</h2>
+<h3>Getting Started</h3>
+<ol>
+<li><strong>Download the template</strong> from the CivicActions GitHub repository</li>
+<li><strong>Customize sections</strong> to match your product and organizational needs</li>
+<li><strong>Gather accessibility information</strong> from your development and testing teams</li>
+<li><strong>Review with stakeholders</strong> including legal, product, and accessibility experts</li>
+<li><strong>Publish and maintain</strong> the documentation with regular updates</li>
+</ol>
+<h3>Best Practices</h3>
+<ul>
+<li><strong>Involve users with disabilities</strong> in reviewing documentation accuracy</li>
+<li><strong>Update regularly</strong> as features and compliance status change</li>
+<li><strong>Use plain language</strong> that's accessible to diverse audiences</li>
+<li><strong>Link to relevant standards</strong> and external accessibility resources</li>
+</ul>
+<h2>Open Source Commitment</h2>
+<h3>Repository Information</h3>
+<ul>
+<li><strong>GitHub Repository</strong>: <a href="https://github.com/civicactions/product-accessibility-template">github.com/civicactions/product-accessibility-template</a></li>
+<li><strong>License</strong>: Creative Commons Attribution 4.0 International</li>
+<li><strong>Contributing Guidelines</strong>: Community contributions welcomed and encouraged</li>
+<li><strong>Documentation</strong>: Comprehensive setup and customization instructions</li>
+</ul>
+<h3>Community Collaboration</h3>
+<ul>
+<li><strong>Issue tracking</strong> for template improvements and feature requests</li>
+<li><strong>Discussion forum</strong> for implementation questions and best practices</li>
+<li><strong>Regular updates</strong> incorporating community feedback and industry changes</li>
+<li><strong>Example implementations</strong> from organizations using the template</li>
+</ul>
+<h2>Impact and Adoption</h2>
+<p>Since release, the template has been:</p>
+<ul>
+<li><strong>Downloaded over 500 times</strong> by organizations worldwide</li>
+<li><strong>Customized for government agencies</strong> requiring Section 508 compliance</li>
+<li><strong>Adapted for small businesses</strong> needing streamlined accessibility documentation</li>
+<li><strong>Translated into multiple languages</strong> by international contributors</li>
+</ul>
+<h2>Next Steps</h2>
+<h3>For Organizations</h3>
+<ul>
+<li><strong>Try the template</strong> with your current product documentation needs</li>
+<li><strong>Share feedback</strong> on what works well and what could be improved</li>
+<li><strong>Contribute examples</strong> of how you've customized the template</li>
+<li><strong>Spread awareness</strong> about standardized accessibility documentation</li>
+</ul>
+<h3>For the Community</h3>
+<ul>
+<li><strong>Contribute to development</strong> through GitHub issues and pull requests</li>
+<li><strong>Share implementation stories</strong> about successful template usage</li>
+<li><strong>Suggest new features</strong> based on evolving accessibility requirements</li>
+<li><strong>Help with translation</strong> for international accessibility communities</li>
+</ul>
+<h2>Related Resources</h2>
+<ul>
+<li><strong>WCAG Guidelines</strong>: <a href="https://www.w3.org/WAI/WCAG21/quickref/">Web Content Accessibility Guidelines 2.1</a></li>
+<li><strong>Section 508</strong>: <a href="https://www.section508.gov/">section508.gov</a></li>
+<li><strong>CivicActions Accessibility Practice</strong>: <a href="/about/">Our accessibility services</a></li>
+<li><strong>Accessibility Testing</strong>: <a href="/accessibility-guides/automated-testing/">Our automated testing guide</a></li>
+</ul>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Format: Article announcing open source accessibility template release</li>
+<li>Priority: Normal value - important community resource</li>
+<li>Action: No changes needed - content preserved as-is per audit recommendation</li>
+<li>Original author: Mike Gifford, CivicActions accessibility practice lead</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            
+            <p><strong>Audit notes:</strong> No changes its perfect</p>
+            
+            
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

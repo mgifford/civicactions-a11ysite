@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/about/">About</a>
+                    
+                
+            
+                
+                    
+                    
+                        > <a href="/about/news/">News</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Daniel Mundra: Diving Into Drupal</h1>
+<p>Meet Daniel Mundra, one of CivicActions' accessibility engineers who brings deep Drupal expertise to government accessibility projects and has been instrumental in developing our automated testing approaches.</p>
+<h2>Background and Journey</h2>
+<p>Daniel's path to accessibility engineering combines technical depth with a passion for inclusive technology. With a background in full-stack web development and a particular expertise in Drupal, he discovered accessibility through working on government projects where Section 508 compliance was not just nice-to-have, but legally required.</p>
+<h3>From Developer to Accessibility Engineer</h3>
+<p>&quot;I started noticing how many barriers existed in the websites we were building,&quot; Daniel explains. &quot;Even with the best intentions, we were inadvertently creating experiences that didn't work for people using screen readers or keyboard navigation. That realization completely changed how I approach development.&quot;</p>
+<h3>Drupal Community Involvement</h3>
+<p>Daniel has become a significant contributor to Drupal's accessibility initiatives:</p>
+<ul>
+<li><strong>Core accessibility patches</strong> improving Drupal's built-in accessibility features</li>
+<li><strong>Accessibility module development</strong> for enhanced testing and compliance</li>
+<li><strong>Community training</strong> at DrupalCons and accessibility camps</li>
+<li><strong>Documentation improvements</strong> making Drupal accessibility guidance more comprehensive</li>
+</ul>
+<h2>Technical Expertise</h2>
+<h3>Drupal Accessibility Specialization</h3>
+<p>Daniel's work focuses on making Drupal-based government websites fully accessible:</p>
+<ul>
+<li><strong>Theme accessibility</strong> ensuring Drupal themes meet WCAG 2.1 AA standards</li>
+<li><strong>Module accessibility audit</strong> evaluating contributed modules for accessibility compliance</li>
+<li><strong>Administrative interface accessibility</strong> making content editing accessible to users with disabilities</li>
+<li><strong>Migration accessibility</strong> preserving and improving accessibility during site redesigns</li>
+</ul>
+<h3>Automated Testing Innovation</h3>
+<p>A key area of Daniel's work involves developing automated accessibility testing workflows:</p>
+<ul>
+<li><strong>CI/CD integration</strong> bringing accessibility testing into development pipelines</li>
+<li><strong>Custom testing scripts</strong> for government-specific accessibility requirements</li>
+<li><strong>Tool evaluation</strong> comparing and optimizing accessibility testing tools for Drupal</li>
+<li><strong>False positive reduction</strong> making automated testing more accurate and actionable</li>
+</ul>
+<h3>Government Project Experience</h3>
+<p>Daniel has worked on accessibility for several high-profile government projects:</p>
+<ul>
+<li><strong>Federal agency website redesigns</strong> meeting Section 508 compliance requirements</li>
+<li><strong>State government portal accessibility</strong> improving citizen service access</li>
+<li><strong>Local government digital transformation</strong> with accessibility as a core requirement</li>
+<li><strong>Cross-agency accessibility standardization</strong> developing shared approaches and tools</li>
+</ul>
+<h2>Contributions to CivicActions Accessibility Practice</h2>
+<h3>Automated Testing Framework</h3>
+<p>Daniel led the development of CivicActions' automated accessibility testing approach:</p>
+<ul>
+<li><strong>Multi-tool integration</strong> combining axe-core, Pa11y, and custom testing scripts</li>
+<li><strong>Government compliance reporting</strong> automatically generating Section 508 compliance documentation</li>
+<li><strong>Performance optimization</strong> ensuring accessibility testing doesn't slow down development</li>
+<li><strong>Team training</strong> helping developers integrate accessibility testing into their workflows</li>
+</ul>
+<h3>Drupal Accessibility Resources</h3>
+<p>His work has produced numerous resources for the Drupal and accessibility communities:</p>
+<ul>
+<li><strong>Drupal accessibility checklist</strong> specifically designed for government compliance</li>
+<li><strong>Module accessibility reviews</strong> evaluating popular Drupal modules for accessibility issues</li>
+<li><strong>Training materials</strong> used in CivicActions' Drupal accessibility workshops</li>
+<li><strong>Case studies</strong> documenting successful government Drupal accessibility implementations</li>
+</ul>
+<h3>Mentorship and Knowledge Sharing</h3>
+<p>Daniel is passionate about developing accessibility expertise in others:</p>
+<ul>
+<li><strong>Junior developer mentorship</strong> bringing new team members up to speed on accessibility</li>
+<li><strong>Cross-team collaboration</strong> working with designers and project managers on accessibility integration</li>
+<li><strong>Client education</strong> helping government teams understand and maintain accessibility standards</li>
+<li><strong>Community speaking</strong> sharing lessons learned at conferences and meetups</li>
+</ul>
+<h2>Philosophy and Approach</h2>
+<h3>Accessibility as Quality Assurance</h3>
+<p>&quot;Accessibility testing isn't separate from quality assurance—it's an essential part of it,&quot; Daniel emphasizes. &quot;If a website doesn't work with assistive technology, it's broken, period.&quot;</p>
+<h3>User-Centered Development</h3>
+<p>Daniel advocates for involving people with disabilities throughout the development process:</p>
+<ul>
+<li><strong>User testing integration</strong> including assistive technology users in QA workflows</li>
+<li><strong>Real-world validation</strong> testing beyond automated tools to ensure actual usability</li>
+<li><strong>Feedback integration</strong> incorporating user feedback into development priorities</li>
+<li><strong>Empathy building</strong> helping development teams understand the impact of accessibility barriers</li>
+</ul>
+<h3>Sustainable Accessibility</h3>
+<p>Rather than accessibility as an add-on, Daniel focuses on building sustainable accessibility practices:</p>
+<ul>
+<li><strong>Developer training</strong> so teams can maintain accessibility without constant external support</li>
+<li><strong>Process integration</strong> making accessibility testing part of standard workflows</li>
+<li><strong>Tool optimization</strong> reducing the burden of accessibility compliance through better tooling</li>
+<li><strong>Long-term planning</strong> ensuring accessibility considerations are part of technical architecture decisions</li>
+</ul>
+<h2>Current Projects and Initiatives</h2>
+<h3>Open Source Drupal Accessibility</h3>
+<p>Daniel continues contributing to Drupal's accessibility improvements:</p>
+<ul>
+<li><strong>Core accessibility enhancements</strong> submitted as patches for Drupal core</li>
+<li><strong>Accessibility testing module</strong> development for easier Drupal accessibility validation</li>
+<li><strong>Community coordination</strong> organizing Drupal accessibility working groups</li>
+<li><strong>Documentation updates</strong> keeping Drupal accessibility guidance current with web standards</li>
+</ul>
+<h3>Government Accessibility Innovation</h3>
+<p>Working on next-generation approaches to government accessibility:</p>
+<ul>
+<li><strong>AI-assisted accessibility testing</strong> exploring machine learning applications for accessibility validation</li>
+<li><strong>Cross-platform accessibility</strong> ensuring government services work across web, mobile, and emerging platforms</li>
+<li><strong>Performance accessibility</strong> optimizing site performance for assistive technology users</li>
+<li><strong>International standards alignment</strong> helping U.S. government agencies adopt global accessibility best practices</li>
+</ul>
+<h3>Training and Education</h3>
+<p>Developing accessibility education resources:</p>
+<ul>
+<li><strong>Government-specific training programs</strong> tailored to federal, state, and local agency needs</li>
+<li><strong>Developer certification pathways</strong> for Drupal accessibility expertise</li>
+<li><strong>Automated testing workshops</strong> teaching teams to implement effective accessibility testing</li>
+<li><strong>Case study development</strong> documenting successful government accessibility implementations</li>
+</ul>
+<h2>Impact and Recognition</h2>
+<h3>Community Contributions</h3>
+<p>Daniel's work has gained recognition in both Drupal and accessibility communities:</p>
+<ul>
+<li><strong>Drupal Community Contributor</strong> award for accessibility improvements</li>
+<li><strong>Conference speaking</strong> at DrupalCon, CSUN, and Accessibility Camp events</li>
+<li><strong>Module maintainer</strong> for several Drupal accessibility-focused contributed modules</li>
+<li><strong>Working group participation</strong> in W3C and Drupal accessibility standards development</li>
+</ul>
+<h3>Government Impact</h3>
+<p>His work has directly improved accessibility for millions of government website users:</p>
+<ul>
+<li><strong>Federal agency compliance</strong> helping agencies meet Section 508 requirements</li>
+<li><strong>State portal accessibility</strong> improving citizen access to essential government services</li>
+<li><strong>Local government innovation</strong> enabling smaller agencies to implement comprehensive accessibility</li>
+<li><strong>Cross-agency standardization</strong> developing shared tools and approaches for government accessibility</li>
+</ul>
+<h3>Technical Innovation</h3>
+<p>Daniel's technical contributions advance the field of automated accessibility testing:</p>
+<ul>
+<li><strong>Open source testing tools</strong> adopted by organizations beyond government</li>
+<li><strong>Testing methodology improvements</strong> reducing false positives and improving accuracy</li>
+<li><strong>Performance optimization</strong> making accessibility testing faster and more reliable</li>
+<li><strong>Integration patterns</strong> for accessibility testing in modern development workflows</li>
+</ul>
+<h2>Looking Forward</h2>
+<h3>Emerging Technologies</h3>
+<p>Daniel is excited about accessibility applications in emerging technologies:</p>
+<ul>
+<li><strong>Voice interfaces</strong> and their accessibility implications for government services</li>
+<li><strong>AI and machine learning</strong> applications for automated accessibility testing and improvement</li>
+<li><strong>Progressive web applications</strong> and their potential for accessible government service delivery</li>
+<li><strong>Internet of Things</strong> accessibility considerations for government technology procurement</li>
+</ul>
+<h3>Community Building</h3>
+<p>Continuing to build accessibility expertise across the Drupal and government communities:</p>
+<ul>
+<li><strong>International collaboration</strong> with Drupal accessibility contributors worldwide</li>
+<li><strong>Government accessibility networks</strong> connecting federal, state, and local accessibility professionals</li>
+<li><strong>Academic partnerships</strong> working with universities on accessibility research and education</li>
+<li><strong>Industry cooperation</strong> collaborating with other accessibility-focused organizations and companies</li>
+</ul>
+<h2>Connect with Daniel</h2>
+<p>Interested in Drupal accessibility or automated testing approaches?</p>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/danielmundra">Daniel's open source contributions</a></li>
+<li><strong>Drupal.org</strong>: <a href="https://www.drupal.org/u/danielmundra">Daniel's Drupal community profile</a></li>
+<li><strong>Conference speaking</strong>: Catch Daniel's presentations at DrupalCon and accessibility conferences</li>
+<li><strong>Team consultation</strong>: Reach out through our <a href="/about/contact/">contact page</a> for Drupal accessibility projects</li>
+</ul>
+<p>Daniel represents the kind of deep technical expertise and community commitment that makes CivicActions' accessibility practice effective. His work ensures that government websites built on Drupal not only meet compliance requirements but provide genuinely inclusive experiences for all users.</p>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Format: Team member profile article highlighting Drupal accessibility expertise</li>
+<li>Priority: Normal value - team showcase content</li>
+<li>Action: No changes needed - content preserved as-is per audit recommendation</li>
+<li>Demonstrates CivicActions team depth in technical accessibility implementation</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            
+            <p><strong>Audit notes:</strong> No changes its perfect</p>
+            
+            
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

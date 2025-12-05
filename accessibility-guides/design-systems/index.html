@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/accessibility-guides/">Accessibility guides</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Design Systems</h1>
+<p>An introduction to accessible design systems and how to implement them effectively.</p>
+<h2>What are Design Systems?</h2>
+<p>Design systems are collections of reusable components, guided by clear standards, that can be assembled together to build digital products. When built with accessibility in mind, they ensure consistent, inclusive experiences across all touchpoints.</p>
+<h2>Benefits for Accessibility</h2>
+<ul>
+<li><strong>Consistent patterns</strong> reduce cognitive load</li>
+<li><strong>Pre-tested components</strong> minimize accessibility bugs</li>
+<li><strong>Clear guidelines</strong> help teams build inclusively</li>
+<li><strong>Scalable solutions</strong> across large organizations</li>
+</ul>
+<h2>Key Principles</h2>
+<h3>1. Built-in Accessibility</h3>
+<p>Components should be accessible by default, not as an afterthought.</p>
+<h3>2. Clear Documentation</h3>
+<p>Every component should include accessibility guidance and usage examples.</p>
+<h3>3. Testing Integration</h3>
+<p>Automated and manual testing should be built into the design system workflow.</p>
+<h2>Recommended Systems</h2>
+<h3>U.S. Web Design System (USWDS)</h3>
+<p>The gold standard for government digital services, with accessibility built into every component.</p>
+<p><strong>Why we recommend USWDS:</strong></p>
+<ul>
+<li>Section 508 compliant by design</li>
+<li>Extensive accessibility documentation</li>
+<li>Active community and maintenance</li>
+<li>Proven in production across federal agencies</li>
+</ul>
+<h3>Other Notable Systems</h3>
+<ul>
+<li><strong>Material Design</strong> - Google's design system with accessibility guidelines</li>
+<li><strong>Carbon Design System</strong> - IBM's comprehensive system with accessibility focus</li>
+<li><strong>Atlassian Design System</strong> - Strong accessibility documentation and testing</li>
+</ul>
+<h2>Implementation Guide</h2>
+<p>Step-by-step approach to building or adopting an accessible design system for your organization.</p>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Original author: Mike</li>
+<li>Assigned editor: Adrian Cooke (pending)</li>
+<li>Format: Topic page (introductory + resources)</li>
+<li>Priority: High value content</li>
+<li>Action: Emphasize USWDS, create clear information hierarchy</li>
+<li>Note: Offload extensive link lists to external resources</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            <p><strong>Assigned editor:</strong>  
+            <span style="color: #dc2626;">(pending)</span></p>
+            
+            
+            
+            <p><strong>Recommendations:</strong> Convert to topic page. Write intro copy. Create info hierarchy on page. Emphasize USWDS. Offload link lists to Github, etc. if possible.</p>
+            
+            
+            <p><strong>Original author:</strong> Mike</p>
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/playbook/">Playbook</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <p>Most PDFs simply do not meet the Section 508 requirements. It is just simply so easy to produce PDFs, but so difficult to produce accessible ones. There are very few tools that allow you to tell the difference between.</p>
+<p>The Luxembourg government has several open source accessibility projects inclucing their <a href="https://github.com/accessibility-luxembourg/simplA11yPDFCrawler">simplA11yPDFCrawler</a>. This small government has created a great tool which collects and scans PDFs for known accessibility errors. <a href="https://verapdf.org/home/">VeraPDF</a> or <a href="https://github.com/verapdf">VeraPDF on GitHub</a> is another open source option that can provide more detailed results but has a more complicated installation.</p>
+<p>It is possible to create PDF files that meet requirements of Section 508, but it is often overlooked or not done properly. Often the source documents used to create them do not have proper semantics. It is always more expensive to try to remediate a PDF than to implement accessibility best practices into the authoring tool.</p>
+<p>The UK's Government Digital Services model decreases the reliance on PDFs and is <a href="https://gds.blog.gov.uk/2018/07/16/why-gov-uk-content-should-be-published-in-html-and-not-pdf/">actively working to move away from them online and pushing for HTML content instead</a>. When publishing a PDF is unavoidable, ideally an HTML or MSWord version of the content should be available as well.</p>
+<p>For creating accessible documents in Microsoft Word, Excel or Powerpoint, is the preferred method. Microsoft offers an Accessibilty Checker tool, although this may not be an extensive check of the document, it does show major accessibility issues needed to fix.</p>
+<p>Visit <a href="/playbook/documents">Creating Accessible Documents</a>.</p>
+<h2>Checklist</h2>
+<ul>
+<li>Check that the PDFs are accessible prior to allowing them to be posted to the website (ideally with a tool like the <a href="https://allyant.com/commonlook-accessibility-suite/cl-pdf-validator/">CommonLook PDF Validator</a>).</li>
+<li>Track source files, so that additional improvements can be made, if barriers are identified.</li>
+<li>Encourage teams to build documents in HTML first.</li>
+<li>Test PDFs with assistive technology.</li>
+</ul>
+<h2>Key questions</h2>
+<ul>
+<li>Does the department have a clear public policy on use of PDFs?</li>
+<li>What is the process to review that all PDF documents are accessible?</li>
+<li>Are there better alternatives to using PDFs that could be used?</li>
+<li>Is a print-friendly version useful for some users?</li>
+</ul>
+
+        
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

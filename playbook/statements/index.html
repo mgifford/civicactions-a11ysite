@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/playbook/">Playbook</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <p>A complete, well rounded accessibility strategy should include an accessibility statement. But what exactly is an accessibility statement? How do you write one and what type of information should be included?</p>
+<h2>What is an accessibility statement?</h2>
+<p>An accessibility statement is a public declaration that highlights the commitment of a company or organization to accessibility and inclusion.</p>
+<p>Accessibility statements are intended to provide site visitors with information about the accessibility of the website. This information can help people use and navigate the site by setting expectations around site standards and providing details about potential known barriers or technical compatibility.</p>
+<p>The <a href="https://civicactions.com/accessibility-statement/">CivicActions accessibility statement</a> can be found in the footer of our main website.</p>
+<h2>Why provide an accessibility statement?</h2>
+<p>In some cases there is a legal requirement, which is a very compelling reason to have one. For example, all US Federal agencies must maintain an accessibility statement with certain information as defined by the <a href="https://bidenwhitehouse.archives.gov/omb/management/ofcio/m-24-08-strengthening-digital-accessibility-and-the-management-of-section-508-of-the-rehabilitation-act/">Office of Management and Budget (OMB) memorandum</a> from December 2023.</p>
+<p>However, even if there isn't a legally mandated requirement, providing an accessibility statement on your website shows site visitors that you value accessibility as a  social responsibility and that providing access to information is a priority for your organization.</p>
+<h2>Writing an accessibility statement</h2>
+<p>At a minimum, the following information should be included in your statement:</p>
+<ul>
+<li>A commitment to accessibility</li>
+<li>The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a> standard that the website or product adheres to (e.g. WCAG 2.1 AA)</li>
+<li>Any known limitations or existing issues that site visitors should be aware of to help to prevent frustration for the user</li>
+<li>Contact information for what to do if/when a user encounters a barrier or issue</li>
+</ul>
+<p>The following additional information would also be good to include:</p>
+<ul>
+<li>Technical specifications, such as which browser/devices work well and which may have known compatibility issues</li>
+<li>Remediation plans for any known or existing accessibility issues</li>
+<li>Any links or references to applicable laws and policies</li>
+<li>Date the statement was last updated</li>
+</ul>
+<p>Based on your particular website/product, there may be additional minimum requirements or some of the additional information mentioned above may be mandatory. For example, US Federal agencies must include (among other things) the date the statement was last updated and also a specific feedback mechanism for reporting issues to the appropriate 508 program office. When drafting your own accessibility statement, it is important to research specific requirements for your region and sector that may impact the information that should be provided.</p>
+<p>Also, remember that an accessibility statement is for site users, so it is important to write for that audience. Use <a href="https://accessibility.civicactions.com/guide/plain-language">plain language</a> when writing your statement to allow users to easily understand the information you are telling them.</p>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://www.w3.org/WAI/planning/statements/">W3C- Developing an Accessibility Statement</a></li>
+<li><a href="https://www.section508.gov/manage/laws-and-policies/website-accessibility-statement/">Section508.gov - Developing an Accessibility Statement</a></li>
+<li><a href="https://www.gov.uk/guidance/model-accessibility-statement">Model accessibility statement from GOV.UK</a></li>
+</ul>
+
+        
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

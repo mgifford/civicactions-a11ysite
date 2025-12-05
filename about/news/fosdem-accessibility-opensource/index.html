@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/about/">About</a>
+                    
+                
+            
+                
+                    
+                    
+                        > <a href="/about/news/">News</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>FOSDEM: Accessibility and Open Source</h1>
+<p>Highlights from Mike Gifford's presentation at FOSDEM 2023 on how open source software development can lead accessibility innovation and create more inclusive technology for everyone.</p>
+<h2>About FOSDEM</h2>
+<p>FOSDEM (Free and Open Source Developers' European Meeting) is one of the world's largest gatherings of open source software developers, attracting thousands of contributors, maintainers, and enthusiasts to Brussels each February. The conference celebrates the collaborative spirit of open source development and showcases innovations across every area of technology.</p>
+<h3>Why Accessibility Matters at FOSDEM</h3>
+<p>Open source software powers much of the digital infrastructure that people with disabilities depend on daily:</p>
+<ul>
+<li><strong>Operating systems</strong> like Linux that support diverse assistive technologies</li>
+<li><strong>Web browsers</strong> that implement accessibility standards and APIs</li>
+<li><strong>Development tools</strong> that help create accessible applications and websites</li>
+<li><strong>Assistive technology</strong> itself, with many tools being open source projects</li>
+</ul>
+<h2>Presentation Overview: &quot;Building Accessibility Into Open Source&quot;</h2>
+<h3>The Accessibility Challenge in Open Source</h3>
+<p>Open source projects face unique accessibility challenges:</p>
+<ul>
+<li><strong>Volunteer contributors</strong> may lack accessibility expertise or awareness</li>
+<li><strong>Limited resources</strong> for comprehensive accessibility testing and validation</li>
+<li><strong>Rapid iteration</strong> that can introduce accessibility regressions</li>
+<li><strong>Diverse user bases</strong> with varying accessibility needs and assistive technology</li>
+</ul>
+<h3>The Open Source Accessibility Advantage</h3>
+<p>However, open source also offers unique advantages for accessibility:</p>
+<ul>
+<li><strong>Transparency</strong> allowing accessibility experts to identify and fix issues</li>
+<li><strong>Community contributions</strong> from users with disabilities who understand real needs</li>
+<li><strong>Shared knowledge</strong> with accessibility improvements benefiting multiple projects</li>
+<li><strong>Innovation speed</strong> enabling rapid development of new accessibility solutions</li>
+</ul>
+<h2>Key Themes from the Presentation</h2>
+<h3>1. Accessibility as a Quality Issue</h3>
+<p>Accessibility shouldn't be treated as an optional feature but as a fundamental aspect of software quality:</p>
+<h4>Code Quality Parallel</h4>
+<p>Just as we use linters for code quality:</p>
+<pre><code class="language-bash"># Traditional code quality
+eslint src/
+prettier --check src/
+
+# Accessibility quality  
+axe-core src/
+pa11y-ci --sitemap https://yoursite.com/sitemap.xml
+</code></pre>
+<h4>Testing Integration</h4>
+<p>Accessibility testing should be part of standard development workflows:</p>
+<ul>
+<li><strong>Unit tests</strong> that verify ARIA attributes and keyboard interactions</li>
+<li><strong>Integration tests</strong> that validate screen reader compatibility</li>
+<li><strong>Visual regression tests</strong> that catch color contrast and layout issues</li>
+<li><strong>User acceptance tests</strong> that include people using assistive technology</li>
+</ul>
+<h3>2. Community-Driven Accessibility</h3>
+<p>Open source communities can drive accessibility innovation:</p>
+<h4>User Contributions</h4>
+<p>People with disabilities are often the most motivated contributors to accessibility improvements:</p>
+<ul>
+<li><strong>Bug reports</strong> from real users identifying accessibility barriers</li>
+<li><strong>Feature requests</strong> for assistive technology compatibility</li>
+<li><strong>Code contributions</strong> from developers who use accessibility features daily</li>
+<li><strong>Documentation improvements</strong> making accessibility guidance more practical</li>
+</ul>
+<h4>Mentorship and Education</h4>
+<p>Experienced accessibility contributors can guide newcomers:</p>
+<ul>
+<li><strong>Accessibility reviews</strong> in pull request processes</li>
+<li><strong>Educational comments</strong> explaining accessibility principles and techniques</li>
+<li><strong>Shared resources</strong> like accessibility testing scripts and documentation</li>
+<li><strong>Cross-project collaboration</strong> sharing solutions between related projects</li>
+</ul>
+<h3>3. Tools and Infrastructure</h3>
+<p>Open source accessibility requires good tooling:</p>
+<h4>Development Tools</h4>
+<ul>
+<li><strong>Linting rules</strong> for accessibility (eslint-plugin-jsx-a11y, axe-linter)</li>
+<li><strong>Browser extensions</strong> for real-time accessibility testing (axe DevTools)</li>
+<li><strong>Automated testing</strong> frameworks (Pa11y, axe-core, Lighthouse)</li>
+<li><strong>Design tools</strong> with accessibility plugins (Figma a11y, Stark)</li>
+</ul>
+<h4>CI/CD Integration</h4>
+<p>Making accessibility testing as easy as running tests:</p>
+<pre><code class="language-yaml">name: Accessibility Testing
+on: [push, pull_request]
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm ci
+      - name: Build project  
+        run: npm run build
+      - name: Run accessibility tests
+        run: npm run test:a11y
+</code></pre>
+<h3>4. Government and Open Source Accessibility</h3>
+<p>Government adoption of open source creates opportunities:</p>
+<h4>Policy Influence</h4>
+<p>Government accessibility requirements drive open source improvements:</p>
+<ul>
+<li><strong>Section 508 compliance</strong> motivating accessibility features in open source projects</li>
+<li><strong>Procurement requirements</strong> creating market demand for accessible open source solutions</li>
+<li><strong>Standards development</strong> with government agencies participating in accessibility specification work</li>
+<li><strong>Public sector collaboration</strong> sharing accessibility improvements across agencies</li>
+</ul>
+<h4>Resource Sharing</h4>
+<p>Government agencies can contribute to open source accessibility:</p>
+<ul>
+<li><strong>Funding accessibility work</strong> through grants and contracts</li>
+<li><strong>Contributing expertise</strong> from government accessibility professionals</li>
+<li><strong>Sharing solutions</strong> that benefit both public and private sectors</li>
+<li><strong>Policy coordination</strong> aligning government needs with open source development</li>
+</ul>
+<h2>Case Studies Presented</h2>
+<h3>1. Drupal Accessibility Initiative</h3>
+<p>How the Drupal community has systematically improved accessibility:</p>
+<ul>
+<li><strong>Accessibility team</strong> coordinating improvements across the project</li>
+<li><strong>Core accessibility</strong> built into Drupal's administrative interface and output</li>
+<li><strong>Contributed modules</strong> evaluated and improved for accessibility compliance</li>
+<li><strong>Community training</strong> at conferences and through online resources</li>
+</ul>
+<h4>Impact Metrics</h4>
+<ul>
+<li><strong>WCAG 2.1 AA compliance</strong> for Drupal core administrative interface</li>
+<li><strong>Accessibility testing</strong> integrated into Drupal's continuous integration</li>
+<li><strong>Government adoption</strong> with agencies choosing Drupal partly for accessibility features</li>
+<li><strong>Community growth</strong> with more contributors focused on accessibility</li>
+</ul>
+<h3>2. axe-core Development</h3>
+<p>How Deque's open source accessibility testing engine benefits everyone:</p>
+<ul>
+<li><strong>Free accessibility testing</strong> available to all developers regardless of budget</li>
+<li><strong>Community contributions</strong> improving test accuracy and coverage</li>
+<li><strong>Widespread adoption</strong> making accessibility testing more common</li>
+<li><strong>Standards alignment</strong> keeping pace with evolving accessibility guidelines</li>
+</ul>
+<h4>Ecosystem Benefits</h4>
+<ul>
+<li><strong>Multiple implementations</strong> (axe DevTools, axe-cli, integrations with testing frameworks)</li>
+<li><strong>Language bindings</strong> for JavaScript, Python, Java, and other platforms</li>
+<li><strong>CI/CD integration</strong> making automated accessibility testing standard practice</li>
+<li><strong>Education impact</strong> helping developers learn accessibility through tool feedback</li>
+</ul>
+<h3>3. NVDA Screen Reader</h3>
+<p>The power of open source assistive technology:</p>
+<ul>
+<li><strong>Community development</strong> by users who understand screen reader needs</li>
+<li><strong>Rapid innovation</strong> with new features and improvements released frequently</li>
+<li><strong>Global accessibility</strong> with translations and international contributions</li>
+<li><strong>Cost accessibility</strong> providing free access to essential assistive technology</li>
+</ul>
+<h4>Government Impact</h4>
+<ul>
+<li><strong>Public sector adoption</strong> reducing costs for government accessibility</li>
+<li><strong>Educational use</strong> enabling accessibility training without licensing costs</li>
+<li><strong>Development testing</strong> allowing developers to test with real screen reader technology</li>
+<li><strong>Standards influence</strong> with NVDA development informing accessibility specifications</li>
+</ul>
+<h2>Key Recommendations from the Presentation</h2>
+<h3>For Open Source Projects</h3>
+<h4>Start with Foundations</h4>
+<ol>
+<li><strong>Add accessibility linting</strong> to your development process</li>
+<li><strong>Include accessibility in contributing guidelines</strong> with examples and resources</li>
+<li><strong>Test with screen readers</strong> during development, not just before release</li>
+<li><strong>Document accessibility decisions</strong> explaining choices for future contributors</li>
+</ol>
+<h4>Build Community</h4>
+<ol>
+<li><strong>Welcome accessibility contributors</strong> regardless of technical background</li>
+<li><strong>Provide mentorship</strong> for contributors learning accessibility</li>
+<li><strong>Share knowledge</strong> through documentation, blog posts, and conference talks</li>
+<li><strong>Collaborate with other projects</strong> on shared accessibility challenges</li>
+</ol>
+<h4>Maintain Quality</h4>
+<ol>
+<li><strong>Automate accessibility testing</strong> in continuous integration pipelines</li>
+<li><strong>Monitor for regressions</strong> with regular accessibility audits</li>
+<li><strong>Respond quickly</strong> to accessibility bug reports and user feedback</li>
+<li><strong>Plan accessibility</strong> in feature development, not as an afterthought</li>
+</ol>
+<h3>For Government Agencies</h3>
+<h4>Support Open Source Accessibility</h4>
+<ol>
+<li><strong>Contribute to projects</strong> you use through funding, development, or expertise</li>
+<li><strong>Share accessibility solutions</strong> that could benefit other organizations</li>
+<li><strong>Participate in standards development</strong> to align government and community needs</li>
+<li><strong>Advocate for accessibility</strong> in procurement and policy decisions</li>
+</ol>
+<h4>Build Internal Capability</h4>
+<ol>
+<li><strong>Train staff</strong> on open source accessibility tools and practices</li>
+<li><strong>Develop expertise</strong> in accessibility testing and validation</li>
+<li><strong>Create communities of practice</strong> for sharing knowledge across agencies</li>
+<li><strong>Document lessons learned</strong> for future projects and other organizations</li>
+</ol>
+<h2>Audience Response and Questions</h2>
+<h3>Developer Engagement</h3>
+<p>FOSDEM attendees were particularly interested in:</p>
+<ul>
+<li><strong>Practical tools</strong> they could immediately use in their projects</li>
+<li><strong>Getting started guidance</strong> for projects without existing accessibility expertise</li>
+<li><strong>Resource recommendations</strong> for learning accessibility development practices</li>
+<li><strong>Community connections</strong> with other developers working on accessibility</li>
+</ul>
+<h3>Accessibility Advocacy</h3>
+<p>Questions revealed growing awareness:</p>
+<ul>
+<li><strong>Legal requirements</strong> and how they apply to open source projects</li>
+<li><strong>User impact</strong> understanding how accessibility barriers affect real people</li>
+<li><strong>Testing approaches</strong> balancing automated tools with manual validation</li>
+<li><strong>Sustainability</strong> maintaining accessibility improvements over time</li>
+</ul>
+<h2>Follow-Up Resources</h2>
+<h3>Tools Demonstrated</h3>
+<ul>
+<li><strong>axe DevTools</strong>: Browser extension for accessibility testing</li>
+<li><strong>Pa11y CLI</strong>: Command-line accessibility testing tool</li>
+<li><strong>NVDA screen reader</strong>: Free, open source screen reader for testing</li>
+<li><strong>Lighthouse</strong>: Google's accessibility auditing tool</li>
+</ul>
+<h3>Learning Resources</h3>
+<ul>
+<li><strong>Web Accessibility Initiative (WAI)</strong>: W3C's accessibility guidance and standards</li>
+<li><strong>Accessibility Developer Guide</strong>: Practical implementation guidance</li>
+<li><strong>Inclusive Design Principles</strong>: Microsoft's accessibility design guidance</li>
+<li><strong>Government accessibility</strong>: Section 508 and international standards</li>
+</ul>
+<h3>Community Connections</h3>
+<ul>
+<li><strong>A11y Slack</strong>: Online community for accessibility discussions</li>
+<li><strong>IAAP</strong>: International Association of Accessibility Professionals</li>
+<li><strong>Local meetups</strong>: Accessibility groups in cities worldwide</li>
+<li><strong>Conference speaking</strong>: Opportunities to share accessibility knowledge</li>
+</ul>
+<h2>Impact and Next Steps</h2>
+<h3>Conference Outcomes</h3>
+<p>The presentation sparked several follow-up initiatives:</p>
+<ul>
+<li><strong>New project accessibility audits</strong> by FOSDEM attendees</li>
+<li><strong>Collaboration connections</strong> between accessibility professionals and open source maintainers</li>
+<li><strong>Resource sharing</strong> with presentation materials adapted for different communities</li>
+<li><strong>Policy discussions</strong> about government support for open source accessibility</li>
+</ul>
+<h3>Ongoing Work</h3>
+<p>CivicActions continues building on FOSDEM connections:</p>
+<ul>
+<li><strong>Open source contributions</strong> to accessibility testing tools and documentation</li>
+<li><strong>Community building</strong> through conferences, meetups, and online collaboration</li>
+<li><strong>Government advocacy</strong> for policies supporting open source accessibility</li>
+<li><strong>Training development</strong> helping more developers learn accessibility practices</li>
+</ul>
+<h2>Presentation Materials</h2>
+<h3>Slides and Resources</h3>
+<ul>
+<li><strong>Presentation slides</strong>: <a href="https://github.com/civicactions/fosdem-2023-accessibility">Available on GitHub</a></li>
+<li><strong>Demo code</strong>: Examples of accessibility testing integration</li>
+<li><strong>Resource links</strong>: Curated list of accessibility tools and learning materials</li>
+<li><strong>Community contacts</strong>: Connections for accessibility questions and collaboration</li>
+</ul>
+<h3>Video Recording</h3>
+<p>The presentation was recorded and is available:</p>
+<ul>
+<li><strong>FOSDEM video archive</strong>: Official conference recording</li>
+<li><strong>Accessibility-focused edit</strong>: Shortened version highlighting key points</li>
+<li><strong>Transcript</strong>: Full text for accessibility and searchability</li>
+<li><strong>Presentation notes</strong>: Additional context and resources</li>
+</ul>
+<h2>Connect and Continue the Conversation</h2>
+<p>Interested in open source accessibility or government technology collaboration?</p>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/civicactions">CivicActions open source work</a></li>
+<li><strong>Speaking opportunities</strong>: <a href="/about/people/mike-gifford/">Contact Mike Gifford</a> for conference presentations</li>
+<li><strong>Consulting services</strong>: <a href="/about/">CivicActions accessibility practice</a></li>
+<li><strong>Community participation</strong>: <a href="/about/get-accessibility-help/">Get accessibility help</a></li>
+</ul>
+<p>FOSDEM 2023 demonstrated the growing momentum behind open source accessibility. By working together, the global development community can create technology that's truly inclusive and accessible to everyone.</p>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Format: Conference presentation summary with practical guidance and community building focus</li>
+<li>Priority: Normal value - demonstrates thought leadership and community engagement</li>
+<li>Action: No changes needed - content preserved as-is per audit recommendation</li>
+<li>Author: Mike Gifford, establishing expertise in open source accessibility advocacy</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            
+            <p><strong>Audit notes:</strong> No changes its perfect</p>
+            
+            
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

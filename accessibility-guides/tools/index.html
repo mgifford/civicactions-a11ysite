@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/accessibility-guides/">Accessibility guides</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Tools</h1>
+<p>Essential accessibility tools for testing, development, and design workflows.</p>
+<h2>Testing Tools</h2>
+<p>What we look for: Tools that integrate well with development workflows, provide actionable feedback, and cover both automated detection and manual testing support.</p>
+<h3>Top Recommendations</h3>
+<ol>
+<li><strong>axe DevTools</strong> - Browser extension for comprehensive accessibility testing</li>
+<li><strong>WAVE</strong> - Visual feedback tool for identifying accessibility issues</li>
+<li><strong>Lighthouse</strong> - Built into Chrome, includes accessibility audits</li>
+</ol>
+<h3>Additional Options</h3>
+<ul>
+<li>Pa11y - Command line accessibility testing</li>
+<li>Axe-core - JavaScript library for automated testing</li>
+<li>Colour Contrast Analyser - Desktop app for color testing</li>
+</ul>
+<h2>Development Tools</h2>
+<p>What we look for: Tools that help developers build accessible code from the start, with clear documentation and integration options.</p>
+<h3>Top Recommendations</h3>
+<ol>
+<li><strong>ESLint Plugin JSX A11y</strong> - Catches accessibility issues in React code</li>
+<li><strong>Axe Linter</strong> - IDE integration for real-time accessibility feedback</li>
+<li><strong>Storybook A11y Addon</strong> - Test components in isolation</li>
+</ol>
+<h3>Additional Options</h3>
+<ul>
+<li>Accessibility Insights for Web - Microsoft's testing suite</li>
+<li>ANDI - Bookmarklet for detailed accessibility analysis</li>
+</ul>
+<h2>Design Tools</h2>
+<p>What we look for: Tools that help designers create inclusive designs with proper color contrast, typography, and layout considerations.</p>
+<h3>Top Recommendations</h3>
+<ol>
+<li><strong>Figma A11y Plugin</strong> - Accessibility checking within design workflows</li>
+<li><strong>Stark</strong> - Color blindness simulation and contrast checking</li>
+<li><strong>Colour Oracle</strong> - Color blindness simulator</li>
+</ol>
+<h3>Additional Options</h3>
+<ul>
+<li>WebAIM Contrast Checker - Online contrast verification</li>
+<li>Toptal Color Blind Filter - Browser-based color blindness simulation</li>
+</ul>
+<h2>Content Tools</h2>
+<p>What we look for: Tools that help content creators write accessible, clear content that works well with assistive technologies.</p>
+<h3>Top Recommendations</h3>
+<ol>
+<li><strong>Hemingway Editor</strong> - Readability and plain language checking</li>
+<li><strong>JAWS Screen Reader</strong> - Industry standard screen reader for testing</li>
+<li><strong>VoiceOver</strong> - Built into macOS, great for basic screen reader testing</li>
+</ol>
+<h3>Additional Options</h3>
+<ul>
+<li>NVDA - Free, open-source Windows screen reader</li>
+<li>Dragon NaturallySpeaking - Voice recognition software testing</li>
+</ul>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Original authors: Mike, Jack</li>
+<li>Assigned editor: Jordan Wood (completed)</li>
+<li>Format: Detail page (comprehensive information)</li>
+<li>Priority: High value content</li>
+<li>Action: Organized by category with top 3 recommendations + additional options</li>
+<li>Structure: What we look for + curated recommendations</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            <p><strong>Assigned editor:</strong>  
+            <span style="color: #059669;">(completed)</span></p>
+            
+            
+            <p><strong>Audit notes:</strong> Lot of info on this page. Consider breaking up.</p>
+            
+            
+            <p><strong>Recommendations:</strong> For each subhead, describe what we look for in a tool in that category, then list the three best ones. Additional options can be below that.</p>
+            
+            
+            <p><strong>Original author:</strong> Mike, Jack</p>
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

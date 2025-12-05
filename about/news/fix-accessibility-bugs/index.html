@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/about/">About</a>
+                    
+                
+            
+                
+                    
+                    
+                        > <a href="/about/news/">News</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Fix Accessibility Bugs</h1>
+<p>A systematic approach to identifying, prioritizing, and fixing accessibility bugs in government websites and applications, with practical examples and implementation strategies.</p>
+<h2>Understanding Accessibility Bugs</h2>
+<h3>What Are Accessibility Bugs?</h3>
+<p>Accessibility bugs are defects that prevent people with disabilities from using digital services effectively. Unlike visual or functional bugs that might be obvious, accessibility bugs often go unnoticed by teams who don't use assistive technology.</p>
+<h3>Common Types in Government Sites</h3>
+<ul>
+<li><strong>Keyboard navigation failures</strong> - interactive elements that can't be reached or activated with keyboard alone</li>
+<li><strong>Screen reader incompatibility</strong> - content that doesn't announce properly or is completely invisible to screen readers</li>
+<li><strong>Color contrast violations</strong> - text and background combinations that don't meet WCAG standards</li>
+<li><strong>Form accessibility issues</strong> - labels, validation, and error messaging that don't work with assistive technology</li>
+<li><strong>Missing alternative text</strong> - images without proper descriptions for users who can't see them</li>
+</ul>
+<h2>Bug Discovery Methods</h2>
+<h3>Automated Testing Tools</h3>
+<p>Catch common accessibility issues quickly:</p>
+<h4>axe-core Integration</h4>
+<pre><code class="language-javascript">// Automated testing in development
+import { axe, toHaveNoViolations } from 'jest-axe';
+expect.extend(toHaveNoViolations);
+
+test('should not have accessibility violations', async () =&gt; {
+  const { container } = render(&lt;MyComponent /&gt;);
+  const results = await axe(container);
+  expect(results).toHaveNoViolations();
+});
+</code></pre>
+<h4>Pa11y CI/CD Integration</h4>
+<pre><code class="language-bash"># Command line accessibility testing
+pa11y-ci --sitemap https://yoursite.gov/sitemap.xml
+pa11y-ci --threshold 5 https://yoursite.gov/contact
+</code></pre>
+<h3>Manual Testing Procedures</h3>
+<p>Human validation catches issues automated tools miss:</p>
+<h4>Screen Reader Testing</h4>
+<ul>
+<li><strong>NVDA (Windows)</strong>: Free, widely used by government employees</li>
+<li><strong>JAWS (Windows)</strong>: Industry standard for professional environments</li>
+<li><strong>VoiceOver (macOS/iOS)</strong>: Built-in Apple accessibility</li>
+<li><strong>TalkBack (Android)</strong>: Mobile screen reader testing</li>
+</ul>
+<h4>Keyboard Navigation</h4>
+<ul>
+<li><strong>Tab through all interactive elements</strong> ensuring logical order and visible focus</li>
+<li><strong>Test all functionality</strong> without using a mouse</li>
+<li><strong>Verify escape routes</strong> from modal dialogs and complex interactions</li>
+<li><strong>Check custom keyboard shortcuts</strong> for conflicts with assistive technology</li>
+</ul>
+<h3>User Testing with People with Disabilities</h3>
+<p>The most authentic way to discover accessibility issues:</p>
+<ul>
+<li><strong>Recruit diverse users</strong> representing different disabilities and assistive technologies</li>
+<li><strong>Test real tasks</strong> rather than artificial accessibility scenarios</li>
+<li><strong>Document barriers</strong> that prevent task completion</li>
+<li><strong>Gather qualitative feedback</strong> on user experience beyond compliance</li>
+</ul>
+<h2>Bug Prioritization Framework</h2>
+<h3>Severity Classification</h3>
+<h4>Critical (P0) - Fix Immediately</h4>
+<ul>
+<li><strong>Complete blocking</strong> - users cannot access essential government services</li>
+<li><strong>Security implications</strong> - accessibility workarounds create security vulnerabilities</li>
+<li><strong>Legal compliance</strong> - violations of Section 508 requirements for high-visibility content</li>
+<li><strong>High-traffic impact</strong> - issues affecting homepage or primary user flows</li>
+</ul>
+<h4>High (P1) - Fix Within Sprint</h4>
+<ul>
+<li><strong>Task completion barriers</strong> - users can start but cannot complete important tasks</li>
+<li><strong>Significant usability impact</strong> - accessibility issues that create major user frustration</li>
+<li><strong>Multiple user groups affected</strong> - problems impacting various disabilities or assistive technologies</li>
+<li><strong>Workaround complexity</strong> - issues requiring users to find complicated alternatives</li>
+</ul>
+<h4>Medium (P2) - Fix Within Release</h4>
+<ul>
+<li><strong>Minor usability issues</strong> - accessibility problems that slow but don't block users</li>
+<li><strong>Limited scope</strong> - issues affecting specific pages or features with lower usage</li>
+<li><strong>Enhancement opportunities</strong> - improvements beyond minimum compliance requirements</li>
+<li><strong>Future compatibility</strong> - preparing for upcoming accessibility standard changes</li>
+</ul>
+<h4>Low (P3) - Address in Backlog</h4>
+<ul>
+<li><strong>Cosmetic accessibility issues</strong> - problems that don't significantly impact functionality</li>
+<li><strong>Edge cases</strong> - unusual scenarios with accessibility implications</li>
+<li><strong>Progressive enhancements</strong> - accessibility features that exceed current requirements</li>
+<li><strong>Documentation needs</strong> - internal accessibility guidance and training materials</li>
+</ul>
+<h3>Impact Assessment Matrix</h3>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>User Impact</th>
+<th>Business Impact</th>
+<th>Technical Complexity</th>
+<th>Timeline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>Blocking</td>
+<td>Legal/Compliance Risk</td>
+<td>Any</td>
+<td>Immediate</td>
+</tr>
+<tr>
+<td>High</td>
+<td>Significant Barrier</td>
+<td>Service Delivery Impact</td>
+<td>Low-Medium</td>
+<td>1-2 Weeks</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>Minor Barrier</td>
+<td>User Satisfaction</td>
+<td>Medium</td>
+<td>1 Month</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>Enhancement</td>
+<td>Future-Proofing</td>
+<td>Any</td>
+<td>Next Quarter</td>
+</tr>
+</tbody>
+</table>
+<h2>Common Bug Fixes</h2>
+<h3>Keyboard Navigation Issues</h3>
+<h4>Problem: Missing Focus Indicators</h4>
+<pre><code class="language-css">/* Bad - no visible focus */
+button:focus {
+  outline: none;
+}
+
+/* Good - clear focus indicator */
+button:focus {
+  outline: 2px solid #005ea2;
+  outline-offset: 2px;
+}
+</code></pre>
+<h4>Problem: Keyboard Traps</h4>
+<pre><code class="language-javascript">// Bad - modal traps focus improperly
+function openModal() {
+  modal.style.display = 'block';
+  // Focus gets trapped without escape mechanism
+}
+
+// Good - proper focus management
+function openModal() {
+  modal.style.display = 'block';
+  focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex=&quot;-1&quot;])');
+  firstElement = focusableElements[0];
+  lastElement = focusableElements[focusableElements.length - 1];
+  firstElement.focus();
+  
+  modal.addEventListener('keydown', handleModalKeydown);
+}
+</code></pre>
+<h3>Screen Reader Problems</h3>
+<h4>Problem: Missing Labels</h4>
+<pre><code class="language-html">&lt;!-- Bad - no label association --&gt;
+&lt;input type=&quot;email&quot; placeholder=&quot;Enter your email&quot;&gt;
+
+&lt;!-- Good - explicit labeling --&gt;
+&lt;label for=&quot;email&quot;&gt;Email Address&lt;/label&gt;
+&lt;input type=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;Enter your email&quot;&gt;
+</code></pre>
+<h4>Problem: Unclear Link Context</h4>
+<pre><code class="language-html">&lt;!-- Bad - ambiguous link text --&gt;
+&lt;a href=&quot;/report.pdf&quot;&gt;Click here&lt;/a&gt; for the accessibility report.
+
+&lt;!-- Good - descriptive link text --&gt;
+&lt;a href=&quot;/report.pdf&quot;&gt;Download the 2023 accessibility compliance report (PDF)&lt;/a&gt;
+</code></pre>
+<h3>Color Contrast Violations</h3>
+<h4>Problem: Insufficient Contrast</h4>
+<pre><code class="language-css">/* Bad - contrast ratio 2.1:1 */
+.text {
+  color: #767676;
+  background-color: #ffffff;
+}
+
+/* Good - contrast ratio 4.5:1 */
+.text {
+  color: #565656;
+  background-color: #ffffff;
+}
+</code></pre>
+<h3>Form Accessibility Issues</h3>
+<h4>Problem: Inaccessible Error Messages</h4>
+<pre><code class="language-html">&lt;!-- Bad - error not associated with field --&gt;
+&lt;div class=&quot;error&quot;&gt;Email is required&lt;/div&gt;
+&lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;
+
+&lt;!-- Good - error properly associated --&gt;
+&lt;input type=&quot;email&quot; name=&quot;email&quot; aria-describedby=&quot;email-error&quot; aria-invalid=&quot;true&quot;&gt;
+&lt;div id=&quot;email-error&quot; class=&quot;error&quot;&gt;Email is required&lt;/div&gt;
+</code></pre>
+<h2>Government-Specific Considerations</h2>
+<h3>Section 508 Compliance</h3>
+<ul>
+<li><strong>Prioritize public-facing content</strong> ensuring citizen access to government services</li>
+<li><strong>Document remediation efforts</strong> for compliance reporting and legal protection</li>
+<li><strong>Test with government-approved assistive technology</strong> reflecting actual user environments</li>
+<li><strong>Coordinate with procurement</strong> ensuring new tools and systems maintain accessibility</li>
+</ul>
+<h3>Legacy System Integration</h3>
+<p>Many government sites must work within existing technical constraints:</p>
+<ul>
+<li><strong>Progressive enhancement</strong> adding accessibility without breaking legacy functionality</li>
+<li><strong>API accessibility</strong> ensuring backend systems support accessible frontend experiences</li>
+<li><strong>Migration planning</strong> improving accessibility during system upgrades and replacements</li>
+<li><strong>Vendor coordination</strong> requiring accessibility fixes from third-party system providers</li>
+</ul>
+<h2>Remediation Workflow</h2>
+<h3>Bug Lifecycle Management</h3>
+<h4>Discovery and Documentation</h4>
+<ol>
+<li><strong>Log accessibility bugs</strong> with detailed reproduction steps and assistive technology impact</li>
+<li><strong>Screenshot/screen recording</strong> evidence showing the accessibility barrier</li>
+<li><strong>User story format</strong> describing impact on people with disabilities</li>
+<li><strong>Technical specifications</strong> including WCAG success criteria violations</li>
+</ol>
+<h4>Development Process</h4>
+<ol>
+<li><strong>Assign to developer</strong> with accessibility expertise or provide training support</li>
+<li><strong>Create fix implementation</strong> following established accessibility patterns</li>
+<li><strong>Unit test accessibility</strong> using automated tools and manual validation</li>
+<li><strong>Code review</strong> including accessibility-focused review criteria</li>
+</ol>
+<h4>Quality Assurance</h4>
+<ol>
+<li><strong>Automated testing</strong> confirming fixes don't introduce new accessibility issues</li>
+<li><strong>Manual testing</strong> with screen readers and keyboard navigation</li>
+<li><strong>Cross-browser validation</strong> ensuring fixes work across different platforms</li>
+<li><strong>User acceptance testing</strong> with people who have disabilities when possible</li>
+</ol>
+<h4>Deployment and Monitoring</h4>
+<ol>
+<li><strong>Production testing</strong> validating fixes in live environment</li>
+<li><strong>Accessibility monitoring</strong> ongoing surveillance for regression issues</li>
+<li><strong>User feedback</strong> channels for reporting new accessibility problems</li>
+<li><strong>Performance impact</strong> assessment ensuring accessibility fixes don't degrade site speed</li>
+</ol>
+<h2>Prevention Strategies</h2>
+<h3>Shift-Left Accessibility</h3>
+<p>Prevent bugs rather than fixing them after development:</p>
+<ul>
+<li><strong>Accessibility requirements</strong> in user stories and acceptance criteria</li>
+<li><strong>Design system compliance</strong> using accessible components and patterns</li>
+<li><strong>Developer training</strong> on accessibility coding practices and testing</li>
+<li><strong>Regular auditing</strong> catching issues before they reach production</li>
+</ul>
+<h3>Automated Prevention</h3>
+<ul>
+<li><strong>Linting rules</strong> catching accessibility issues during development</li>
+<li><strong>Pre-commit hooks</strong> preventing inaccessible code from entering repository</li>
+<li><strong>Continuous integration</strong> testing accessibility with every code change</li>
+<li><strong>Performance budgets</strong> including accessibility compliance metrics</li>
+</ul>
+<h2>Measuring Success</h2>
+<h3>Quantitative Metrics</h3>
+<ul>
+<li><strong>Bug reduction</strong> over time across different accessibility categories</li>
+<li><strong>Time to resolution</strong> for accessibility issues by severity level</li>
+<li><strong>User task completion</strong> rates for people using assistive technology</li>
+<li><strong>Compliance scores</strong> from automated and manual accessibility audits</li>
+</ul>
+<h3>Qualitative Assessment</h3>
+<ul>
+<li><strong>User feedback</strong> from people with disabilities about site usability</li>
+<li><strong>Team confidence</strong> in accessibility implementation and testing</li>
+<li><strong>Stakeholder satisfaction</strong> with accessibility compliance and user experience</li>
+<li><strong>Community recognition</strong> for accessibility leadership and innovation</li>
+</ul>
+<h2>Tools and Resources</h2>
+<h3>Automated Testing Tools</h3>
+<ul>
+<li><strong>axe DevTools</strong>: Browser extension for real-time accessibility testing</li>
+<li><strong>Pa11y</strong>: Command-line accessibility testing for CI/CD integration</li>
+<li><strong>Lighthouse</strong>: Google's accessibility auditing in Chrome DevTools</li>
+<li><strong>WAVE</strong>: Web accessibility evaluation with visual feedback</li>
+</ul>
+<h3>Manual Testing Resources</h3>
+<ul>
+<li><strong>Screen reader guides</strong>: Documentation for testing with NVDA, JAWS, VoiceOver</li>
+<li><strong>Keyboard testing checklists</strong>: Systematic approaches to keyboard navigation validation</li>
+<li><strong>Color contrast analyzers</strong>: Tools for measuring and fixing contrast violations</li>
+<li><strong>Mobile accessibility</strong>: Testing approaches for iOS and Android accessibility</li>
+</ul>
+<h3>CivicActions Resources</h3>
+<ul>
+<li><strong>Accessibility testing guide</strong>: <a href="/accessibility-guides/automated-testing/">Our automated testing documentation</a></li>
+<li><strong>Development training</strong>: <a href="/accessibility-guides/plain-language/">Plain language accessibility guidance</a></li>
+<li><strong>Team consultation</strong>: <a href="/about/get-accessibility-help/">Get accessibility help</a></li>
+</ul>
+<p>Fixing accessibility bugs systematically improves government digital services for everyone. The investment in proper bug tracking, prioritization, and remediation pays dividends in user satisfaction, legal compliance, and long-term maintenance efficiency.</p>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Format: Technical guidance article with practical examples and code snippets</li>
+<li>Priority: Normal value - essential reference for development teams</li>
+<li>Action: No changes needed - content preserved as-is per audit recommendation</li>
+<li>Provides actionable guidance for systematic accessibility bug resolution</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            
+            <p><strong>Audit notes:</strong> No changes its perfect</p>
+            
+            
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

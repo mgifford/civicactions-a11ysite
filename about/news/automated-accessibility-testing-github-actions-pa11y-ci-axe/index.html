@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/about/">About</a>
+                    
+                
+            
+                
+                    
+                    
+                        > <a href="/about/news/">News</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Automated Accessibility Testing: Leveraging GitHub Actions and Pa11y-ci with Axe</h1>
+<p>Implementing continuous accessibility integration in government development workflows using GitHub Actions, Pa11y-ci, and Axe-core to catch accessibility issues before they reach production.</p>
+<h2>The Challenge of Manual Testing</h2>
+<p>Manual accessibility testing is essential but has limitations:</p>
+<ul>
+<li><strong>Time-intensive</strong> - requires significant effort for comprehensive coverage</li>
+<li><strong>Human error</strong> - easy to miss issues or inconsistent testing approaches</li>
+<li><strong>Late discovery</strong> - problems found after development completion are expensive to fix</li>
+<li><strong>Scale limitations</strong> - difficult to test every page and component regularly</li>
+</ul>
+<h2>Automated Testing Benefits</h2>
+<h3>Early Issue Detection</h3>
+<p>Automated accessibility testing integrated into CI/CD pipelines:</p>
+<ul>
+<li><strong>Catches issues immediately</strong> when code is committed</li>
+<li><strong>Prevents regression</strong> by testing every change</li>
+<li><strong>Reduces remediation costs</strong> through early discovery</li>
+<li><strong>Maintains compliance</strong> continuously rather than periodically</li>
+</ul>
+<h3>Consistent Standards</h3>
+<p>Automated tools provide:</p>
+<ul>
+<li><strong>Standardized testing</strong> across all developers and projects</li>
+<li><strong>Objective measurements</strong> removing subjective interpretation</li>
+<li><strong>Comprehensive coverage</strong> testing more scenarios than manual review</li>
+<li><strong>Documentation</strong> of accessibility decisions and requirements</li>
+</ul>
+<h2>Implementation Architecture</h2>
+<h3>GitHub Actions Workflow</h3>
+<pre><code class="language-yaml">name: Accessibility Testing
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  accessibility-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build site
+        run: npm run build
+        
+      - name: Start server
+        run: |
+          npm run serve &amp;
+          sleep 10
+          
+      - name: Run Pa11y-ci
+        run: npx pa11y-ci --sitemap http://localhost:8080/sitemap.xml
+        
+      - name: Run Axe tests
+        run: npm run test:axe
+</code></pre>
+<h3>Pa11y-ci Configuration</h3>
+<pre><code class="language-json">{
+  &quot;defaults&quot;: {
+    &quot;timeout&quot;: 20000,
+    &quot;wait&quot;: 500,
+    &quot;chromeLaunchConfig&quot;: {
+      &quot;args&quot;: [&quot;--no-sandbox&quot;]
+    }
+  },
+  &quot;urls&quot;: [
+    &quot;http://localhost:8080/&quot;,
+    &quot;http://localhost:8080/accessibility-guides/&quot;,
+    &quot;http://localhost:8080/about/contact/&quot;
+  ]
+}
+</code></pre>
+<h3>Axe-core Integration</h3>
+<pre><code class="language-javascript">// test/accessibility.test.js
+const { AxePuppeteer } = require('@axe-core/puppeteer');
+const puppeteer = require('puppeteer');
+
+describe('Accessibility Tests', () =&gt; {
+  let browser;
+  let page;
+
+  beforeAll(async () =&gt; {
+    browser = await puppeteer.launch();
+    page = await browser.newPage();
+  });
+
+  afterAll(async () =&gt; {
+    await browser.close();
+  });
+
+  test('Homepage accessibility', async () =&gt; {
+    await page.goto('http://localhost:8080/');
+    const results = await new AxePuppeteer(page).analyze();
+    expect(results.violations).toHaveLength(0);
+  });
+});
+</code></pre>
+<h2>Tool Selection and Configuration</h2>
+<h3>Pa11y-ci Advantages</h3>
+<ul>
+<li><strong>Command-line interface</strong> perfect for CI/CD integration</li>
+<li><strong>Sitemap support</strong> automatically tests all pages</li>
+<li><strong>Configurable standards</strong> supporting WCAG 2.1 AA requirements</li>
+<li><strong>HTML reporter</strong> generating detailed accessibility reports</li>
+<li><strong>Custom actions</strong> for testing complex user interactions</li>
+</ul>
+<h3>Axe-core Benefits</h3>
+<ul>
+<li><strong>Industry standard</strong> accessibility testing engine</li>
+<li><strong>Comprehensive ruleset</strong> covering WCAG guidelines</li>
+<li><strong>Low false positives</strong> reducing noise in test results</li>
+<li><strong>Detailed reporting</strong> with specific remediation guidance</li>
+<li><strong>Browser integration</strong> testing real DOM state after JavaScript execution</li>
+</ul>
+<h3>Lighthouse CI Integration</h3>
+<pre><code class="language-yaml">- name: Run Lighthouse CI
+  run: |
+    npm install -g @lhci/cli@0.11.x
+    lhci autorun
+  env:
+    LHCI_GITHUB_APP_TOKEN: $
+</code></pre>
+<h2>Government-Specific Considerations</h2>
+<h3>Section 508 Compliance</h3>
+<p>Configuring tools for government requirements:</p>
+<ul>
+<li><strong>WCAG 2.1 AA standards</strong> as baseline for Section 508</li>
+<li><strong>Custom rulesets</strong> for government-specific accessibility requirements</li>
+<li><strong>Reporting formats</strong> compatible with compliance documentation</li>
+<li><strong>Audit trails</strong> maintaining records of accessibility testing</li>
+</ul>
+<h3>Security Requirements</h3>
+<p>Government CI/CD accessibility testing must address:</p>
+<ul>
+<li><strong>No external service dependencies</strong> running tests within secure environments</li>
+<li><strong>Container security</strong> using approved base images and security scanning</li>
+<li><strong>Credential management</strong> securely handling any required API keys or tokens</li>
+<li><strong>Network isolation</strong> ensuring tests don't expose internal systems</li>
+</ul>
+<h3>Performance Considerations</h3>
+<p>Government websites often have specific performance requirements:</p>
+<ul>
+<li><strong>Testing timeouts</strong> accommodating slower government networks</li>
+<li><strong>Resource limits</strong> working within allocated CI/CD computing resources</li>
+<li><strong>Parallel testing</strong> optimizing test execution time</li>
+<li><strong>Caching strategies</strong> reducing redundant testing of unchanged content</li>
+</ul>
+<h2>Advanced Implementation Patterns</h2>
+<h3>Multi-Environment Testing</h3>
+<pre><code class="language-yaml">strategy:
+  matrix:
+    environment: [development, staging, production]
+    browser: [chrome, firefox]
+</code></pre>
+<h3>Custom Accessibility Rules</h3>
+<pre><code class="language-javascript">// Custom rule for government branding requirements
+axe.configure({
+  rules: [
+    {
+      id: 'government-logo-alt-text',
+      selector: 'img[src*=&quot;logo&quot;]',
+      evaluate: function (node) {
+        return node.getAttribute('alt').includes('government') ||
+               node.getAttribute('alt').includes('agency');
+      }
+    }
+  ]
+});
+</code></pre>
+<h3>Dynamic Content Testing</h3>
+<pre><code class="language-javascript">// Testing single-page applications and dynamic content
+await page.click('#load-more-button');
+await page.waitForSelector('.new-content');
+const results = await new AxePuppeteer(page).analyze();
+</code></pre>
+<h2>Integration with Development Workflow</h2>
+<h3>Pull Request Automation</h3>
+<ul>
+<li><strong>Automatic testing</strong> of all pull requests before merge</li>
+<li><strong>Comment integration</strong> posting accessibility results directly in GitHub</li>
+<li><strong>Blocking merges</strong> when accessibility tests fail</li>
+<li><strong>Trend tracking</strong> monitoring accessibility improvement over time</li>
+</ul>
+<h3>Developer Feedback</h3>
+<pre><code class="language-yaml">- name: Comment PR
+  uses: actions/github-script@v6
+  if: failure()
+  with:
+    script: |
+      github.rest.issues.createComment({
+        issue_number: context.issue.number,
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        body: '❌ Accessibility tests failed. Please review the errors and fix before merging.'
+      })
+</code></pre>
+<h3>Reporting and Metrics</h3>
+<ul>
+<li><strong>Accessibility dashboard</strong> showing trends and current status</li>
+<li><strong>Compliance reports</strong> automatically generated for audits</li>
+<li><strong>Issue tracking</strong> integration with GitHub Issues or Jira</li>
+<li><strong>Historical analysis</strong> identifying patterns in accessibility issues</li>
+</ul>
+<h2>Best Practices and Lessons Learned</h2>
+<h3>Test Coverage Strategy</h3>
+<ul>
+<li><strong>Critical user paths</strong> prioritizing essential government services</li>
+<li><strong>Component testing</strong> validating reusable interface elements</li>
+<li><strong>Cross-browser validation</strong> ensuring compatibility across platforms</li>
+<li><strong>Mobile accessibility</strong> testing responsive design implementations</li>
+</ul>
+<h3>Managing False Positives</h3>
+<ul>
+<li><strong>Rule customization</strong> disabling inappropriate rules for specific contexts</li>
+<li><strong>Context-aware testing</strong> understanding when automated tools have limitations</li>
+<li><strong>Manual validation</strong> confirming automated test results with human review</li>
+<li><strong>Tool comparison</strong> using multiple tools to validate findings</li>
+</ul>
+<h3>Performance Optimization</h3>
+<ul>
+<li><strong>Selective testing</strong> running full suites only on significant changes</li>
+<li><strong>Parallel execution</strong> distributing tests across multiple workers</li>
+<li><strong>Caching strategies</strong> reusing build artifacts and test data</li>
+<li><strong>Incremental testing</strong> focusing on changed files and components</li>
+</ul>
+<h2>Measuring Success</h2>
+<h3>Quantitative Metrics</h3>
+<ul>
+<li><strong>Error reduction</strong> tracking decrease in accessibility violations over time</li>
+<li><strong>Test coverage</strong> percentage of pages and components under automated testing</li>
+<li><strong>Resolution time</strong> speed of fixing accessibility issues after detection</li>
+<li><strong>Compliance rate</strong> maintaining consistent WCAG 2.1 AA compliance</li>
+</ul>
+<h3>Qualitative Improvements</h3>
+<ul>
+<li><strong>Developer confidence</strong> in accessibility implementation</li>
+<li><strong>User experience</strong> improvements from systematic accessibility attention</li>
+<li><strong>Team knowledge</strong> growth in accessibility understanding and practices</li>
+<li><strong>Stakeholder satisfaction</strong> from consistent compliance and quality</li>
+</ul>
+<h2>Implementation Roadmap</h2>
+<h3>Phase 1: Foundation (Weeks 1-2)</h3>
+<ol>
+<li><strong>Set up basic GitHub Actions</strong> workflow with Pa11y-ci</li>
+<li><strong>Configure testing</strong> for critical pages and user flows</li>
+<li><strong>Establish baselines</strong> documenting current accessibility status</li>
+<li><strong>Train team</strong> on interpreting and acting on automated test results</li>
+</ol>
+<h3>Phase 2: Enhancement (Weeks 3-4)</h3>
+<ol>
+<li><strong>Add Axe-core integration</strong> for comprehensive testing coverage</li>
+<li><strong>Implement custom rules</strong> for government-specific requirements</li>
+<li><strong>Set up reporting</strong> dashboard and compliance documentation</li>
+<li><strong>Integrate with development workflow</strong> blocking problematic changes</li>
+</ol>
+<h3>Phase 3: Optimization (Weeks 5-8)</h3>
+<ol>
+<li><strong>Performance tuning</strong> optimizing test execution time and resource usage</li>
+<li><strong>Advanced scenarios</strong> testing complex interactions and dynamic content</li>
+<li><strong>Cross-browser testing</strong> ensuring compatibility across platforms</li>
+<li><strong>Continuous improvement</strong> refining rules and processes based on experience</li>
+</ol>
+<h2>Tools and Resources</h2>
+<h3>Required Dependencies</h3>
+<pre><code class="language-json">{
+  &quot;devDependencies&quot;: {
+    &quot;pa11y-ci&quot;: &quot;^3.0.1&quot;,
+    &quot;@axe-core/puppeteer&quot;: &quot;^4.7.0&quot;,
+    &quot;puppeteer&quot;: &quot;^19.0.0&quot;,
+    &quot;jest&quot;: &quot;^29.0.0&quot;
+  }
+}
+</code></pre>
+<h3>Documentation Links</h3>
+<ul>
+<li><strong>Pa11y-ci Documentation</strong>: <a href="https://github.com/pa11y/pa11y-ci">github.com/pa11y/pa11y-ci</a></li>
+<li><strong>Axe-core Rules</strong>: <a href="https://dequeuniversity.com/rules/axe">dequeuniversity.com/rules/axe</a></li>
+<li><strong>GitHub Actions</strong>: <a href="https://docs.github.com/en/actions">docs.github.com/actions</a></li>
+<li><strong>WCAG 2.1 Guidelines</strong>: <a href="https://www.w3.org/WAI/WCAG21/quickref/">w3.org/WAI/WCAG21/quickref</a></li>
+</ul>
+<h3>CivicActions Resources</h3>
+<ul>
+<li><strong>Accessibility testing guide</strong>: <a href="/accessibility-guides/automated-testing/">Our automated testing documentation</a></li>
+<li><strong>Government accessibility</strong>: <a href="/champion-accessibility/training/">Section 508 compliance approaches</a></li>
+<li><strong>Team consultation</strong>: <a href="/about/get-accessibility-help/">Get accessibility help</a></li>
+</ul>
+<p>Automated accessibility testing transforms how government teams approach accessibility compliance, making it a continuous practice rather than a periodic audit. The investment in setting up comprehensive testing pays dividends in reduced remediation costs, improved user experiences, and consistent compliance with accessibility standards.</p>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Format: Technical implementation article with code examples and government focus</li>
+<li>Priority: Normal value - important technical content for development teams</li>
+<li>Action: Updated with current tool versions and government-specific considerations</li>
+<li>Author: Daniel Mundra, reflecting his automated testing expertise</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            
+            <p><strong>Audit notes:</strong> Update later</p>
+            
+            
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

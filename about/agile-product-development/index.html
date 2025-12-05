@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/about/">About</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Agile Product Development with Accessibility</h1>
+<p>How to integrate accessibility considerations into agile development workflows, sprint planning, and product delivery processes.</p>
+<h2>Accessibility in Agile Principles</h2>
+<h3>Shift Left Approach</h3>
+<p><strong>Integrate accessibility early</strong> in the development cycle rather than treating it as a late-stage requirement:</p>
+<ul>
+<li><strong>Product planning</strong> includes accessibility user stories and acceptance criteria</li>
+<li><strong>Design sprints</strong> incorporate inclusive design principles from the start</li>
+<li><strong>Development sprints</strong> include accessibility testing and validation</li>
+<li><strong>Quality assurance</strong> verifies accessibility alongside functionality</li>
+</ul>
+<h3>Continuous Integration</h3>
+<ul>
+<li><strong>Automated testing</strong> catches accessibility issues in every build</li>
+<li><strong>Manual testing</strong> validates user experience with assistive technology</li>
+<li><strong>Regular audits</strong> ensure accessibility standards are maintained</li>
+<li><strong>User feedback</strong> from people with disabilities informs iterations</li>
+</ul>
+<h2>Sprint Planning for Accessibility</h2>
+<h3>User Story Development</h3>
+<p>Write accessibility requirements into user stories:</p>
+<p><strong>Example</strong>: &quot;As a keyboard-only user, I need to navigate the checkout process using only Tab, Enter, and arrow keys so I can complete purchases independently.&quot;</p>
+<p><strong>Acceptance Criteria</strong>:</p>
+<ul>
+<li>All interactive elements are keyboard accessible</li>
+<li>Focus indicators are clearly visible</li>
+<li>Tab order follows logical sequence</li>
+<li>Screen reader announcements are meaningful</li>
+</ul>
+<h3>Definition of Done</h3>
+<p>Include accessibility criteria in your Definition of Done:</p>
+<ul>
+<li>✅ <strong>Automated tests</strong> pass (axe-core, Pa11y)</li>
+<li>✅ <strong>Keyboard navigation</strong> works completely</li>
+<li>✅ <strong>Screen reader testing</strong> confirms usable experience</li>
+<li>✅ <strong>Color contrast</strong> meets WCAG 2.1 AA standards</li>
+<li>✅ <strong>Form validation</strong> works with assistive technology</li>
+</ul>
+<h3>Estimation and Velocity</h3>
+<ul>
+<li><strong>Accessibility tasks</strong> should be estimated alongside feature work</li>
+<li><strong>Testing time</strong> includes both automated and manual accessibility validation</li>
+<li><strong>Learning curve</strong> accounts for team accessibility skill development</li>
+<li><strong>Velocity tracking</strong> includes accessibility debt and improvements</li>
+</ul>
+<h2>Team Roles and Responsibilities</h2>
+<h3>Product Owner</h3>
+<ul>
+<li><strong>Prioritize accessibility</strong> in product backlog</li>
+<li><strong>Define acceptance criteria</strong> that include accessibility requirements</li>
+<li><strong>Advocate with stakeholders</strong> for accessibility investment</li>
+<li><strong>Review and approve</strong> accessibility-focused user stories</li>
+</ul>
+<h3>Scrum Master</h3>
+<ul>
+<li><strong>Facilitate accessibility discussions</strong> in sprint planning and retrospectives</li>
+<li><strong>Remove impediments</strong> to accessibility implementation</li>
+<li><strong>Track accessibility metrics</strong> as part of team performance</li>
+<li><strong>Coordinate accessibility training</strong> and knowledge sharing</li>
+</ul>
+<h3>Development Team</h3>
+<ul>
+<li><strong>Implement accessible code</strong> following semantic HTML and ARIA best practices</li>
+<li><strong>Write accessibility tests</strong> as part of test-driven development</li>
+<li><strong>Review code</strong> for accessibility compliance</li>
+<li><strong>Collaborate with designers</strong> on inclusive interaction patterns</li>
+</ul>
+<h3>UX/Design Team</h3>
+<ul>
+<li><strong>Research with diverse users</strong> including people who use assistive technology</li>
+<li><strong>Design inclusive interfaces</strong> that work across abilities and technologies</li>
+<li><strong>Create accessible prototypes</strong> for testing and validation</li>
+<li><strong>Document interaction patterns</strong> with accessibility specifications</li>
+</ul>
+<h2>Sprint Activities</h2>
+<h3>Sprint Planning</h3>
+<ul>
+<li><strong>Review accessibility debt</strong> from previous sprints</li>
+<li><strong>Identify accessibility risks</strong> in upcoming features</li>
+<li><strong>Estimate accessibility work</strong> as part of story pointing</li>
+<li><strong>Plan accessibility testing</strong> activities and resources</li>
+</ul>
+<h3>Daily Standups</h3>
+<ul>
+<li><strong>Surface accessibility blockers</strong> that need team attention</li>
+<li><strong>Share accessibility discoveries</strong> and learning opportunities</li>
+<li><strong>Coordinate accessibility reviews</strong> and testing activities</li>
+<li><strong>Update on accessibility tool and process improvements</strong></li>
+</ul>
+<h3>Sprint Reviews</h3>
+<ul>
+<li><strong>Demo accessibility features</strong> using assistive technology</li>
+<li><strong>Gather feedback</strong> from users with disabilities when possible</li>
+<li><strong>Showcase accessibility improvements</strong> and metrics</li>
+<li><strong>Identify accessibility enhancement opportunities</strong> for future sprints</li>
+</ul>
+<h3>Retrospectives</h3>
+<ul>
+<li><strong>Reflect on accessibility practices</strong> and team capability</li>
+<li><strong>Identify process improvements</strong> for better accessibility integration</li>
+<li><strong>Celebrate accessibility wins</strong> and learning achievements</li>
+<li><strong>Plan accessibility skill development</strong> activities</li>
+</ul>
+<h2>Tools and Processes</h2>
+<h3>Development Tools</h3>
+<ul>
+<li><strong>Linting rules</strong> catch accessibility issues during coding (eslint-plugin-jsx-a11y)</li>
+<li><strong>Browser extensions</strong> provide in-context accessibility checking (axe DevTools)</li>
+<li><strong>Automated testing</strong> runs accessibility audits in CI/CD pipeline</li>
+<li><strong>Design tools</strong> include accessibility plugins and color contrast checkers</li>
+</ul>
+<h3>Testing Integration</h3>
+<ul>
+<li><strong>Unit tests</strong> verify ARIA attributes and keyboard interactions</li>
+<li><strong>Integration tests</strong> validate complete user workflows with assistive technology</li>
+<li><strong>Visual regression testing</strong> catches color contrast and layout accessibility issues</li>
+<li><strong>User acceptance testing</strong> includes people who use assistive technology</li>
+</ul>
+<h3>Documentation</h3>
+<ul>
+<li><strong>Accessibility playbook</strong> guides team implementation decisions</li>
+<li><strong>Component library</strong> documents accessible usage patterns</li>
+<li><strong>Testing protocols</strong> ensure consistent accessibility validation</li>
+<li><strong>Lessons learned</strong> capture accessibility insights for future reference</li>
+</ul>
+<h2>Managing Accessibility Debt</h2>
+<h3>Identification and Tracking</h3>
+<ul>
+<li><strong>Accessibility audits</strong> identify existing issues and technical debt</li>
+<li><strong>Issue prioritization</strong> considers user impact and implementation complexity</li>
+<li><strong>Debt visualization</strong> makes accessibility work visible in sprint planning</li>
+<li><strong>Progress tracking</strong> shows accessibility improvement over time</li>
+</ul>
+<h3>Remediation Approach</h3>
+<ul>
+<li><strong>Critical fixes</strong> address issues blocking assistive technology users</li>
+<li><strong>Incremental improvements</strong> enhance accessibility in each sprint</li>
+<li><strong>Systematic refactoring</strong> updates components to accessible patterns</li>
+<li><strong>Prevention measures</strong> stop new accessibility debt from accumulating</li>
+</ul>
+<h2>Measuring Success</h2>
+<h3>Sprint Metrics</h3>
+<ul>
+<li><strong>Accessibility test coverage</strong> shows validation completeness</li>
+<li><strong>Issue discovery rate</strong> indicates testing effectiveness</li>
+<li><strong>Remediation velocity</strong> tracks team improvement capability</li>
+<li><strong>User satisfaction</strong> from accessibility testing and feedback</li>
+</ul>
+<h3>Product Metrics</h3>
+<ul>
+<li><strong>WCAG compliance</strong> measured through automated and manual audits</li>
+<li><strong>User task completion</strong> rates for people using assistive technology</li>
+<li><strong>Support requests</strong> related to accessibility barriers</li>
+<li><strong>Feature adoption</strong> among users with disabilities</li>
+</ul>
+<h2>CivicActions Approach</h2>
+<p>Our agile accessibility practices include:</p>
+<ul>
+<li><strong>Accessibility champions</strong> embedded in each scrum team</li>
+<li><strong>Regular accessibility training</strong> as part of professional development</li>
+<li><strong>User research</strong> that includes people with disabilities</li>
+<li><strong>Automated testing</strong> integrated into CI/CD pipelines</li>
+<li><strong>Cross-team collaboration</strong> on accessibility standards and practices</li>
+</ul>
+<h3>Government Context</h3>
+<p>For government clients, we ensure:</p>
+<ul>
+<li><strong>Section 508 compliance</strong> built into acceptance criteria</li>
+<li><strong>Procurement language</strong> includes accessibility requirements</li>
+<li><strong>Vendor coordination</strong> on accessibility implementation</li>
+<li><strong>Ongoing monitoring</strong> maintains compliance throughout product lifecycle</li>
+</ul>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Format: Detail page with comprehensive agile accessibility guidance</li>
+<li>Priority: Normal value - foundational process content</li>
+<li>Action: Combined multiple agile-related pages per audit recommendations</li>
+<li>Content covers practical implementation for government and private sector contexts</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            
+            <p><strong>Audit notes:</strong> Links to internal page.</p>
+            
+            
+            <p><strong>Recommendations:</strong> Combined content about agile accessibility approaches with practical implementation guidance</p>
+            
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

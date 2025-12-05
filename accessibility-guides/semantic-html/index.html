@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/accessibility-guides/">Accessibility guides</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Semantic HTML</h1>
+<p>Using proper HTML elements to prevent accessibility issues and build inclusive experiences from the ground up.</p>
+<h2>Why Semantic HTML Matters for Accessibility</h2>
+<p>Semantic HTML is your first and most powerful line of defense against accessibility issues. When you use the right HTML elements for their intended purpose, you get accessibility features for free through the browser's built-in accessibility APIs.</p>
+<h2>The Power of Native Semantics</h2>
+<h3>Browser APIs Do the Heavy Lifting</h3>
+<p>When you use semantic HTML elements, browsers automatically:</p>
+<ul>
+<li><strong>Communicate roles</strong> to assistive technologies (button, heading, list, etc.)</li>
+<li><strong>Provide keyboard interactions</strong> (buttons can be activated with Space/Enter)</li>
+<li><strong>Establish relationships</strong> between elements (labels and form controls)</li>
+<li><strong>Create navigation shortcuts</strong> (headings become screen reader navigation points)</li>
+</ul>
+<h3>The First Rule of ARIA</h3>
+<p><strong>&quot;If you can use a native HTML element or attribute with the semantics and behavior you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.&quot;</strong></p>
+<p>This means: <code>&lt;button&gt;</code> is better than <code>&lt;div role=&quot;button&quot;&gt;</code></p>
+<h2>Essential Semantic Elements</h2>
+<h3>Headings (h1-h6)</h3>
+<p><strong>Purpose</strong>: Create document outline and navigation structure</p>
+<pre><code class="language-html">&lt;h1&gt;Main Page Title&lt;/h1&gt;
+  &lt;h2&gt;Major Section&lt;/h2&gt;
+    &lt;h3&gt;Subsection&lt;/h3&gt;
+    &lt;h3&gt;Another Subsection&lt;/h3&gt;
+  &lt;h2&gt;Another Major Section&lt;/h2&gt;
+</code></pre>
+<p><strong>Accessibility benefit</strong>: Screen readers use headings to navigate and understand content structure</p>
+<h3>Buttons and Links</h3>
+<p><strong>Use buttons for actions</strong>:</p>
+<pre><code class="language-html">&lt;button type=&quot;submit&quot;&gt;Save Changes&lt;/button&gt;
+&lt;button onclick=&quot;openDialog()&quot;&gt;Edit Profile&lt;/button&gt;
+</code></pre>
+<p><strong>Use links for navigation</strong>:</p>
+<pre><code class="language-html">&lt;a href=&quot;/contact&quot;&gt;Contact Us&lt;/a&gt;
+&lt;a href=&quot;#main-content&quot;&gt;Skip to content&lt;/a&gt;
+</code></pre>
+<p><strong>Accessibility benefit</strong>: Correct expectations for keyboard users and screen reader users</p>
+<h3>Lists (ul, ol, dl)</h3>
+<p><strong>For grouped information</strong>:</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p><strong>Accessibility benefit</strong>: Screen readers announce list length and current position</p>
+<h3>Form Elements</h3>
+<p><strong>Proper labeling</strong>:</p>
+<pre><code class="language-html">&lt;label for=&quot;email&quot;&gt;Email Address&lt;/label&gt;
+&lt;input type=&quot;email&quot; id=&quot;email&quot; required&gt;
+
+&lt;fieldset&gt;
+  &lt;legend&gt;Preferred Contact Method&lt;/legend&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;email-pref&quot; name=&quot;contact&quot; value=&quot;email&quot;&gt;
+  &lt;label for=&quot;email-pref&quot;&gt;Email&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;phone-pref&quot; name=&quot;contact&quot; value=&quot;phone&quot;&gt;
+  &lt;label for=&quot;phone-pref&quot;&gt;Phone&lt;/label&gt;
+&lt;/fieldset&gt;
+</code></pre>
+<p><strong>Accessibility benefit</strong>: Clear relationships between labels and controls</p>
+<h3>Landmarks (main, nav, header, footer, section, article)</h3>
+<p><strong>Document structure</strong>:</p>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;nav aria-label=&quot;Main navigation&quot;&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h1&gt;Article Title&lt;/h1&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;/section&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;
+</code></pre>
+<p><strong>Accessibility benefit</strong>: Assistive technology navigation shortcuts</p>
+<h2>Validation as Accessibility Testing</h2>
+<h3>HTML Validator - Your First Line of Defense</h3>
+<p><strong>Why validation matters</strong>:</p>
+<ul>
+<li>Invalid HTML can break assistive technology parsing</li>
+<li>Semantic errors often indicate accessibility problems</li>
+<li>Validation catches issues before they reach users</li>
+</ul>
+<p><strong>Recommended validators</strong>:</p>
+<ul>
+<li><a href="https://validator.w3.org/">W3C Markup Validator</a> - The gold standard</li>
+<li><a href="https://validator.w3.org/nu/">Nu Html Checker</a> - Modern HTML5 validation</li>
+<li>Browser DevTools - Built-in validation warnings</li>
+</ul>
+<h3>Common Validation Errors That Impact Accessibility</h3>
+<ul>
+<li><strong>Missing alt attributes</strong> on images</li>
+<li><strong>Duplicate IDs</strong> (breaks label/input relationships)</li>
+<li><strong>Improperly nested elements</strong> (can break screen reader parsing)</li>
+<li><strong>Missing required attributes</strong> (lang, labels, etc.)</li>
+</ul>
+<h2>Implementation Strategy</h2>
+<h3>Start with Structure</h3>
+<ol>
+<li><strong>Use proper document outline</strong> with heading hierarchy</li>
+<li><strong>Add semantic landmarks</strong> (header, nav, main, footer)</li>
+<li><strong>Structure content</strong> with lists, paragraphs, and sections</li>
+<li><strong>Validate early and often</strong> to catch issues immediately</li>
+</ol>
+<h3>Enhance Progressively</h3>
+<ol>
+<li><strong>Add ARIA only when needed</strong> - start with semantic HTML</li>
+<li><strong>Test with keyboard navigation</strong> to verify interactions work</li>
+<li><strong>Use accessibility testing tools</strong> to identify gaps</li>
+<li><strong>Test with real assistive technology</strong> when possible</li>
+</ol>
+<h3>Common Pitfalls to Avoid</h3>
+<ul>
+<li><strong>Don't use divs and spans</strong> when semantic elements exist</li>
+<li><strong>Don't skip heading levels</strong> (h1 → h3 without h2)</li>
+<li><strong>Don't remove focus indicators</strong> without providing alternatives</li>
+<li><strong>Don't rely only on color</strong> to convey information</li>
+</ul>
+<h2>Tools for Semantic HTML Success</h2>
+<h3>Development Tools</h3>
+<ul>
+<li><strong>HTML validators</strong> for catching syntax and semantic errors</li>
+<li><strong>Browser accessibility inspectors</strong> for reviewing element roles</li>
+<li><strong>axe DevTools</strong> for comprehensive accessibility scanning</li>
+<li><strong>Lighthouse accessibility audit</strong> built into Chrome DevTools</li>
+</ul>
+<h3>Testing Approaches</h3>
+<ul>
+<li><strong>Keyboard-only navigation</strong> to verify semantic interactions</li>
+<li><strong>Screen reader testing</strong> to ensure proper element communication</li>
+<li><strong>Automated accessibility testing</strong> integrated into development workflow</li>
+<li><strong>Manual code review</strong> focusing on semantic element choices</li>
+</ul>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Original author: Jennifer</li>
+<li>Format: Detail page (comprehensive implementation guide)</li>
+<li>Priority: Normal value content</li>
+<li>Memorial: Laura's contributions to accessibility fundamentals continue to guide inclusive development</li>
+<li>Focus: Prevention-focused approach emphasizing native HTML benefits and validation</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            
+            <p><strong>Audit notes:</strong> Redirects</p>
+            
+            
+            <p><strong>Recommendations:</strong> Suggest reframing this page as a way to prevent accessibility issues or cut down on them out of the gate. Talk about native element semantics and how they map to browser accessibility APIs, doing a lot of the hard work for you. Mention first rule of ARIA. Mention HTML Validator as first line of defence against accessibility errors.</p>
+            
+            
+            <p><strong>Original author:</strong> Jennifer</p>
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

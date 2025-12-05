@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/champion-accessibility/">Champion accessibility</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <h1>Onboarding Staff to Accessibility</h1>
+<p>A comprehensive guide for organizations to effectively onboard new staff on accessibility principles and practices.</p>
+<h2>Why Accessibility Onboarding Matters</h2>
+<p>Effective accessibility onboarding ensures all team members understand their role in creating inclusive digital experiences from day one. It builds organizational accessibility capacity and prevents costly remediation later.</p>
+<h2>Onboarding Framework</h2>
+<h3>Week 1: Foundations</h3>
+<p><strong>Goal:</strong> Understand why accessibility matters and basic concepts</p>
+<p><strong>Activities:</strong></p>
+<ul>
+<li>Introduction to disability and accessibility concepts</li>
+<li>Review organizational accessibility policies and commitments</li>
+<li>Basic WCAG overview and success criteria</li>
+<li>Meet the accessibility team/champions</li>
+</ul>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>WebAIM Introduction to Web Accessibility</li>
+<li>Organizational accessibility statement and policies</li>
+<li>Team introductions and contact information</li>
+</ul>
+<h3>Week 2: Role-Specific Training</h3>
+<p><strong>Goal:</strong> Learn how accessibility applies to specific job functions</p>
+<p><strong>For Developers:</strong></p>
+<ul>
+<li>Semantic HTML and ARIA basics</li>
+<li>Keyboard navigation requirements</li>
+<li>Screen reader testing introduction</li>
+<li>Automated testing tool setup</li>
+</ul>
+<p><strong>For Designers:</strong></p>
+<ul>
+<li>Color contrast requirements</li>
+<li>Focus indicators and visual design</li>
+<li>Accessible typography and layout</li>
+<li>User research with people with disabilities</li>
+</ul>
+<p><strong>For Content Creators:</strong></p>
+<ul>
+<li>Plain language principles</li>
+<li>Alternative text guidelines</li>
+<li>Document accessibility basics</li>
+<li>Accessible social media practices</li>
+</ul>
+<p><strong>For Project Managers:</strong></p>
+<ul>
+<li>Accessibility requirements gathering</li>
+<li>Testing and QA considerations</li>
+<li>Timeline and resource planning</li>
+<li>Client communication strategies</li>
+</ul>
+<h3>Month 1: Practical Application</h3>
+<p><strong>Goal:</strong> Apply accessibility knowledge to actual work</p>
+<p><strong>Activities:</strong></p>
+<ul>
+<li>Shadow experienced team members on accessibility tasks</li>
+<li>Complete accessibility review of existing project</li>
+<li>Participate in accessibility testing session</li>
+<li>Contribute to accessibility documentation</li>
+</ul>
+<h3>Ongoing: Continuous Learning</h3>
+<p><strong>Goal:</strong> Stay current with accessibility practices and standards</p>
+<p><strong>Support Systems:</strong></p>
+<ul>
+<li>Monthly accessibility check-ins</li>
+<li>Access to training resources and conferences</li>
+<li>Connection with accessibility communities</li>
+<li>Regular skill assessment and development planning</li>
+</ul>
+<h2>Assessment and Competency</h2>
+<h3>Knowledge Checkpoints</h3>
+<ul>
+<li>Basic accessibility concepts (Week 1)</li>
+<li>Role-specific skills (Week 2)</li>
+<li>Practical application (Month 1)</li>
+<li>Ongoing competency reviews (Quarterly)</li>
+</ul>
+<h3>Skills Development</h3>
+<p>Track progress in key accessibility competencies and provide targeted support for skill gaps.</p>
+<h2>Resources for Success</h2>
+<h3>Internal Resources</h3>
+<ul>
+<li>Accessibility style guides and standards</li>
+<li>Testing tools and environment access</li>
+<li>Mentorship and buddy system connections</li>
+<li>Documentation and knowledge base access</li>
+</ul>
+<h3>External Resources</h3>
+<ul>
+<li>Professional development opportunities</li>
+<li>Community meetups and conferences</li>
+<li>Online training platforms and certifications</li>
+<li>Industry newsletters and updates</li>
+</ul>
+<h2>Measuring Success</h2>
+<p>Effective onboarding programs show measurable improvements in:</p>
+<ul>
+<li>Accessibility issue prevention in new projects</li>
+<li>Staff confidence in accessibility tasks</li>
+<li>Time to competency for new hires</li>
+<li>Overall organizational accessibility maturity</li>
+</ul>
+<hr>
+<p><strong>Editorial Notes:</strong></p>
+<ul>
+<li>Original author: Mike</li>
+<li>Assigned editor: Jordan Wood (completed)</li>
+<li>Format: Guide (step-by-step process)</li>
+<li>Priority: High value content</li>
+<li>Action: Converted to general organizational how-to guide</li>
+<li>Note: CivicActions-specific content moved to internal documentation</li>
+</ul>
+
+        
+        
+        <div class="editorial-notes">
+            <h3>Editorial Notes</h3>
+            
+            <p><strong>Assigned editor:</strong>  
+            <span style="color: #059669;">(completed)</span></p>
+            
+            
+            <p><strong>Audit notes:</strong> Lot of info on this page. Consider breaking up.</p>
+            
+            
+            <p><strong>Recommendations:</strong> This one should probably be turned into a how-to for orgs generally, with any remainder put into the Handbook or CA Confluence.</p>
+            
+            
+            <p><strong>Original author:</strong> Mike</p>
+            
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

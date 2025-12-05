@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>true</title>
+    <meta name="description" content="true">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+        }
+        
+        .site-title a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+            background: #374151;
+            color: #fff;
+        }
+        
+        nav a[aria-current="page"] {
+            background: #3b82f6;
+            color: #fff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            color: #374151;
+            margin-top: 2rem;
+        }
+        
+        .editorial-notes {
+            background: #f3f4f6;
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .editorial-notes h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            
+            
+            
+                
+                    
+                    
+                        > <a href="/guide/">Guide</a>
+                    
+                
+            
+                
+                    
+                    
+                        > True
+                    
+                
+            
+        </nav>
+        
+        
+        <p>CivicActions teams use this guidance to prioritize accessibility issues based on the degree of content interference caused by a WCAG success criterion failure. We <a href="https://github.com/readme/guides/fix-accessibility-bugs">treat accessibility issues as bugs</a>, and have adapted priority definitions from <a href="https://github.com/dequelabs/axe-core/blob/develop/doc/issue_impact.md">Deque's issue impact classification</a>. Earlier versions of this guide also drew upon <a href="https://web.archive.org/web/20250304072312/https://guides.18f.gov/accessibility/checklist/">18F's Accessibility Checklist</a>.</p>
+<p>Note that:</p>
+<ul>
+<li>The list is illustrative, not exhaustive, and</li>
+<li>A failure can belong to more than one level depending on how severely it impacts content access.</li>
+</ul>
+<p>Teams may evaluate an issue further with respect to its impact on specific content, functionality, or usability. Reasons for adjustment should be included in the ticket description, and when new patterns or examples are identified they should be considered for inclusion in the table.</p>
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th>Access failure</th>
+      <th>Issue priority</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><a href="https://www.w3.org/TR/WCAG22/#cc5">Page-level interference (Single A criteria)</a></strong>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control">no audio control (1.4.2)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap">keyboard trap (2.1.2)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide">no pause, stop, hide (2.2.2)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold">four flashes or above threshold (2.3.1)</a></li>
+        </ul>
+      </td>
+      <td><strong>Highest user impact</strong>
+        <ul>
+          <li>Dire, resolve immediately</li>
+          <li>Forces user to abandon essential workflow</li>
+          <li>Users with disabilities fundamentally blocked</li>
+          <li>Creates immediate organizational risk</li>
+          <li>Everything else can wait for this</li>
+        </ul>
+      </td>
+      <td><strong>Do now</strong><br />
+        Bypass release cycle
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Primary component failure</strong>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content">images missing alt attributes (1.1.1)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded">audio lacks captions (1.2.2)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded">video lacks audio descriptions (1.2.5)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence">content meaning wrong without CSS (1.3.2 F1)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum">text less than 4.5:1 contrast ratio (1.4.3)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard">an interaction is not keyboard navigable (2.1.1)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap">keyboard trap in one direction only (2.1.2)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#timeouts">user not warned of timeout (2.2.6)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions">form inputs missing a label (3.3.2)</a></li>
+        </ul>
+      </td>
+      <td><strong>High user impact</strong>
+        <ul>
+          <li>Significantly degrades essential workflow</li>
+          <li>Users with disabilities substantially blocked</li>
+          <li>Significant frustration for AT users</li>
+          <li>The issue has been around a long time</li>
+          <li>Other work can wait for this</li>
+        </ul>
+      </td>
+      <td><strong>Do next</strong><br />
+        Address in next release
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Component interference</strong>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships">headings missing/out of order (1.3.1)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#identify-purpose">content/component not in a landmark (1.3.6)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence">table is not well-formed (1.3.2)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence">content sequence wrong without CSS (1.3.2 F1)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks">skip to content link missing or broken (2.4.1)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#focus-order">tab order is non-sequential (2.4.3)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels">table is missing headings (2.4.6)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#focus-visible">keyboard focus disappears/not visible (2.4.7)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions">instructions not with inputs (3.3.2 ARIA17)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions">form label missing but inferrable (3.3.2 G167)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#name-role-value">custom control lacks full API support (4.1.2)</a></li>
+        </ul>
+      </td>
+      <td><strong>Medium user impact</strong>
+        <ul>
+          <li>Degrades non-critical workflows for AT users</li>
+          <li>Users with disabilities are slowed down</li>
+          <li>Some frustration for AT users is likely</li>
+          <li>Acceptable short-term workaround exists</li>
+          <li>Low priority issue that has been around a while</li>
+        </ul>
+      </td>
+      <td><strong>Do soon</strong><br />
+        Address this quarter
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Page or component degradation</strong>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks">iframe is missing title attribute (2.4.1 H64)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled">page titles duped/lack adequate detail (2.4.2)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only">link text lacks adequate context (2.4.9)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page">language not set at page level (3.1.1)</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification">inconsistent labeling of same function (3.2.4)</a></li>
+        </ul>
+      </td>
+      <td><strong>Low user impact</strong>
+        <ul>
+          <li>Does not substantially degrade a workflow</li>
+          <li>Has a simple workaround</li>
+          <li>Hinders compliance</li>
+          <li>Annoyance bug</li>
+          <li>If the affected component is not actively used</li>
+        </ul>
+      </td>
+      <td><strong>Do later</strong><br />
+        Address when doing related work
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Missing best practices</strong></td>
+      <td><strong>Lowest user impact</strong>
+        <ul>
+          <li>No significant user value to fix</li>
+          <li>Only in unsupported browser or component</li>
+        </ul>
+      </td>
+      <td><strong>Do as time allows</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+        
+        
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
