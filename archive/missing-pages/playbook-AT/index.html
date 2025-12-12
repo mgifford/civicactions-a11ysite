@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen reader testing</title>
+    <meta name="description" content="A guide to common, popular screen readers such as JAWS and NVDA and a basic screen reader test plan.">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/archive/">Archive</a> <span aria-hidden="true">›</span> <a href="/archive/missing-pages/">Missing pages</a> <span aria-hidden="true">›</span> <span>Screen reader testing</span>
+        </nav>
+        
+        
+        <p>Screen reader users navigate and experience web pages differently than non-screen reader users typically do. While it takes considerable experience to use a screen reader in the same way as the average daily user, incorporating basic screen reader testing into your accessibility test plan can still be quite effective in finding potential issues.</p>
+<p>There is considerable variation, even within the blind and low vision community, on how screen reader users navigate the web due to the wide range of vision related disabilities and technologies available. Each screen reader also has different default functionality and behaviors and can be customized to the user's preferences. It's recommended to test with multiple screen readers and devices to account for as many of these variations as possible.</p>
+<h2>Common screen readers</h2>
+<ul>
+<li><a href="https://www.freedomscientific.com/products/software/jaws/">JAWS</a> (Job Access With Speech)
+<ul>
+<li>A very popular screen reader available for PC</li>
+<li>Requires a paid license to be run</li>
+<li>For testing purposes, JAWS can be run in 40 minute intervals without a license</li>
+</ul>
+</li>
+<li><a href="https://www.nvaccess.org/about-nvda/">NVDA</a> (Non-Visual Desktop Access)
+<ul>
+<li>Another popular option for PC</li>
+<li>Free screen reading software that does not require a license</li>
+</ul>
+</li>
+<li>VoiceOver
+<ul>
+<li>All Apple products come with VoiceOver by default</li>
+<li>VoiceOver is typically more popular as a screen reader for mobile rather than desktop</li>
+</ul>
+</li>
+<li>TalkBack
+<ul>
+<li>All Android devices come with this screen reader by default</li>
+<li>Not extremely popular overall, but is the most popular for Android devices</li>
+</ul>
+</li>
+</ul>
+<h2>Basic screen reader tests</h2>
+<p>Using at least one of the common screen readers mentioned, complete the basic testing steps.</p>
+<ol>
+<li>Read through the web page start to finish.
+<ul>
+<li>Is everything read on the page that you expected? Is anything skipped or read in an incorrect order?</li>
+<li>Are all elements read in a way that is understandable?</li>
+</ul>
+</li>
+<li>Tab through the webpage using the keyboard.
+<ul>
+<li>Are all the interactive elements on the page available using the keyboard?</li>
+<li>Does each element respond to expected keys? WebAim has a good reference for expected keyboard interaction.</li>
+</ul>
+</li>
+<li>Confirm use of landmarks to create the main document structure of the page.
+<ul>
+<li>Review the landmarks list to see which landmarks/semantic layout elements are used on the page.</li>
+<li>Confirm that any duplicate landmarks or regions have been identified with a unique label.</li>
+</ul>
+</li>
+<li>Fill out and submit all forms.
+<ul>
+<li>Are all field labels, instructions and hint text, announced as expected?</li>
+<li>Are error messages announced and understood?</li>
+<li>Are the invalid fields clearly marked?</li>
+</ul>
+</li>
+<li>Confirm that links and buttons appear in the appropriate list within the screen reader menus and have descriptive, unique text labels.</li>
+<li>Review all images and other non-text content to confirm they have meaningful alternative text descriptions.</li>
+</ol>
+<h2>Resources</h2>
+<p>These resources and guides can help you to become familiar with and learn how to use each screen reader.</p>
+<ul>
+<li><a href="https://webaim.org/resources/shortcuts/jaws">JAWS keyboard shortcuts</a></li>
+<li><a href="https://webaim.org/resources/shortcuts/nvda">NVDA keyboard shortcuts</a></li>
+<li><a href="https://webaim.org/articles/voiceover/">VoiceOver keyboard shortcuts</a></li>
+<li><a href="https://support.apple.com/guide/iphone/turn-on-and-practice-voiceover-iph3e2e415f/ios">VoiceOver touch device gestures</a></li>
+<li><a href="https://support.google.com/accessibility/android/answer/6283677?hl=en">Getting started with TalkBack</a></li>
+</ul>
+
+        
+        
+            </main>
+        </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
