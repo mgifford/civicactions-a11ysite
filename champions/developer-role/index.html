@@ -1,24 +1,49 @@
-<hr>
-<p>layout: role
-title: Developer
-description:
-excerpt:
-sidenav: docs
-categories:</p>
-<ul>
-<li>Development
-hero:
-image:
-callout:
-alt:
-text: &quot;Developer&quot;
-link:
-text: Link to more about that priority
-href: /link/
-content: Accessibility resources for developers.</li>
-</ul>
-<hr>
-<p>Developers make accessibility real by shipping usable, resilient components. Focus on semantic HTML first, progressive enhancement, and guardrails like linting and CI checks.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer</title>
+    <meta name="description" content="CivicActions Accessibility site - resources for digital inclusion">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/guides/">Accessibility Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/champions/">Champions</a> <span aria-hidden="true">›</span> <span>Developer</span>
+        </nav>
+        
+        
+        <p>Developers make accessibility real by shipping usable, resilient components. Focus on semantic HTML first, progressive enhancement, and guardrails like linting and CI checks.</p>
 <h2>How developers move accessibility forward</h2>
 <ul>
 <li>Build semantic structures (landmarks, headings, lists, form labels) so assistive tech has a reliable model of the page.</li>
@@ -31,5 +56,19 @@ content: Accessibility resources for developers.</li>
 <li><a href="/guides/development/semantic-html/">Semantic HTML guide</a></li>
 <li><a href="/guides/development/automated-testing/">Automated testing</a></li>
 <li><a href="/guides/development/manual-testing/">Manual testing checklist</a></li>
-<li><a href="/guide/defect-priority/">Defect priority</a></li>
+<li><a href="/guides/development/defect-priority/">Defect priority</a></li>
 </ul>
+
+        
+        
+            </main>
+        </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="/accessibility-statement/">Accessibility statement</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
