@@ -1,64 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manual Testing — CivicActions Accessibility</title>
-    <link rel="stylesheet" href="/civicactions-a11ysite/assets/styles.css">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to do manual testing</title>
+    <meta name="description" content="A comprehensive guide to basic manual testing, including how to do keyboard testing, zoom testing and color contrast testing.">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
     <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-        <a href="/civicactions-a11ysite/about">About</a>
-        <a href="/civicactions-a11ysite/guides">Guides</a>
-        <a href="/civicactions-a11ysite/champions">Champions</a>
-      </nav>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <h1>Manual Testing</h1>
-      <h2>Guidance on manual accessibility testing techniques. Content pending migration.</h2>
-<h2>title: &quot;Manual Testing&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Manual Testing
-parent: Guides</h2>
-<h1>Manual Testing</h1>
-<p>Placeholder migrated stub.</p>
+    
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/guides/">Guides</a> <span aria-hidden="true">›</span> <a href="/guides/development/">Development</a> <span aria-hidden="true">›</span> <span>How to do manual testing</span>
+        </nav>
+        
+        
+        <p>A comprehensive accessibility testing plan must include manual testing. As automated testing generally only catches about <a href="https://www.levelaccess.com/blog/automated-accessibility-testing-tools-how-much-do-scans-catch/">20-30% of accessibility errors</a>, without manual testing the majority of issues are going to be missed.</p>
+<p>There are various types of manual testing that can be incorporated into your testing plan, some are easier than others to work in based on resources, expertise, available tools, etc. You can create your testing plan based on what works for you and your team; the most important thing is that some amount of manual testing is consistently part of the process.</p>
+<h2>Keyboard testing</h2>
+<p>Keyboard testing can catch a high volume of potential accessibility issues. Keyboard testing can identify if semantic elements were not used—which typically lead to larger issues with other devices. It can also identify if the reading order is incorrect and if there are keyboard traps on the page, among other issues.</p>
+<p>Keyboard testing is easy to do and requires no specific expertise or hardware—other than a keyboard—so this type of  testing can be shared among various project team members. It is one of the most important manual tests that should be included in any testing plan.</p>
+<p><strong>To do keyboard testing:</strong></p>
+<ol>
+<li>Confirm that all interactive elements are available and actionable using the keyboard only.
+<ul>
+<li>Use TAB to move forward through the page and SHIFT + TAB to go backwards.</li>
+<li>SPACE and ENTER are the most common keys to activate elements but for more custom elements <a href="https://webaim.org/techniques/keyboard/#testing">WebAIM provides a good resource</a>.</li>
+</ul>
+</li>
+<li>Confirm that while tabbing, all interactive elements have a visible focus indicator when receiving focus.
+<ul>
+<li>Typically, this is a colored border around the element.</li>
+</ul>
+</li>
+<li>Confirm that while tabbing, the order of tabbing moves logically through the page. It should follow a typical reading order - top to bottom, left to right.</li>
+</ol>
+<h2>Zoom and resizing</h2>
+<p>The purpose of zoom testing is to confirm that at 200% there are no visual or functional issues from the page resizing. It is also important to specifically test text resizing, that it is working as expected.</p>
+<p>Zoom testing is another testing type that can be completed without any specialized hardware, software or expertise, making it relatively easy to add to a basic testing plan.</p>
+<p><strong>To test content zoom:</strong></p>
+<ol>
+<li>Set your browser width to 1280 pixels.</li>
+<li>Use CTRL + or CMD + to zoom in to 200%.</li>
+<li>Confirm that:
+<ul>
+<li>You can see each element and all the text that you could previously</li>
+<li>You can use and interact with each element (both with keyboard and mouse)</li>
+<li>Confirm that horizontal scrolling is not present except for a few exceptions (i.e. data tables, images, charts, etc.)</li>
+</ul>
+</li>
+</ol>
+<p><strong>To test text resizing:</strong></p>
+<ol>
+<li>Within your browser, update your settings to increase text size.
+<ul>
+<li>Chrome: Settings &gt; Appearance &gt; Font size</li>
+<li>Firefox: Settings &gt; Language &amp; Appearance &gt; Fonts</li>
+<li>Edge: Settings &gt; Appearance &gt; Fonts</li>
+</ul>
+</li>
+<li>Confirm that all text on the page resizes appropriately based on the indicated browser size.</li>
+</ol>
+<h2>Contrast and use of color</h2>
+<p>The most basic rule in color contrast testing is to confirm that all elements have a contrast ratio of at least 4.5:1 against their background. There are some nuances with this requirement where a lower ratio can pass if necessary, however it is always best to aim higher whenever possible.</p>
+<p>Color use within a page or product should also be evaluated to ensure that it is not the only means of conveying information. This is especially helpful for folks using your product who may be colorblind or have low vision.</p>
+<p>While testing color does not require any specific testing tools, there are some available that are helpful and may make testing easier:</p>
+<ul>
+<li><a href="https://app.contrast-finder.org/">Contrast finder</a></li>
+<li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
+<li><a href="https://chromewebstore.google.com/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?pli=1">Colorblindly plugin for Chrome</a></li>
+<li>Built-in browser rendering for color blindness</li>
+</ul>
+<p><strong>To test color contrast:</strong></p>
+<ol>
+<li>Small text (20px or smaller) has at least a 4.5:1 contrast ratio</li>
+<li>Large text (greater than 20px) has at least a 3:1 contrast ratio</li>
+<li>Non-text elements have at least a 3:1 contrast ratio to their background and to neighboring elements. For example:
+<ul>
+<li>Graphics - sections in a pie chart must meet requirements</li>
+<li>UI elements - colors indicating if a checkbox or radio button is selected must meet requirements</li>
+</ul>
+</li>
+</ol>
+<p><strong>To test use of color:</strong></p>
+<ol>
+<li>Identify all links and confirm that each has an underline.</li>
+<li>Identify any data elements (i.e. charts, tables, maps, etc.) and confirm that the information within each is presented with more than just color.
+<ul>
+<li>For example, in a table if yes is indicated by coloring a cell green, does it also use another indicator? A checkmark, a pattern, etc.?</li>
+</ul>
+</li>
+<li>Confirm that any instructions given do not refer to color. (e.g. Click the blue button)</li>
+</ol>
+<h2>Next steps</h2>
+<p>When you are ready to learn more, here are some further guides and resources for accessibility testing:</p>
+<ul>
+<li><a href="https://accessibility.civicactions.com/playbook/AT">Screen reader testing</a></li>
+<li><a href="https://accessibility.civicactions.com/playbook/automated-testing">Implement automated testing</a></li>
+<li><a href="https://accessibility.civicactions.com/guide/tools">Additional Tools</a></li>
+</ul>
 
-    </main>
+        
+        
+            </main>
+        </div>
+    
     <footer>
-      <p><a href="/civicactions-a11ysite/site/accessibility-statement">Accessibility statement</a></p>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
     </footer>
-  </body>
-</html><!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manual Testing</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-      </nav>
-    </header>
-    <main>
-      <h2>Guidance on manual accessibility testing techniques. Content pending migration.</h2>
-<h2>title: &quot;Manual Testing&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Manual Testing
-parent: Guides</h2>
-<h1>Manual Testing</h1>
-<p>Placeholder migrated stub.</p>
-
-    </main>
-    <footer>
-      <p><a href="/civicactions-a11ysite/search/">Search</a></p>
-    </footer>
-  </body>
+</body>
 </html>

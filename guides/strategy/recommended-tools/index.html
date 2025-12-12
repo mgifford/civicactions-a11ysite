@@ -1,64 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recommended Tools — CivicActions Accessibility</title>
-    <link rel="stylesheet" href="/civicactions-a11ysite/assets/styles.css">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build up your accessibility toolbox</title>
+    <meta name="description" content="Digital tools that can help make content accessible.">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
     <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-        <a href="/civicactions-a11ysite/about">About</a>
-        <a href="/civicactions-a11ysite/guides">Guides</a>
-        <a href="/civicactions-a11ysite/champions">Champions</a>
-      </nav>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <h1>Recommended Tools</h1>
-      <h2>Recommended accessibility tools and how to use them. Content pending migration.</h2>
-<h2>title: &quot;Recommended Tools&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Recommended Tools
-parent: Guides</h2>
-<h1>Recommended Tools</h1>
-<p>Placeholder migrated stub.</p>
+    
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/guides/">Guides</a> <span aria-hidden="true">›</span> <a href="/guides/strategy/">Strategy</a> <span aria-hidden="true">›</span> <span>Build up your accessibility toolbox</span>
+        </nav>
+        
+        
+        <p>Digital accessibility tools can help ensure that the content you create is meeting accessibility guidelines. This page lists a variety of tools that designers, developers, and others can use to make web content more accessible. We have focused on open source tools, as they are the easiest to adopt and scale for most organizations.</p>
+<h2>Authoring</h2>
+<p>An authoring tool is software that can be used to create or modify content for use by others. These tools should allow authors to create accessible content from the beginning, without having to come up with a workaround. Output should conform to WCAG Level A and Level AA Success Criteria and Conformance Requirements. These are some authoring tools we recommend.</p>
+<ul>
+<li><a href="https://sa11y.netlify.app/">Sa11y</a>: This is an accessibility quality assurance assistant that visually highlights common accessibility and usability issues on a web page.</li>
+<li><a href="https://github.com/itmaybejj/editoria11y">Editoria11y</a>: This highlights common issues inline within the content editor.</li>
+<li><a href="https://drupal.org/">Drupal</a>: This is a content management system and has modules that can enhance its accessibility.</li>
+</ul>
+<h2>Automated testing</h2>
+<p>Automated accessibility testing should occur at different stages when creating digital content, from design to development. We recommend getting started with these tools and learning more about how to <a href="https://accessibility.civicactions.com/playbook/automated-testing">implement automated testing</a>.</p>
+<ul>
+<li><a href="https://github.com/component-driven/cypress-axe">Cypress with axe core</a>: This combines the JavaScript testing framework of Cypress with the popular accessibility testing engine, axe core.</li>
+<li><a href="https://github.com/pa11y/pa11y-ci">Pa11y CI</a>: This is a continuous integration (CI) runner that can test a few pages or an entire site for accessibility issues.</li>
+</ul>
+<h2>Bookmarklets</h2>
+<p>Bookmarklets provide quick, automated checks for accessibility issues. They can test for a wide variety of issues, such as testing interactive elements, focus, touch events, and reading order. These are some of the bookmarklets that we recommend, but there are many more out there!</p>
+<ul>
+<li><a href="https://ada.is/blog/2016/02/12/contrast-bookmarklet/">Accessibility and Contrast Bookmarklet</a>: Analyze the contrast of the text on a page and highlight elements which may have readability issues.</li>
+<li><a href="https://www.ssa.gov/accessibility/andi/">ANDI by SSA.gov</a>: A free accessibility testing tool that offers detection of problems, checks for 508 compliance and shows what a screen reader will typically say for interactive elements. It also gives realistic recommendations to improve accessibility.</li>
+<li><a href="https://sa11y.netlify.app/">Sa11y</a>: Is also available as a bookmarklet.</li>
+<li><a href="https://adrianroselli.com/2019/04/reading-order-bookmarklet.html">Reading Order Bookmarklet</a>: Running this bookmarklet will visually number the reading order in which screen-reading software will announce different parts of the page to check to see that it matches the visual order.</li>
+<li><a href="https://validator.w3.org/favelets.html">W3C markup validator</a>: Checking your HTML for errors catches a lot of accessibility issues, especially with forms and images.</li>
+</ul>
+<h3>Page level evaluation tools</h3>
+<p>Browser extensions can provide powerful tools for analyzing page accessibility.</p>
+<ul>
+<li><a href="https://accessibilityinsights.io/">Microsoft's Accessibility Insights</a>: Provides quick checks with WCAG success criteria codes, as well as guided evaluation reports.</li>
+<li><a href="https://www.deque.com/axe/browser-extensions/">Deque's axe Browser extension</a>: Test web applications and identify accessibility issues.</li>
+</ul>
+<h2>Color contrast checker</h2>
+<p>Color contrast is an important part of accessibility. Text and background colors must have enough contrast so that the content on the page can be easily seen. Web Content Accessibility Guidelines (WCAG) 2 suggest a minimum contrast of 4:5:1. W3C has an <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">Understanding SC 1.4.3 page</a> that explains this in greater detail, if you are new to accessibility <a href="https://webaim.org/articles/contrast/">WebAim has great resources</a>. These tools can help quickly check if the colors on a page meet these guidelines.</p>
+<ul>
+<li><a href="https://www.tpgi.com/color-contrast-checker/">Colour Contrast Analyser (CCA)</a> - Best open source desktop application for color contrast (Windows/Mac).</li>
+<li><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp">ColorZilla for Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/colorzilla/">ColorZilla for Firefox</a>: Best open source browser extension/plugin for Chrome or Firefox browsers.</li>
+<li><a href="https://contrast.report/">Contrast Report</a> - Innovative site which has a pop-out function that allows for building collections of different color combinations.</li>
+<li><a href="https://contrast-finder.tanaguru.com/">tanaguru contrast finder</a> - Best tool for proposing alternative colors when a combination fails WCAG.</li>
+<li><a href="https://color-contrast.incluud.dev/?fg=521b92&amp;bg=fefc78">Color Contrast Checker</a> - Great for designers who want to see the implications for charts, a sample color palette and design tokens.</li>
+</ul>
+<p>Other options include:</p>
+<ul>
+<li><a href="https://coolors.co/contrast-checker">Coolors Color Contrast Checker</a></li>
+<li><a href="https://colourcontrast.cc/">Colour contrast checker</a></li>
+<li><a href="https://colorcontrast.dev/">ColorContrast.dev</a></li>
+<li><a href="https://www.oddcontrast.com/">OddContrast</a></li>
+<li><a href="https://thisisfranciswu.com/enterprise-ui-palette-generator/">Accessible Color Palette Generator</a></li>
+</ul>
+<h2>Design tool integrations</h2>
+<p>Different design tools can be added to Figma, Sketch, and Storybook to ensure that accessibility criteria is being met. There are plenty of different integrations available, but these are the ones we recommend to start with.</p>
+<h3>Figma</h3>
+<ul>
+<li><a href="https://www.figma.com/community/file/953682768192596304">Accessibility Annotation Kit</a>: This kit helps designers document accessibility considerations to share with developers when handing off designs.</li>
+<li><a href="https://www.figma.com/community/file/1233184772650050315/Accessibility-Checklist-for-Designers">Accessibility Checklist for Designers</a>: A checklist that was created on the base of WCAG 2.1 AA standards and helps check designs for accessibility.</li>
+<li><a href="https://www.figma.com/community/plugin/1208180794570801545/includeaccessibility-annotations">Include—Accessibility Annotations</a>: This plugin guides designers through a series of checks and creates multiple annotation layers in an annotations frame.</li>
+</ul>
+<h3>Sketch</h3>
+<ul>
+<li><a href="https://github.com/ygev/sketch-accessibility-assistant">Sketch Accessibility Assistant</a>: A linter that checks Sketch elements to make sure they pass AA+ compliance for WCAG 2.1.</li>
+<li><a href="https://cluse.cc/">Sketch Cluse</a>: Sketch plugin to check and adjust color contrast.</li>
+</ul>
+<h3>Storybook</h3>
+<ul>
+<li><a href="https://storybook.js.org/addons/@storybook/addon-a11y">Storybook-addon-a11y</a>: A Storybook addon which uses axe to improve the accessibility of UI components.</li>
+<li><a href="https://storybook.js.org/addons/storybook-addon-aria-live">Aria Live</a>: A utility tool for inspecting announcements of ARIA live regions</li>
+</ul>
+<h2>EPUB</h2>
+<p>An electronic publication (EPUB) is an e-book file format and is a technical standard set by the International Digital Publishing Forum (IDPF). These are some helpful tools that can check for accessibility in this format.</p>
+<ul>
+<li><a href="https://github.com/w3c/epubcheck">EPUBCheck</a>: The official conformance checker for EPUB publications, maintained by the DAISY Consortium on behalf of W3C</li>
+<li><a href="https://github.com/daisy/ace">Ace, by DAISY</a>: Assists with the evaluation of accessibility features of EPUB publications and is also maintained by the DAISY Consortium.</li>
+</ul>
+<h2>Evaluation</h2>
+<p>Evaluation tools are software programs or online services that can help determine if your website content meets accessibility guidelines. These are the tools we recommend to help evaluate content at a site or page level.</p>
+<h3>Site level evaluation tools</h3>
+<ul>
+<li><a href="https://github.com/MSU-NatSci/DomainAccessibilityAudit">Domain Accessibility Audit</a>: This web application by MSU College of Natural Science automatically crawls websites and checks for accessibility violations. It's based on axe by Deque Systems, Inc.</li>
+<li><a href="https://pa11y.org/">Pa11y</a>: A popular command-line interface which loads web pages and highlights any accessibility issues it finds.</li>
+</ul>
+<h2>PDF</h2>
+<p>A portable document format (PDF) is a file format that helps share and print documents. They can be opened and viewed on any device. Although PDFs <a href="https://accessibility.civicactions.com/playbook/pdf">should generally be avoided</a>, it is possible to create files that meet section 508 compliance. These are some tools we recommend to make a PDF accessible.</p>
+<ul>
+<li><a href="https://pave-pdf.org/">PAVE</a>: Automatically makes corrections to a PDF while leaving the visual representation unchanged.</li>
+<li><a href="https://verapdf.org/home/">VeraPDF</a>: Will evaluate all parts of a PDF and conformance levels.</li>
+<li><a href="https://github.com/accessibility-luxembourg/simplA11yPDFCrawler">simplA11yPDFCrawler</a>: Analyzes PDF documents and detects accessibility issues.</li>
+</ul>
+<h2>Simulators that help build empathy</h2>
+<p>When working to make content accessible, it can be helpful to learn how people with disabilities experience the web. These simulators help develop an understanding of how to make content accessible.</p>
+<ul>
+<li><a href="https://vinceumo.github.io/A11Y-Color-Blindness-Empathy-Test/">A11Y: Color blindness empathy test</a>: A web-based tool created to help designers and developers better understand color blindness and visual imparity.</li>
+<li><a href="https://www.funkify.org/">Funkify Chrome Extension</a>: Not open source, but a free version is available which simulates dyslexia, different cognitive conditions, and vision impairments.</li>
+<li><a href="https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla">Metamatrix Web Disability Simulator Chrome Extension</a>: Simulates color blindness, low vision, dyslexia and more.</li>
+</ul>
+<h2>Screen readers</h2>
+<p>Screen readers help people who are blind or visually impaired read text on a screen. We recommend using these common screen readers and testing your content with multiple screen readers and devices. We are including both free and proprietary options, as it is important for compliance testing.</p>
+<ul>
+<li><a href="https://www.freedomscientific.com/products/software/jaws/">JAWS</a> (Job Access With Speech): This is a popular, <em>proprietary screen reader</em> provides speech and Braille output for Windows. It requires a paid license to run.</li>
+<li><a href="https://www.nvaccess.org/about-nvda/">NVDA</a>: (Non-Visual Desktop Access): This is another common screen reader for Windows that's <strong>open source</strong> and available for free.</li>
+<li><a href="https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1">Microsoft Narrator</a> Is a <em>proprietary screen reader</em> that is included with Windows.</li>
+<li><a href="https://www.apple.com/accessibility/vision/">VoiceOver</a>: While <em>not open source</em>, VoiceOver is a screen reader that's a default on all Apple devices (desktop and mobile) and gives descriptions in braille.</li>
+<li><a href="https://support.google.com/accessibility/android/answer/6283677?hl=en">Google Talkback</a>: A Google screen reader included on Android devices. All Android devices come with this screen reader by default. It is also released with an <strong>open source</strong> license.</li>
+</ul>
+<p>Learn more about <a href="https://accessibility.civicactions.com/playbook/AT">screen reader testing</a>.</p>
+<h2>Resources</h2>
+<p>These are a few other lists that contain helpful accessibility tools.</p>
+<ul>
+<li><a href="https://github.com/accessibility/a11y-lists-of-lists">Accessibility Lists of Lists</a></li>
+<li><a href="https://www.w3.org/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a></li>
+</ul>
+<h2>Next Steps</h2>
+<p>When you are ready to learn more, here are some further guides and resources that may help:</p>
+<ul>
+<li><a href="https://accessibility.civicactions.com/playbook/training">Invest in accessibility training</a></li>
+<li><a href="https://accessibility.civicactions.com/playbook/community">Join the global accessibility community</a></li>
+<li><a href="https://accessibility.civicactions.com/guide/resources">Learning resources</a></li>
+</ul>
 
-    </main>
+        
+        
+            </main>
+        </div>
+    
     <footer>
-      <p><a href="/civicactions-a11ysite/site/accessibility-statement">Accessibility statement</a></p>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
     </footer>
-  </body>
-</html><!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recommended Tools</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-      </nav>
-    </header>
-    <main>
-      <h2>Recommended accessibility tools and how to use them. Content pending migration.</h2>
-<h2>title: &quot;Recommended Tools&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Recommended Tools
-parent: Guides</h2>
-<h1>Recommended Tools</h1>
-<p>Placeholder migrated stub.</p>
-
-    </main>
-    <footer>
-      <p><a href="/civicactions-a11ysite/search/">Search</a></p>
-    </footer>
-  </body>
+</body>
 </html>

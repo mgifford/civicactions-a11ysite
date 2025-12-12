@@ -3,160 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>true</title>
-    <meta name="description" content="true">
-    <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #333;
-        }
-        
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: #000;
-            color: #fff;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 1000;
-        }
-        
-        .skip-link:focus {
-            top: 6px;
-        }
-        
-        header {
-            background: #1f2937;
-            color: #fff;
-            padding: 1rem 0;
-            border-bottom: 3px solid #3b82f6;
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        
-        .site-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 0 1rem 0;
-        }
-        
-        .site-title a {
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0;
-        }
-        
-        nav li {
-            margin: 0;
-        }
-        
-        nav a {
-            display: block;
-            color: #e5e7eb;
-            text-decoration: none;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-        
-        nav a:hover,
-        nav a:focus {
-            background: #374151;
-            color: #fff;
-        }
-        
-        nav a[aria-current="page"] {
-            background: #3b82f6;
-            color: #fff;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
-        
-        .breadcrumb a {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-        
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        
-        h1 {
-            color: #1f2937;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        h2 {
-            color: #374151;
-            margin-top: 2rem;
-        }
-        
-        .editorial-notes {
-            background: #f3f4f6;
-            border-left: 4px solid #fbbf24;
-            padding: 1rem;
-            margin: 2rem 0;
-            font-size: 0.9rem;
-        }
-        
-        .editorial-notes h3 {
-            margin-top: 0;
-            color: #92400e;
-        }
-        
-        footer {
-            background: #f9fafb;
-            border-top: 1px solid #e5e7eb;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-            text-align: center;
-            color: #6b7280;
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav a {
-                padding: 0.5rem 0;
-            }
-        }
-    </style>
+    <title>How we scale inclusive website content with automated testing and open source tools</title>
+    <meta name="description" content="Using GitHub and open source technology -- general and text-specific -- we created a continuous text feedback mechanism to help ensure our content mirrors our values.">
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -177,43 +26,157 @@
         </div>
     </header>
     
-    <main id="main-content">
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
         
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
-            
-            
-            
-                
-                    
-                    
-                        > <a href="/about/">About</a>
-                    
-                
-            
-                
-                    
-                    
-                        > <a href="/about/news/">News</a>
-                    
-                
-            
-                
-                    
-                    
-                        > True
-                    
-                
-            
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/about/">About</a> <span aria-hidden="true">›</span> <a href="/about/news/">News</a> <span aria-hidden="true">›</span> <span>How we scale inclusive website content with automated testing and open source tools</span>
         </nav>
         
         
-        <h1>Scale Inclusive Content Automated Testing Open Source Tools</h1>
-<p>Placeholder migrated stub.</p>
+        <p>Since launching the <a href="https://accessibility.civicactions.com/">CivicActions Accessibility</a> website, we've had <a href="https://github.com/CivicActions/accessibility">9 contributors on GitHub</a> and many more contributing to our <a href="/guide">guide</a>, <a href="/playbook">playbooks</a>, and <a href="/news">posts</a>.</p>
+<p>We value openness, agility, inclusiveness and continuous improvement. Ensuring that our site is consistently built makes it easier to maintain in the long-run.</p>
+<p>As our website grows, we want to ensure our content mirrors our values — and that it scales with ease. So, we have enabled automated testing (and some updating) of text when it's submitted in a pull request.</p>
+<h2>Content goals that match our values</h2>
+<p>It is important that this site demonstrates our values by being accessible and professional. That's why we eliminate unclear, insensitive language that could alienate our audience.</p>
+<p>Automation is not full-proof. It doesn't have context to understand why a sentence is structured a certain way or why particular words are used. It is a tool in our arsenal to help us continuously improve, like catching terms that might be offensive or simplifying complex sentences, and so on.</p>
+<h2>The technology</h2>
+<p>Most content changes are done through plain text editors or directly on GitHub. So, many of the conveniences that are built into modern word processing applications aren't available. The following tools help us keep the quality of our site high.</p>
+<p>To achieve the testing we use the following technologies:</p>
+<ul>
+<li><a href="https://github.com/remarkjs/remark">remark</a>: A markdown processor (Markdown is how we write all our content that is then compiled into static HTML pages by Jekyll).</li>
+<li><a href="https://github.com/retextjs/retext">retext</a>: A natural language processor to check for issues in the text.</li>
+<li><a href="https://github.com/reviewdog/reviewdog">reviewdog</a>: Takes the errors and warnings from remark and retext and comments on the markdown text in the code (pull request) indicating the issues and recommended corrections.</li>
+<li><a href="https://pre-commit.com/">pre-commit</a>: Also test files for any issues and in some cases updates the text automatically.</li>
+<li><a href="https://www.docker.com/">docker</a> and <a href="https://github.com/features/actions">GitHub Actions</a>: Used to run the reviewdog scripts with remark and retext whenever a pull request is submitted.</li>
+</ul>
+<h2>The setup</h2>
+<p>For remark/retext we create a Docker image that installs the dependencies and sets up reviewdog to execute our configuration on a pull request. The details are <a href="https://github.com/CivicActions/accessibility/tree/main/lint">visible in our repository</a> but here are the important bits.</p>
+<p>The following files (truncated for brevity) configure the plugins for testing markdown and text — and their individual settings.</p>
+<p>Here are some of our example settings:</p>
+<ul>
+<li>Markdown bullets denoted with an asterisk '*'.</li>
+<li>Single space between sentences.</li>
+<li>Straight quotes (note this down, it will be important later in the post).</li>
+<li>Readability set to 18 years.</li>
+<li>Checking for spelling mistakes.</li>
+<li>Checking for insensitive or inconsiderate language.</li>
+</ul>
+<p><a href="https://github.com/CivicActions/accessibility/blob/main/lint/config/remarkrc.problem">remarkrc.problem file</a>:</p>
+<pre><code class="language-json">{
+  &quot;settings&quot;: {
+    &quot;listItemIndent&quot;: &quot;1&quot;,
+    &quot;bullet&quot;: &quot;*&quot;,
+    &quot;strong&quot;: &quot;*&quot;,
+    &quot;emphasis&quot;: &quot;_&quot;,
+    &quot;fences&quot;: true
+  },
+  &quot;plugins&quot;: [
+      &quot;remark-frontmatter&quot;,
+      &quot;remark-validate-links&quot;,
+      &quot;remark-comment-config&quot;,
+...
+      [&quot;remark-lint-table-cell-padding&quot;, &quot;consistent&quot;],
+      [&quot;remark-lint-table-cell-padding&quot;, &quot;consistent&quot;],
+      [&quot;remark-lint-unordered-list-marker-style&quot;, &quot;*&quot;],
+      &quot;./retext.problem&quot;
+    ]
+}
+</code></pre>
+<p><a href="https://github.com/CivicActions/accessibility/blob/main/lint/config/retext.problem.js">retext.problem.js file</a>:</p>
+<pre><code class="language-javascript">&quot;use strict&quot;;
+
+...
+
+module.exports = attacher;
+
+function attacher() {
+  this.use(
+    remark2retext,
+    unified()
+      .use(english)
+      .use(sentenceSpacing, { preferred: 1 })
+      .use(quotes, { preferred: &quot;straight&quot; })
+      .use(repeated)
+      .use(indefinite)
+  );
+}
+</code></pre>
+<p><a href="https://github.com/CivicActions/accessibility/blob/main/lint/config/retext.suggestion.js">retext.suggestion.js file</a>:</p>
+<pre><code class="language-javascript">&quot;use strict&quot;;
+
+...
+
+function attacher() {
+  this.use(
+    remark2retext,
+    unified()
+      .use(english)
+      .use(contractions, { straight: true })
+      .use(readability, {
+        age: 18,
+        minWords: 15,
+        severity: &quot;fatal&quot;,
+        threshold: 5 / 7,
+      })
+      .use(equality, { ignore: ignoreWords || [] })
+      .use(spell, dictionary)
+  );
+}
+</code></pre>
+<h2>The execution</h2>
+<p>Similar to our <a href="/posts/automated-accessibility-testing-leveraging-github-actions-and-pa11y-ci-with-axe">automated accessibility testing</a> post, we use <a href="https://github.com/CivicActions/accessibility/blob/main/.github/workflows/reviewdog.yml">GitHub actions</a> to run our set up on pull requests. The setup is also tuned to only check the changes for the text issues and not all files. This encourages authors to focus on the changes they are submitting.</p>
+<h3>Examples</h3>
+<p>In <a href="https://github.com/CivicActions/accessibility/pull/373/files">pull request 373</a> and the below screenshot you can see that the sentence, &quot;Whole websites can now be easily crawled for bugs&quot; that the word <strong>'easily'</strong> has been flagged as may be insensitive and we should try to avoid it.</p>
+<p><img src="/assets/img/insensitive-text-warning.png" alt="Screenshot of the insensitive warning"></p>
+<p>In <a href="https://github.com/CivicActions/accessibility/pull/374/files">pull request 374</a> and the below screenshots you can see that I took an earlier version of this post and ran it through the process and got some good feedback.</p>
+<p>In this screenshot we see a warning about a hard to read sentence.</p>
+<p><img src="/assets/img/hard-to-read-sentence-warning.png" alt="Screenshot of the hard to read sentence warning"></p>
+<p>In this screenshot we see that a typo was misattributed as an insensitive word.</p>
+<p><img src="/assets/img/typo-lead-to-insensitive-warning.png" alt="Screenshot of the typo that lead to insensitive warning"></p>
+<h3>Automating changes</h3>
+<p>Some of the recommendations that are provided could be automatically edited, like changing smart quotes to straight quotes (remember the note from earlier). We do this using the pre-commit tool and here is an example:</p>
+<p>In this screenshot we see a warning about a smart quote:
+<img src="/assets/img/smart-quote-warning.png" alt="Screenshot before"></p>
+<p>In this screenshot the change is made for us and committed to the pull request:
+<img src="/assets/img/smark-quote-fix.png" alt="Screenshot after"></p>
+<p>You can see the details at this URL: <a href="https://github.com/CivicActions/accessibility/pull/342">pull request 342</a>.</p>
+<h3>Future considerations</h3>
+<p>We are interested in adding the <a href="https://github.com/retextjs/retext-simplify">retext-simplify plugin</a> to check phrases for simpler alternatives and maybe reduce the age for readability. Check out the <a href="https://github.com/retextjs/retext/blob/main/doc/plugins.md">available plugins in the retext documentation</a>.</p>
+<h2>Conclusion</h2>
+<p>Following this set-up can help you inject tools to help you test your content. But remember, automation can be devoid of context and can still contain our biases.</p>
+<p>You should keep tweaking the tools and double-check your content to make sure it meets your values.</p>
+<h2>Further reading and examples</h2>
+<ul>
+<li>The same tools above are used in:
+<ul>
+<li><a href="https://github.com/sparkartgroup/quality-docs/">Quality docs</a>.</li>
+<li><a href="https://github.com/CivicActions/handbook">CivicActions handbook</a>.</li>
+</ul>
+</li>
+<li>Some similar tools for GitHub and other applications:
+<ul>
+<li><a href="https://github.com/ritterim/markdown-proofing">A markdown proofing platform for individuals, teams, and organizations</a>.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=jemcclin.readabilitycheck">Readability Check</a>.</li>
+<li><a href="https://atom.io/packages/status-stats-jbrains">status-stats-jbrains package</a>.</li>
+</ul>
+</li>
+</ul>
+<p>Thank you to Michelle Kang, Marlena Medford, Luke Fretwell, and Mike Gifford for your support, thoughts, and feedback.</p>
 
         
         
-    </main>
+            </main>
+        </div>
     
     <footer>
         <div class="footer-content">

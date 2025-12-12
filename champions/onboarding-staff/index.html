@@ -1,64 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Onboarding Staff — CivicActions Accessibility</title>
-    <link rel="stylesheet" href="/civicactions-a11ysite/assets/styles.css">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding staff</title>
+    <meta name="description" content="How to set up accessibility onboarding for new staff members.">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
     <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-        <a href="/civicactions-a11ysite/about">About</a>
-        <a href="/civicactions-a11ysite/guides">Guides</a>
-        <a href="/civicactions-a11ysite/champions">Champions</a>
-      </nav>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <h1>Onboarding Staff</h1>
-      <h2>Onboarding guidance for new staff to accessibility practices. Content pending migration.</h2>
-<h2>title: &quot;Onboarding Staff&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Onboarding Staff
-parent: Champions</h2>
-<h1>Onboarding Staff</h1>
-<p>Placeholder migrated stub.</p>
+    
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/champions/">Champions</a> <span aria-hidden="true">›</span> <span>Onboarding staff</span>
+        </nav>
+        
+        
+        <p>A common understanding of accessibility allows teams to work together toward building accessible products and services. When hiring new team members, it's important to not assume they're knowledgeable about accessibility. Instead, it's best to ensure that all team members understand the basics by creating an accessibility onboarding program that every new member participates in.</p>
+<p>As part of <a href="https://accessibility.civicactions.com/posts/CivicActions-Accessibility-Pledge">our Accessibility Pledge</a> at CivicActions, we've added an introduction to accessibility in our onboarding process. This has helped to advance our accessibility maturity and build a robust culture that has internalized accessibility. We'd like to share our onboarding process here in the hopes that other companies can take inspiration when building their own accessibility onboarding processes.</p>
+<h2>Prepare for an accessibility workshop</h2>
+<p>All new team members attend a one hour workshop that talks about the basics of accessibility. Before the workshop takes place, we ask them to prepare by watching videos, reviewing internal company materials, and installing accessibility tools that are relevant to their area of practice.</p>
+<h3>Watch accessibility videos</h3>
+<p>These short videos introduce accessibility and are a great way to get started. Each video is less than five minutes.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=grrx2Lva7T0">What is Digital Accessibility?</a></li>
+<li><a href="https://www.youtube.com/watch?v=20SHvU2PKsM">Introduction to Web Accessibility and W3C Standards</a></li>
+<li><a href="https://www.youtube.com/watch?v=Gv1aDEFlXq8">Disability Sensitivity Training</a></li>
+</ul>
+<h3>Review internal materials</h3>
+<p>We ask that new team members review the <a href="https://accessibility.civicactions.com/">CivicActions Accessibility site</a> and the accessibility page in the <a href="https://guidebook.civicactions.com/en/latest/practice-areas/accessibility/">CivicActions Handbook</a>. These are some examples of materials that you could create that would be company specific.</p>
+<h3>Install accessibility tools</h3>
+<p>These are some tools we recommend that could help test accessibility on your products.</p>
+<h4>Tools for everyone</h4>
+<ol>
+<li>Web accessibility testers
+<ul>
+<li>These browser extensions evaluate web content and identify any potential accessibility issues.
+<ul>
+<li><a href="https://www.deque.com/axe/browser-extensions/">Deque's axe Browser extension</a></li>
+<li><a href="https://wave.webaim.org/">WebAim's WAVE</a></li>
+<li><a href="https://accessibilityinsights.io/">Microsoft's Accessibility Insights</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Color contrast checker
+<ul>
+<li>This tool can check if colors meet the contrast ratio defined in the Web Content Accessibility Guidelines (WCAG).
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp">ColorZilla for Chrome</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/colorzilla/">ColorZilla for Firefox</a></li>
+<li><a href="https://coolors.co/contrast-checker/112a46-acc8e5">Coolors Color Contrast Checker</a></li>
+<li><a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Operating system accessibility settings
+<ul>
+<li>Investigate and configure accessibility settings in your operating system. Apple, Windows, Chromebook, Linux desktop OS all have built-in accessibility features. These can also be found on mobile systems like Android and iOS.</li>
+</ul>
+</li>
+<li>Browser accessibility settings
+<ul>
+<li>Browsers may need to be configured to enable tabbing on links.</li>
+<li>Enabling these features makes it easy to do regular keyboard testing.</li>
+<li>Search for these settings:
+<ul>
+<li>Chrome: &quot;Pressing Tab on a webpage highlights links, as well as form fields.&quot;</li>
+<li>Firefox: &quot;Use the tab key to move focus between form controls and links.&quot;</li>
+<li>Safari (Advanced tab): &quot;Press Tab to highlight each item on a web page.&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4>Tools for each practice area</h4>
+<ol>
+<li>Developers
+<ul>
+<li>Install an accessibility linter in your text editor to check your code files for accessibility defects.
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter">axe Accessibility Linter for VS Code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Visual designers
+<ul>
+<li>Install a color contrast checker into Figma, Sketch, or Invision to ensure that the colors you choose meet WCAG contrast ratios.
+<ul>
+<li><a href="https://www.figma.com/community/plugin/748533339900865323/Contrast">Contrast</a> (For Figma)</li>
+<li><a href="https://www.figma.com/community/plugin/733159460536249875">A11y - Color Contrast Checker</a> (For Figma)</li>
+<li><a href="https://www.getstark.co/">Stark</a> (For Figma, Sketch, Invision, and more)</li>
+</ul>
+</li>
+<li>Better yet, install an annotation plugin to perform checks and overlay accessibility notes of all kinds on wireframes and prototypes:
+<ul>
+<li><a href="https://www.figma.com/community/plugin/1208180794570801545/includeaccessibility-annotations">Include—Accessibility Annotations</a> (For Figma)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Content writers
+<ul>
+<li>Install a readability checker to ensure your content follows <a href="https://accessibility.civicactions.com/guide/plain-language">plain language guidelines</a>.
+<ul>
+<li><a href="https://www.hemingwayapp.com/">Hemingway App</a></li>
+<li><a href="https://readable.io/">Readable</a></li>
+<li><a href="https://support.microsoft.com/en-us/office/get-your-document-s-readability-and-level-statistics-85b4969e-e80a-4777-8dd3-f7fc3c8b3fd2">Microsoft's Flesch-Kincaid</a> (For Microsoft Word)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2>Attend an accessibility workshop</h2>
+<p>Our accessibility workshop is one hour long and covers the basics of accessibility. We encourage participants to engage with us during this time and answer any questions they may have. Our workshop covers these topics:</p>
+<ul>
+<li>What is accessibility?
+<ul>
+<li>We discuss the different types of disabilities (hearing, motor, cognitive, and visual) and how they can be permanent, temporary, or situational.</li>
+<li>We describe different assistive technologies people use, such as auto-captioning, text-to-speech, screen readers, and more.</li>
+</ul>
+</li>
+<li>Accessibility in our organization
+<ul>
+<li>We emphasize how CivicActions promotes accessibility with <a href="https://accessibility.civicactions.com/posts/CivicActions-Accessibility-Pledge">our Accessibility Pledge</a> and how we're continuously working toward developing products built with a wide range of diversity in mind from the beginning.</li>
+<li>We talk about our accessibility practice area and give information about internal meetings and professional development.</li>
+<li>We review <a href="https://accessibility.civicactions.com/guide/champions-program">our Champions program</a> and promote other next steps to learn more about accessibility.</li>
+</ul>
+</li>
+<li>Introduction to accessibility tools
+<ul>
+<li>We give a demo on at least one of the browser extensions mentioned above; how to use the tools on different websites, what the results look like and what they mean.</li>
+</ul>
+</li>
+</ul>
+<h3>Role-specific workshops (Optional)</h3>
+<p>Each role in a company may need additional support in how they can best do their job. Our team has built role based documentation that can be viewed on <a href="https://accessibility.civicactions.com/roles/">our Roles page</a>. For more inspiration, we recommend these websites:</p>
+<ul>
+<li><a href="https://accessibility-manual.dwp.gov.uk/guidance-for-your-job-role">UK's DWP Guidance for your job role</a></li>
+<li><a href="https://digital.gov/guides/accessibility-for-teams">Digital.gov's Accessibility for Teams</a></li>
+</ul>
+<h2>Take a quiz</h2>
+<p>After watching videos, reviewing company materials, and attending the accessibility workshop, we encourage new team members to take an accessibility quiz to help gauge their understanding of our training. Our goal is for them to score 80% or higher on this quiz or to reach out to the accessibility team with any questions they may have. To see an example of an accessibility quiz, view the quiz that we've created for new team members.</p>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdpyp-NLXUzzmbc4zNQqikrgx0V2n1IbmZRYlWSIBstTFbI-Q/viewform">CivicActions accessibility quiz</a></p>
+<h2>Conclusion</h2>
+<p>Accessibility onboarding is key to ensuring that all team members have a basic understanding of best accessibility practices. This understanding can help integrate accessibility into the culture of an organization and ensure that everyone on the team can help build accessible products.</p>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/learn/paths/accessibility-fundamentals/">Microsoft's Accessibility Fundamentals Workshop</a></li>
+<li><a href="https://web.archive.org/web/20250806094735/https://disabilityin.org/resource/disability-fundamentals-training-for-managers/">Disability:In's Disability Fundamentals Training for Managers</a></li>
+</ul>
+<h2>Next Steps</h2>
+<p>When you are ready to learn more, here are some further guides and resources that may help:</p>
+<ul>
+<li><a href="https://accessibility.civicactions.com/guide/tools">Build up your accessibility toolbox</a></li>
+<li><a href="https://accessibility.civicactions.com/playbook/training">Invest in accessibility training</a></li>
+<li><a href="https://accessibility.civicactions.com/playbook/community">Join the global accessibility community</a></li>
+<li><a href="https://accessibility.civicactions.com/playbook/practice">Build a community of practice</a></li>
+</ul>
 
-    </main>
+        
+        
+            </main>
+        </div>
+    
     <footer>
-      <p><a href="/civicactions-a11ysite/site/accessibility-statement">Accessibility statement</a></p>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
     </footer>
-  </body>
-</html><!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Onboarding Staff</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-      </nav>
-    </header>
-    <main>
-      <h2>Onboarding guidance for new staff to accessibility practices. Content pending migration.</h2>
-<h2>title: &quot;Onboarding Staff&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Onboarding Staff
-parent: Champions</h2>
-<h1>Onboarding Staff</h1>
-<p>Placeholder migrated stub.</p>
-
-    </main>
-    <footer>
-      <p><a href="/civicactions-a11ysite/search/">Search</a></p>
-    </footer>
-  </body>
+</body>
 </html>

@@ -3,160 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>true</title>
-    <meta name="description" content="true">
-    <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #333;
-        }
-        
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: #000;
-            color: #fff;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 1000;
-        }
-        
-        .skip-link:focus {
-            top: 6px;
-        }
-        
-        header {
-            background: #1f2937;
-            color: #fff;
-            padding: 1rem 0;
-            border-bottom: 3px solid #3b82f6;
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        
-        .site-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 0 1rem 0;
-        }
-        
-        .site-title a {
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0;
-        }
-        
-        nav li {
-            margin: 0;
-        }
-        
-        nav a {
-            display: block;
-            color: #e5e7eb;
-            text-decoration: none;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-        
-        nav a:hover,
-        nav a:focus {
-            background: #374151;
-            color: #fff;
-        }
-        
-        nav a[aria-current="page"] {
-            background: #3b82f6;
-            color: #fff;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
-        
-        .breadcrumb a {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-        
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        
-        h1 {
-            color: #1f2937;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        h2 {
-            color: #374151;
-            margin-top: 2rem;
-        }
-        
-        .editorial-notes {
-            background: #f3f4f6;
-            border-left: 4px solid #fbbf24;
-            padding: 1rem;
-            margin: 2rem 0;
-            font-size: 0.9rem;
-        }
-        
-        .editorial-notes h3 {
-            margin-top: 0;
-            color: #92400e;
-        }
-        
-        footer {
-            background: #f9fafb;
-            border-top: 1px solid #e5e7eb;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-            text-align: center;
-            color: #6b7280;
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav a {
-                padding: 0.5rem 0;
-            }
-        }
-    </style>
+    <title>Prioritizing accessibility bugs for maximum impact</title>
+    <meta name="description" content="CivicActions Accessibility site - resources for digital inclusion">
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -177,43 +26,144 @@
         </div>
     </header>
     
-    <main id="main-content">
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
         
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
-            
-            
-            
-                
-                    
-                    
-                        > <a href="/about/">About</a>
-                    
-                
-            
-                
-                    
-                    
-                        > <a href="/about/news/">News</a>
-                    
-                
-            
-                
-                    
-                    
-                        > True
-                    
-                
-            
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/about/">About</a> <span aria-hidden="true">›</span> <a href="/about/news/">News</a> <span aria-hidden="true">›</span> <span>Prioritizing accessibility bugs for maximum impact</span>
         </nav>
         
         
-        <h1>prioritizing-accessibility-bugs-for-maximum-impact</h1>
-<p>Placeholder migrated stub. Expand with content from original site.</p>
+        <p>By Jack Haas, Front End Engineer</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*Ss7GsqaiWJYjA_4fkagEVQ.jpeg" alt="Close-up of a computer screen displaying lines of color-coded programming
+code."></p>
+<p>Juggling competing priorities, tight deadlines, and endless iterations can
+make it easy to deprioritize accessibility considerations. In our work, we've
+seen how neglecting accessibility can lead to frustrating user experiences and
+other consequences. That's why we decided to <a href="https://github.com/readme/guides/fix-accessibility-bugs">treat accessibility issues with
+the same urgency as any other bug</a>.</p>
+<p>Enter the <a href="https://accessibility.civicactions.com/guide/defect-priority">Accessibility Bug Classification
+Matrix</a>, which
+we created to help us quickly prioritize issues based on their impact. It
+provides a clear framework for promptly identifying and addressing the most
+critical accessibility barriers.</p>
+<h3>Features of our bug classification matrix</h3>
+<ul>
+<li>Adapted from industry best practices</li>
+<li>Covers a wide range of Web Content Accessibility Guidelines (WCAG) criteria</li>
+<li>Prioritizes issues based on user impact severity</li>
+<li>Provides clear action steps for each priority level</li>
+</ul>
+<h3>Overview</h3>
+<p>As our team grows and projects become more complex, we've realized the value
+of having a centralized process and systemic approach to prioritizing
+accessibility bugs as they are discovered.</p>
+<p>Inspired by the <a href="https://github.com/dequelabs/axe-core/blob/develop/doc/issue_impact.md">impact classifications developed by accessibility experts at
+Deque</a>, we adapted their framework to fit our
+workflows and priorities. The result is a helpful tool that helps our teams
+quickly assess and prioritize accessibility issues based on their true
+severity and impact on users.</p>
+<p><strong>This matrix isn't just for accessibility experts.</strong> We designed it to be a
+resource for all team members, regardless of the accessibility knowledge. By
+providing clear definitions and examples for each priority level, we're
+empowering everyone on our team to make informed decisions about what needs to
+happen when a bug is discovered.</p>
+<p>It's important to note that this isn't meant to be a rigid, exhaustive list of
+every possible accessibility issue. We recognize that the field of
+accessibility is constantly changing, and new challenges emerge.</p>
+<h3>Accessibility as a team sport</h3>
+<p>We're fostering a culture of shared responsibility by making this resource
+available to the whole team. Accessibility shouldn't be limited to a few
+experts. Whether you're a project manager triaging a backlog of issues, a QA
+team member doing release testing, or a designer who has noticed something odd
+when reviewing how their work was implemented, our <a href="https://accessibility.civicactions.com/guide/defect-priority">Accessibility Bug
+Classification Matrix</a> provides a common language and clear guidance.</p>
+<h3>Assessing failure levels and issue priorities</h3>
+<p>We've divided the matrix into five levels, each with its own set of criteria
+and corresponding remediation priority.</p>
+<h3>Level 1: Page-level interference (Single A WCAG criteria)</h3>
+<p>Think of this as the <em>&quot;drop everything and fix it now&quot;</em> category. Issues at
+this level are the most severe, as they fundamentally block users with
+disabilities from accessing essential content or functionality.</p>
+<p><img src="https://cdn-images-1.medium.com/max/696/0*lQ7GlQN8eGmycoN2" alt="Table of criteria showing page-level interference: the highest level of user
+impact which should be addressed immediately."> <em>See the full table of
+criteria in the <a href="https://accessibility.civicactions.com/guide/defect-priority">Accessibility Bug Classification
+Matrix</a>.</em></p>
+<p>When we encounter issues like these, our priority is to address them
+immediately, even if it means bypassing a regular release cycle. The user
+impact is simply too high to defer resolving the issue.</p>
+<h3>Level 2: Primary component failure</h3>
+<p>Next up are issues that significantly degrade the user experience for key
+components or content. While not as severe as Level 1 issues, these still
+present substantial barriers for users with disabilities.</p>
+<p><img src="https://cdn-images-1.medium.com/max/696/0*4xc76HeIcSsHNu2s" alt="Table of criteria showing primary component failure: a high level of user
+impact which should be addressed in the next release."> <em>See the full table of
+criteria in the <a href="https://accessibility.civicactions.com/guide/defect-priority">Accessibility Bug Classification
+Matrix</a>.</em></p>
+<p>The goal is to address these level 2 issues in the next regular release cycle.
+They're high priority but with a bit more flexibility (compared to Level 1).</p>
+<h3>Level 3: Component interference</h3>
+<p>At this level, we're dealing with issues that, while not completely blocking
+access, still present significant usability challenges for assistive
+technology users.</p>
+<p><img src="https://cdn-images-1.medium.com/max/696/0*oVWReMPvFkHYWcva" alt="Table of criteria showing component interference: a medium level of user
+impact which should be addressed within the quarter."> <em>See the full table of
+criteria in the <a href="https://accessibility.civicactions.com/guide/defect-priority">Accessibility Bug Classification
+Matrix</a>.</em></p>
+<p>Our target for Level 3 issues is to resolve them within the current quarter as
+part of regular backlog refinement.</p>
+<h3>Level 4: Page or component degradation</h3>
+<p>These issues, while still important to address, have a lower impact on overall
+usability. They may hinder compliance or present minor annoyances but
+typically have workarounds.</p>
+<p><img src="https://cdn-images-1.medium.com/max/696/0*51OqVlaG9hi8AuPk" alt="Table of criteria showing page or component degradation: a low level of user
+impact which should be addressed when doing related work."> <em>See the full table of
+criteria in the <a href="https://accessibility.civicactions.com/guide/defect-priority">Accessibility Bug Classification
+Matrix</a>.</em></p>
+<p>We prioritize these for remediation as we're doing related development work or
+as time allows.</p>
+<h3>Level 5: Missing best practices</h3>
+<p>Finally, we have issues that might not be strictly related to compliance but
+represent opportunities to enhance accessibility and user experience. For
+these, we rely on ongoing accessibility education and awareness among our
+teams to consistently apply best practices and bake these in from the start.</p>
+<p><img src="https://cdn-images-1.medium.com/max/696/0*t738ZM2l0h5zXje6" alt="Table of criteria showing missing best practices: the lowest level of user
+impact which should be addressed as time allows."> <em>See the full table of
+criteria in the <a href="https://accessibility.civicactions.com/guide/defect-priority">Accessibility Bug Classification
+Matrix</a>.</em></p>
+<p>By breaking issues down into clear, actionable levels, we can ensure that the
+most impactful issues are addressed promptly while still being pragmatic about
+making improvements.</p>
+<h3>Advancing accessibility, one bug at a time</h3>
+<p>Project realities like tight deadlines and limited resources often force teams
+to make tough choices about where to focus their efforts. By using tools like
+the <a href="https://accessibility.civicactions.com/guide/defect-priority">Accessibility Bug Classification
+Matrix</a> and
+developing a culture of responsibility, teams can make meaningful progress
+without compromising other project goals. A clear, actionable framework lets
+us be strategic about where to spend our time to provide the biggest impact.
+The key is to approach accessibility pragmatically <em>and</em> as an ongoing
+process.</p>
+<p><img src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=e365e0a40098" alt=""></p>
+<hr>
+<p><a href="https://medium.com/civicactions/prioritizing-accessibility-bugs-for-maximum-impact-e365e0a40098">Prioritizing accessibility bugs for maximum
+impact</a> was originally published in
+<a href="https://medium.com/civicactions">CivicActions</a> on Medium, where people are
+continuing the conversation by highlighting and responding to this story.</p>
 
         
         
-    </main>
+            </main>
+        </div>
     
     <footer>
         <div class="footer-content">

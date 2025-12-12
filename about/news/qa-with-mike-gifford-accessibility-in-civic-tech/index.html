@@ -3,160 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>true</title>
-    <meta name="description" content="true">
-    <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #333;
-        }
-        
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: #000;
-            color: #fff;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 1000;
-        }
-        
-        .skip-link:focus {
-            top: 6px;
-        }
-        
-        header {
-            background: #1f2937;
-            color: #fff;
-            padding: 1rem 0;
-            border-bottom: 3px solid #3b82f6;
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        
-        .site-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 0 1rem 0;
-        }
-        
-        .site-title a {
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0;
-        }
-        
-        nav li {
-            margin: 0;
-        }
-        
-        nav a {
-            display: block;
-            color: #e5e7eb;
-            text-decoration: none;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-        
-        nav a:hover,
-        nav a:focus {
-            background: #374151;
-            color: #fff;
-        }
-        
-        nav a[aria-current="page"] {
-            background: #3b82f6;
-            color: #fff;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
-        
-        .breadcrumb a {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-        
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        
-        h1 {
-            color: #1f2937;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        h2 {
-            color: #374151;
-            margin-top: 2rem;
-        }
-        
-        .editorial-notes {
-            background: #f3f4f6;
-            border-left: 4px solid #fbbf24;
-            padding: 1rem;
-            margin: 2rem 0;
-            font-size: 0.9rem;
-        }
-        
-        .editorial-notes h3 {
-            margin-top: 0;
-            color: #92400e;
-        }
-        
-        footer {
-            background: #f9fafb;
-            border-top: 1px solid #e5e7eb;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-            text-align: center;
-            color: #6b7280;
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav a {
-                padding: 0.5rem 0;
-            }
-        }
-    </style>
+    <title>Q&A with Mike Gifford: Accessibility in civic tech</title>
+    <meta name="description" content="CivicActions Accessibility site - resources for digital inclusion">
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -177,43 +26,201 @@
         </div>
     </header>
     
-    <main id="main-content">
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
         
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
-            
-            
-            
-                
-                    
-                    
-                        > <a href="/about/">About</a>
-                    
-                
-            
-                
-                    
-                    
-                        > <a href="/about/news/">News</a>
-                    
-                
-            
-                
-                    
-                    
-                        > True
-                    
-                
-            
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/about/">About</a> <span aria-hidden="true">›</span> <a href="/about/news/">News</a> <span aria-hidden="true">›</span> <span>Q&a with mike gifford: accessibility in civic tech</span>
         </nav>
         
         
-        <h1>qa-with-mike-gifford-accessibility-in-civic-tech</h1>
-<p>Placeholder migrated stub. Expand with content from original site.</p>
+        <p><em>Mike Gifford</em> <em>is a Senior
+Strategist at CivicActions, a</em> <a href="https://www.drupal.org/u/mgifford"><em>Drupal</em></a>
+<em>core maintainer, and accessibility advocate. He's passionate about changing
+the conversation around accessibility in civic tech by moving beyond
+compliance to view these needs for what they are: a</em> [<em>human
+right</em>](https://www.un.org/development/desa/disabilities/convention-on-the-
+rights-of-persons-with-disabilities.html).</p>
+<p><img src="https://cdn-images-1.medium.com/max/300/1*8872YgkIHydqOGBqnLf_XQ.jpeg" alt="">
+Senior Strategist Mike Gifford in his natural habitat</p>
+<p><strong>The world of civic tech is deep and wide. Why accessibility? What approach
+should we be taking as we attempt to learn about issues within the
+accessibility community?</strong></p>
+<p><img src="https://cdn-images-1.medium.com/max/267/1*gayAWvkTqT9vCEDA--WQWg.jpeg" alt="">
+Photo of Alan and Mike, courtesy of Mike's
+[Flickr](https://www.flickr.com/photos/mgifford/43726252162/in/photolist-7YWkEH-
+aPgReD-28fT1Pz-28fT32K-GjYrLW-
+ST6bc5-24pNY74-28wDTtS-29BX7V6-24pNZ9e-2dVjQ4W-2dVjR9b-24pP2fD-2dVjQZd-2eWDw4U-24pP1oD-2dCqXCK-
+kzhBxV-MFpXty-MFpWmo-MFpVbN-29BWv1S-29BWtnm-29Gc2zV-29Gc1Bx-
+pZftbo-29BWeWo-29BWspu-pZfqg5-FrMc1Q-FrMcyJ-P1edeT-E92xUC-AQ6Kn-FrMbBd-
+SwY22Z-SwY3bc-SwY2VH-SwY3xz-SwY2ux-SwY2ht-SEFn7Q)</p>
+<p><strong>Mike:</strong> For me, it started with **** empathy and friendship. Alan Shain,
+who's been a roommate and friend since 1990, has cerebral palsy. He's a former
+bureaucrat and a comic who has been active in the Canadian arts community.</p>
+<p>He's taught me the importance of the disability rights movement. Knowing him
+got me thinking more about humanity and the abilities we possess, and the
+notion that we are all only &quot;temporarily able-bodied.&quot; We have some abilities
+right now, but that may change drastically tomorrow. As we grow older, things
+inevitably happen to our bodies. Yet, we have a big aversion to the idea of
+our own mortality, so we often overlook that.</p>
+<blockquote>
+<p><em>&quot;We are all only temporarily able-bodied — we have some abilities right
+now, but that may change drastically tomorrow.&quot;</em></p>
+</blockquote>
+<p>Through many conversations with Alan, I've become more appreciative of how
+other people move through this world. There's much more to accessibility than
+people realize. It helps to open our minds and consider that there are
+temporary and situational disabilities, such as ones caused by medications, or
+even by losing your glasses. You could have trouble doing your taxes because
+you have to care for your children, or because you're simply struggling to
+juggle more than one thing at a time. You could be trying to access a website
+with low contrast while outside on a sunny day. These are all examples of
+accessibility issues.</p>
+<blockquote>
+<p><em>&quot;There are temporary disabilities and situational ones, such as ones
+caused by medications, or even by losing your glasses.&quot;</em></p>
+</blockquote>
+<p>![](https://cdn-
+images-1.medium.com/max/512/1*eql_kL_2w38l3Xc5v8767g.jpeg)<a href="https://unsplash.com/@perfecto_capucine?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Perfecto
+Capucine</a>
+on<a href="https://unsplash.com/photos/3gC4gBnD3Xs"> Unsplash</a></p>
+<p><strong>When you think about web accessibility, what are some common misconceptions
+or mistakes you see? How can they be addressed?</strong></p>
+<p>A lot of people assume things are accessible, when in fact they are not. Take
+Drupal's website, for example. People assume that Drupal.org is accessible,
+and therefore, no other work needs to be done. While Drupal has some built-in
+accessibility features, there are other issues that aren't coming to light.</p>
+<p>I would love to have people adopt the mindset that accessibility features
+should be included from the start, and not as an afterthought. Wanting to be
+more accessible today than yesterday should always be the goal. This means
+building frameworks that pave the way for inclusive, forward-thinking
+practices. We're dealing with something that changes all the time, so it's
+about more than just performance. We need to be constantly finding ways of
+bringing more people into the conversation; we're excluding far too many
+people.</p>
+<blockquote>
+<p><em>&quot;I would love to have people adopt the mindset that accessibility features
+should be included from the start, and not as an afterthought.&quot;</em></p>
+</blockquote>
+<p><strong>What changes have you seen over time in this industry?</strong></p>
+<p>The number of educational resources addressing accessibility issues has
+increased significantly. And they are much more timely and interesting than a
+decade ago, when the conversation first shifted towards these issues.</p>
+<p>For example, tools like <a href="https://www.deque.com/axe/">axe accessibility
+testing</a> provide more opportunities to uncover
+problematic issues on websites. It would be great if we could monitor those
+instances even more. In Europe the government is tasked with monitoring the
+access of all public websites. The results have to be published, which holds
+them accountable to the standards they set, and increases the transparency of
+existing issues. If a department scores low on accessibility compliance,
+people will know, and expect a response. It's like checkers! The good thing is
+that there are standard automated tools that can trawl websites and show where
+improvements can be made.</p>
+<p>![](https://cdn-
+images-1.medium.com/max/369/1*H2PPMC2NG_aVND_u_O-3Gg.jpeg)<a href="https://unsplash.com/@someguy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andy
+Feliciotti</a>
+on<a href="https://unsplash.com/photos/oN_cUY1v7hs"> Unsplash</a></p>
+<p><strong>Where do you see web accessibility going in the future? Do you have any
+&quot;big bets&quot; when it comes to emerging technologies or trends?</strong></p>
+<p>I think **** VR and augmented reality will have a big impact soon. We're at
+the edge of them being more meaningfully included in our lives. It would be
+great for engagement — an interactive way to start thinking about how to make
+emerging technologies more accessible. Computers are built into so many
+devices, but they still contain significant impairments. Washing machines and
+other appliances could be adapted to be more intuitive, too.</p>
+<p><strong>For people reading this, how can they be part of the solution?</strong></p>
+<p>Ask questions and explore what's out there. Educate yourself, and spend time
+trying to understand how other people interact with the web and how important
+that access is to all of us. Look into features like the Wave toolbar and
+accessibility insights from Microsoft to get a sense of accessibility issues
+that others face. These tools are great for evaluating and aiding in awareness
+of the existing problems, and are structured to give users a visual cue of
+where they might be.</p>
+<p>Also, try to make the conversation about accessibility personal. Ask people
+about the needs their parents might have as they age. What general challenges
+will they face? For example, when you're younger, it's easier for you to
+memorize things. but that changes as we age. Show people how we face similar
+challenges at different points in our lives, and normalize addressing those
+concerns now rather than later. That said, there are one in five people
+suffering from permanent disabilities, so the probability of you knowing
+someone with one is very high.</p>
+<blockquote>
+<p><em>&quot;Try to make the conversation about accessibility personal.&quot;</em></p>
+</blockquote>
+<p><strong>Why should the government prioritize web accessibility in procurement?</strong></p>
+<p>Government is the largest single purchaser of goods and services, so as an
+entity, it has a huge impact on setting accessibility standards for everyone
+else. If the government commits to only buying accessible tech, it will change
+the world. Currently though, the federal government often favors certain
+corporations, or software or tools that have barriers to accessibility.</p>
+<blockquote>
+<p><em>&quot;If the government commits to only buying accessible tech, it will change
+the world.&quot;</em></p>
+</blockquote>
+<p>![](https://cdn-
+images-1.medium.com/max/341/1*f5XKnDOq1tUEOLLNF4mUMg.jpeg)<a href="https://unsplash.com/@thisisengineering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ThisisEngineering
+RAEng</a>
+on<a href="https://unsplash.com/photos/o6jUolZ7QJk"> Unsplash</a></p>
+<p><strong>Do you see open source software as a way to improve accessibility at
+scale?</strong></p>
+<p>Yes, using open source tools can actually be [part of an accessibility
+strategy](https://medium.com/civicactions/4-ways-to-improve-government-
+accessibility-through-open-source-8e20fabc7281) for a government organization.
+For example, Drupal issues can affect a million websites that use it, but
+because it is open source, fixing issues in the Drupal core fixes them
+everywhere — the scalability is huge. With proprietary software, you'll have
+to cobble together your best hope of an answer to any issues that arise. You
+may not be able to share information outside of a silo because of bureaucratic
+or intellectual property issues with the software you are being forced to use.</p>
+<blockquote>
+<p><em>&quot;Open source tools can actually be part of an accessibility strategy for a
+government organization.&quot;</em></p>
+</blockquote>
+<p>It's more efficient to work in open source because when we get it right, it
+scales. The cost to the taxpayer for methods using proprietary software is
+unsustainable; there's no way to share the wisdom. Everyone is struggling to
+find the same solutions to problems, and they end up cobbling something
+together instead of working effectively. Open source tech allows you to
+explore all your options and get the best answer to a problem, because you
+have a whole community supporting it. If you have questions about something,
+and the community answers them for you, it's being answered for everyone else,
+too.</p>
+<h4><strong>Learn more</strong></h4>
+<ul>
+<li><a href="https://medium.com/civicactions/government-accessibility-and-the-cms-problem-588a07088c65">Mike Gifford at DrupalCon Global 2020</a></li>
+<li><a href="https://medium.com/openconcept-stories/would-you-publish-without-spellchecking-9166ce8b00de">Challenges in automating accessibility</a></li>
+<li><a href="https://medium.com/openconcept-stories/writing-impactful-accessibility-reports-d6cdd84356fd">Writing impactful accessibility reports</a></li>
+<li><a href="https://medium.com/civicactions/whitehouse-gov-makes-an-accessibility-statement-5de37580209">Accessibility initiatives from the White House</a></li>
+<li><a href="https://medium.com/civicactions/4-ways-to-improve-government-accessibility-through-open-source-8e20fabc7281">How open source tools improve accessibility for government</a></li>
+</ul>
+<h4><strong>Connect with Mike</strong></h4>
+<ul>
+<li><a href="https://www.linkedin.com/in/mgifford/">LinkedIn</a></li>
+<li><a href="https://github.com/mgifford">GitHub</a></li>
+<li><a href="https://mgifford.medium.com/">Medium</a></li>
+<li><a href="https://twitter.com/mgifford">Twitter</a></li>
+</ul>
+<p><img src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=339ff94f017f" alt=""></p>
+<hr>
+<p>[Q&amp;A with Mike Gifford: Accessibility in civic
+tech](https://medium.com/civicactions/q-a-with-mike-gifford-accessibility-in-
+civic-tech-339ff94f017f) was originally published in
+<a href="https://medium.com/civicactions">CivicActions</a> on Medium, where people are
+continuing the conversation by highlighting and responding to this story.</p>
 
         
         
-    </main>
+            </main>
+        </div>
     
     <footer>
         <div class="footer-content">

@@ -1,64 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Accessibility Conformance Report (ACR) — CivicActions Accessibility</title>
-    <link rel="stylesheet" href="/civicactions-a11ysite/assets/styles.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-        <a href="/civicactions-a11ysite/about">About</a>
-        <a href="/civicactions-a11ysite/guides">Guides</a>
-        <a href="/civicactions-a11ysite/champions">Champions</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Accessibility Conformance Report (ACR)</h1>
-      <h2>Overview of ACRs and how to create them. Content pending migration.</h2>
-<h2>title: &quot;Acr&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Acr
-parent: Guides</h2>
-<h1>Acr</h1>
-<p>Placeholder migrated stub.</p>
-
-    </main>
-    <footer>
-      <p><a href="/civicactions-a11ysite/site/accessibility-statement">Accessibility statement</a></p>
-    </footer>
-  </body>
-</html><!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessibility Conformance Report (ACR)</title>
-  </head>
-  <body>
+    <meta name="description" content="Learn how an Accessibility Conformance Report (ACR) can improve your procurement process.">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
     <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-      </nav>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <h2>Overview of ACRs and how to create them. Content pending migration.</h2>
-<h2>title: &quot;Acr&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Acr
-parent: Guides</h2>
-<h1>Acr</h1>
-<p>Placeholder migrated stub.</p>
+    
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/guides/">Guides</a> <span aria-hidden="true">›</span> <a href="/guides/reporting/">Reporting</a> <span aria-hidden="true">›</span> <span>Accessibility conformance report (acr)</span>
+        </nav>
+        
+        
+        <p>An Accessibility Conformance Report (ACR) is a document that measures how well  information and communication technology (ICT) products comply with <a href="https://www.access-board.gov/ict/">Section 508 Standards</a>. These reports are mainly used in government and education procurement, but can also be used by private sector organizations. During procurement, vendors are encouraged to create an ACR to show how an ICT meets the specific accessibility requirements that are being requested.</p>
+<p>An ACR is often created using a Voluntary Product Accessibility Template (VPAT), which comes in a few standard formats for reporting accessibility conformance. When evaluating our own work on websites, we use <a href="https://github.com/GSA/openacr">OpenACR</a> along with the VPAT 2.5 WCAG (November 2023) template. OpenACR is a tool developed by CivicActions and maintained by the General Services Administration (GSA). To learn more about its development, <a href="https://civicactions.com/case-studies/open-acr/">read our case study</a>.</p>
+<p>OpenACR reads and formats ACR results in YAML, a machine-readable format that can be easily stored and updated, and allows accessibility claims of digital products and services to be easily compared. Related to this, the <a href="https://acreditor.section508.gov/">OpenACR web editor</a> provides a step-by-step interface for using OpenACR to create machine-readable ACR documents.</p>
+<h2>Our example</h2>
+<p>CivicActions prioritizes creating ACRs to show how the products we use meet accessibility standards set by Section 508. To see an example of how to create an ACR, view the report created for Drupal 9.1.</p>
+<p><a href="https://accessibility.civicactions.com/ACR/Drupal9AccessibilityConformanceReport.html">Drupal 9.1 Accessibility Conformance Report</a></p>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://acreditor.section508.gov/">OpenACR web editor</a></li>
+<li><a href="https://civicactions.com/case-studies/open-acr/">CivicActions OpenACR Case Study</a></li>
+<li><a href="https://www.section508.gov/sell/acr/">GSA Accessibility Conformance Report (ACR)</a></li>
+<li><a href="https://www.itic.org/policy/accessibility/vpat">Free VPAT and other resources from ITI</a></li>
+<li><a href="https://www.accessibilityoz.com/2019/09/how-to-read-a-vpat/">How to read a VPAT</a></li>
+</ul>
 
-    </main>
+        
+        
+            </main>
+        </div>
+    
     <footer>
-      <p><a href="/civicactions-a11ysite/search/">Search</a></p>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>

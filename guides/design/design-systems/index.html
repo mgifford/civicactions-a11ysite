@@ -1,64 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Design Systems — CivicActions Accessibility</title>
-    <link rel="stylesheet" href="/civicactions-a11ysite/assets/styles.css">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design systems</title>
+    <meta name="description" content="A collection of government and corporate web and digital design systems from the United States and around the world.">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
     <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-        <a href="/civicactions-a11ysite/about">About</a>
-        <a href="/civicactions-a11ysite/guides">Guides</a>
-        <a href="/civicactions-a11ysite/champions">Champions</a>
-      </nav>
+        <div class="header-content">
+            <div class="site-title">
+                <a href="/">CivicActions Accessibility</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accessibility-guides/">Accessibility Guides</a></li>
+                    <li><a href="/champion-accessibility/">Champion Accessibility</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <h1>Design Systems</h1>
-      <h2>Guidance on accessible design systems and components. Content pending migration.</h2>
-<h2>title: &quot;Design Systems&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Design Systems
-parent: Guides</h2>
-<h1>Design Systems</h1>
-<p>Placeholder migrated stub.</p>
+    
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/guides/">Guides</a> <span aria-hidden="true">›</span> <a href="/guides/design/">Design</a> <span aria-hidden="true">›</span> <span>Design systems</span>
+        </nav>
+        
+        
+        <h2>Government open design systems {#government-open-design-systems}</h2>
+<p>Worldwide, government website design is being led by open source initiatives.</p>
+<h3>USA</h3>
+<ul>
+<li><a href="https://designsystem.digital.gov/">U.S. Web Design System (USWDS)</a> — <a href="https://github.com/uswds/uswds">USWDS on GitHub</a></li>
+<li><a href="https://design.cms.gov/">USA CMS Design System</a> — <a href="https://github.com/cmsgov/design-system">CMS on GitHub</a></li>
+<li><a href="https://design.va.gov">VA.gov Design System</a> — <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation">VA on GitHub</a></li>
+<li><a href="https://designsystem.webstandards.ca.gov/">California Design System</a> — <a href="https://github.com/cagov/design-system">CDS on GitHub</a> (uses Web Components)</li>
+</ul>
+<h3>Europe and the UK</h3>
+<ul>
+<li><a href="https://design-system.service.gov.uk/">GOV.UK – Design System</a> — <a href="https://github.com/alphagov/govuk-design-system">GOV.UK Design System on GitHub</a></li>
+<li><a href="https://github.com/dwp/design-system">UK's Department for Work and Pensions Design System on GitHub</a></li>
+<li><a href="https://github.com/island-is/island.is">Iceland's design system mono repository</a></li>
+<li><a href="https://zeroheight.com/1be481dc2/p/2861fa-boas-vindas">Portugal's Ágora Design System</a></li>
+</ul>
+<h3>Canada</h3>
+<ul>
+<li><a href="https://wet-boew.github.io/wet-boew/index.html">Canada – Web Experience Toolkit (WET)</a> — <a href="https://github.com/wet-boew/wet-boew">WET on GitHub</a></li>
+<li><a href="https://design.gccollab.ca/">Canada – Aurora Design System</a> — <a href="https://design.gccollab.ca/">Aurora on GitHub</a></li>
+<li><a href="https://github.com/bcgov/design-system">British Columbia Government - Design System</a></li>
+</ul>
+<h3>Australia, NZ and Pacific</h3>
+<ul>
+<li><a href="https://web.archive.org/web/20210907155703/https://designsystem.gov.au/">Australia – Design System</a> (Archive.org) — <a href="https://github.com/govau/design-system-components/">Design System Components on GitHub</a></li>
+<li><a href="https://designsystem.health.gov.au/">Australia's Health Design System</a> — <a href="https://github.com/healthgovau/health-design-system">Health on GitHub</a></li>
+<li><a href="https://design-system-alpha.digital.govt.nz/">NZ – Design System</a> — <a href="https://github.com/GOVTNZ/govtnz-design-system">govtnz-design-system on GitHub</a></li>
+<li><a href="https://www.designsystem.tech.gov.sg">Singapore Government Design System</a> — <a href="https://github.com/govtechsg/sgds">SGDS on GitHub</a></li>
+</ul>
+<h3>Municipal</h3>
+<ul>
+<li><a href="https://github.com/City-of-Helsinki/helsinki-design-system">City of Helsinki Design System</a></li>
+<li><a href="https://nypl.github.io/nypl-design-system/reservoir/v1/?path=/story/welcome--page">The New York Public Library's Design System</a> — <a href="https://github.com/NYPL/nypl-design-system">NYPL on GitHub</a></li>
+</ul>
+<h2>Other open design systems {#other-open-design-systems}</h2>
+<ul>
+<li><a href="https://github.com/okta/odyssey">Okta's Odyssey Design System</a></li>
+<li><a href="https://www.carbondesignsystem.com/">IBM's Carbon open source design system</a> — <a href="https://github.com/carbon-design-system/carbon">Carbon on GitHub</a> <a href="https://www.carbondesignsystem.com/guidelines/accessibility/overview/">Carbon's Accessibility</a> (uses Web Components)</li>
+<li><a href="https://demos.creative-tim.com/impact-design-system/index.html">Impact Design System</a> — <a href="https://github.com/creativetimofficial/impact-design-system">Impact Desigh System on GitHub</a></li>
+<li><a href="https://clarity.design/">VMWare's Clarity Design System</a> — <a href="https://github.com/vmware/clarity">Clarity on GitHub</a> <a href="https://clarity.design/get-started/support/">Clarity's Accessibility</a> (uses Web Components)</li>
+<li><a href="https://www.emulsify.info/">Emulsify</a> — <a href="https://github.com/emulsify-ds">Emulsify on GitHub</a> <a href="https://docs.emulsify.info/usage/accessibility-testing">Emulsify's Accessibility</a></li>
+<li><a href="https://design.talend.com/">Talend's Coral Design System</a> — <a href="https://github.com/Talend/ui/">Coral on GitHub</a> (uses React Components)</li>
+<li><a href="https://a11y-guidelines.orange.com/en/">Orange Digital Accessibility</a> — <a href="https://github.com/Orange-OpenSource/a11y-guidelines">Orange a11y-guidelines on GitHub</a></li>
+<li><a href="https://material.io/">Google's Material Design</a> — <a href="https://github.com/material-components">Material on GitHub</a> <a href="https://material.io/design/usability/accessibility.html">Material's Accessibility</a> (uses Web Components)</li>
+<li><a href="https://spectrum.adobe.com/">Adobe's Spectrum</a> — <a href="https://spectrum.adobe.com/page/inclusive-design/">Spectrum's Inclusive Design</a> (uses Web Components)</li>
+<li><a href="https://www.microsoft.com/design/fluent/">Microsoft's Fluent</a> <a href="https://github.com/microsoft/fluentui">Fluent UI on GitHub</a></li>
+<li><a href="https://bold.bridge.ufsc.br/en/">Bridge Lab's Bold</a> — <a href="https://github.com/laboratoriobridge/bold">Bold on GitHub</a> <a href="https://bold.bridge.ufsc.br/en/design-guidelines/accessibility/">Bold's Accessibility</a></li>
+<li><a href="https://polaris.shopify.com/">Shopify's Polaris</a> — <a href="https://github.com/topics/shopify-polaris">Polaris on GitHub</a> <a href="https://polaris.shopify.com/foundations/accessibility">Polaris' Accessibility</a></li>
+<li><a href="https://intuit.github.io/design-systems-cli/">Intuit's Design-systems-cli</a> — <a href="https://github.com/intuit/design-systems-cli">Intuit on GitHub</a> <a href="https://designsystem.quickbooks.com/bolt/accessibility/">Quickbooks' Accessibility</a></li>
+<li><a href="https://sparkdesignsystem.com/">Spark Design System</a> — <a href="https://github.com/sparkdesignsystem/spark-design-system">Spark on GitHub</a> <a href="https://sparkdesignsystem.com/principles/accessibility-guidelines/#accessibility-guidelines">Spark's Accessibility</a></li>
+<li><a href="https://www.patternfly.org/">Redhat's Patternfly</a> — <a href="https://github.com/patternfly/patternfly">Patternfly on GitHub</a></li>
+<li><a href="https://ui5.github.io/webcomponents/">SAP's UI5</a> — <a href="https://github.com/UI5/webcomponents">UI5 on GitHub</a> (uses Web Components)</li>
+<li><a href="https://outline.phase2tech.com/">Phase2's Outline</a> — <a href="https://github.com/phase2/outline">Outline on GitHub</a> (uses Web Components)</li>
+<li><a href="https://build.washingtonpost.com">Washington Post's Design System (UiKit)</a></li>
+<li><a href="https://primer.style/">GitHub's Primer</a> — <a href="https://github.com/primer">Primer on GitHub</a></li>
+<li><a href="https://pharos.jstor.org/">Jstor's Pharos</a> — <a href="https://github.com/ithaka/pharos">Pharos on GitHub</a></li>
+</ul>
 
-    </main>
+        
+        
+            </main>
+        </div>
+    
     <footer>
-      <p><a href="/civicactions-a11ysite/site/accessibility-statement">Accessibility statement</a></p>
+        <div class="footer-content">
+            <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
+            <p><a href="/about/contact/">Contact us</a> | <a href="https://github.com/civicactions/accessibility">GitHub</a></p>
+        </div>
     </footer>
-  </body>
-</html><!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Design Systems</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/civicactions-a11ysite/">Home</a>
-      </nav>
-    </header>
-    <main>
-      <h2>Guidance on accessible design systems and components. Content pending migration.</h2>
-<h2>title: &quot;Design Systems&quot;
-description: &quot;Placeholder stub&quot;
-layout: base
-eleventyNavigation:
-key: Design Systems
-parent: Guides</h2>
-<h1>Design Systems</h1>
-<p>Placeholder migrated stub.</p>
-
-    </main>
-    <footer>
-      <p><a href="/civicactions-a11ysite/search/">Search</a></p>
-    </footer>
-  </body>
+</body>
 </html>

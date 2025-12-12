@@ -1,0 +1,60 @@
+<h1>Agents</h1>
+<p>This repository can be explored and extended using AI agents in VS Code (GitHub Copilot / AI Toolkit). Below are quick notes to help you leverage agent workflows for this project.</p>
+<h2>Purpose</h2>
+<ul>
+<li>Provide a single reference for using agents to assist with development, documentation, and site maintenance.</li>
+<li>Point to relevant tools and best practices available in the local AI Toolkit installation.</li>
+</ul>
+<h2>AI Toolkit Tools</h2>
+<p>The local AI Toolkit provides guidance-focused tools (available when AI Toolkit is installed). To verify the local instructions exist:</p>
+<pre><code class="language-sh">ls -la ~/.aitk/instructions/tools.instructions.md
+</code></pre>
+<p>If present, see <code>~/.aitk/instructions/tools.instructions.md</code> for details:</p>
+<ul>
+<li>aitk-get_agent_code_gen_best_practices: Best practices and steps for agent development.</li>
+<li>aitk-get_tracing_code_gen_best_practices: Guidance for adding tracing/observability to AI applications.</li>
+<li>aitk-get_ai_model_guidance: Model selection and usage patterns.</li>
+<li>aitk-evaluation_planner: Helps clarify evaluation metrics and datasets.</li>
+<li>aitk-get_evaluation_code_gen_best_practices: Best practices for building evaluation code.</li>
+<li>aitk-evaluation_agent_runner_best_practices: Running agents over datasets to collect responses.</li>
+</ul>
+<h2>Typical Workflows</h2>
+<ul>
+<li>Planning: Use evaluation_planner to define goals before building.</li>
+<li>Building: Use get_agent_code_gen_best_practices and get_ai_model_guidance.</li>
+<li>Tracing: Use get_tracing_code_gen_best_practices for observability.</li>
+<li>Evaluating: Use get_evaluation_code_gen_best_practices + evaluation_agent_runner_best_practices.</li>
+</ul>
+<h2>Tips</h2>
+<ul>
+<li>Keep changes minimal and aligned with repo style.</li>
+<li>Prefer adding small, focused scripts or docs instead of broad refactors.</li>
+<li>When editing files, validate with local build (see below).</li>
+</ul>
+<h2>Local Development (Eleventy)</h2>
+<p>This site uses Eleventy. To run locally:</p>
+<ol>
+<li>Install Node.js 18+.
+<ul>
+<li>Verify your environment:<pre><code class="language-sh">node -v
+npm -v
+</code></pre>
+If Node is older than v18, update via nvm or your package manager.</li>
+</ul>
+</li>
+<li>Install dependencies:<pre><code class="language-sh">npm install
+</code></pre>
+</li>
+<li>Start the local dev server:<pre><code class="language-sh">npm run serve
+</code></pre>
+</li>
+<li>Build static output:<pre><code class="language-sh">npm run build
+</code></pre>
+</li>
+</ol>
+<p>The dev server will watch files and reload on changes.</p>
+<h2>Notes</h2>
+<ul>
+<li>GitHub Pages builds may require <code>npm run build-ghpages</code> for path prefixing.</li>
+<li>See <code>package.json</code> for available scripts.</li>
+</ul>

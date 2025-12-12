@@ -3,160 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>true</title>
-    <meta name="description" content="true">
-    <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #333;
-        }
-        
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: #000;
-            color: #fff;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 1000;
-        }
-        
-        .skip-link:focus {
-            top: 6px;
-        }
-        
-        header {
-            background: #1f2937;
-            color: #fff;
-            padding: 1rem 0;
-            border-bottom: 3px solid #3b82f6;
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        
-        .site-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 0 1rem 0;
-        }
-        
-        .site-title a {
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0;
-        }
-        
-        nav li {
-            margin: 0;
-        }
-        
-        nav a {
-            display: block;
-            color: #e5e7eb;
-            text-decoration: none;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-        
-        nav a:hover,
-        nav a:focus {
-            background: #374151;
-            color: #fff;
-        }
-        
-        nav a[aria-current="page"] {
-            background: #3b82f6;
-            color: #fff;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
-        
-        .breadcrumb a {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-        
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        
-        h1 {
-            color: #1f2937;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        h2 {
-            color: #374151;
-            margin-top: 2rem;
-        }
-        
-        .editorial-notes {
-            background: #f3f4f6;
-            border-left: 4px solid #fbbf24;
-            padding: 1rem;
-            margin: 2rem 0;
-            font-size: 0.9rem;
-        }
-        
-        .editorial-notes h3 {
-            margin-top: 0;
-            color: #92400e;
-        }
-        
-        footer {
-            background: #f9fafb;
-            border-top: 1px solid #e5e7eb;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-            text-align: center;
-            color: #6b7280;
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav a {
-                padding: 0.5rem 0;
-            }
-        }
-    </style>
+    <title>Include people with disabilities</title>
+    <meta name="description" content="CivicActions Accessibility site - resources for digital inclusion">
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -177,44 +26,51 @@
         </div>
     </header>
     
-    <main id="main-content">
+        <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
+            <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
+                <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/guides/">Guides</a></li>
+                    <li><a href="/champions/">Champions</a></li>
+                    <li><a href="/search/">Search</a></li>
+                </ul>
+            </aside>
+            <main id="main-content" style="flex:1;">
         
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
-            
-            
-            
-                
-                    
-                    
-                        > <a href="/guides/">Guides</a>
-                    
-                
-            
-                
-                    
-                    
-                        > <a href="/guides/strategy/">Strategy</a>
-                    
-                
-            
-                
-                    
-                    
-                        > True
-                    
-                
-            
+            <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/guides/">Guides</a> <span aria-hidden="true">›</span> <a href="/guides/strategy/">Strategy</a> <span aria-hidden="true">›</span> <span>Include people with disabilities</span>
         </nav>
         
         
-        <h1>Pwd</h1>
-<p>Placeholder migrated stub.</p>
-<p>Content pending migration per plan.</p>
+        <h2>Overview</h2>
+<p>Actually engaging with people with disabilities (PwD) is key. Their lived experience is critical for identifying issues that a test and someone without disabilities may not catch. This can be accomplished by assuring user research in discovery stages includes PwD. Usability testing of specific site features should also include PwD to ensure that the solution works as expected.</p>
+<p>Out of respect for their time, PwD shouldn't be engaged to test the accessibility of a website until the results of automated and basic manual tests are implemented.</p>
+<p>PwD's lived experience is critical for catching issues and errors that the tests miss, but it is important to not waste people's time replicating known problems that a computer or a non-disabled person can easily identify. See the playbooks on automated testing and manual testing for more information.</p>
+<p>When recruiting a testing cohort, it is important to consider the range of disabilities that need to be addressed. Should you test with people who were blind from birth and who use Braille, or those who became blind and use an audio interface? A legally blind person may have some sight, and may use a screen reader in combination with a screen magnifier. If there are audio components, it may be important to include members of the deaf community. People have a range of experiences of perceiving colour, and this can change over time. These are just a few examples.</p>
+<p>There are many different disabilities and people experiencing combinations of them. Depending on the size of the project you may want to adjust the number of participants who are involved. Most projects simply do not include enough people with disabilities. Remember too that there is variation in how people use Assistive Technology, and so one perspective may not reflect the needs of the whole community. A minimum size would include people with limitations in sight, hearing, mobility and cognition.</p>
+<p>Many disabilities are invisible, and because of the stigma that can be associated with disability, people may not feel comfortable disclosing this information to their peers. It is statistically likely that a team already includes people with disabilities, but often this is hidden and unknown to the rest of the group.</p>
+<p>Robust products and services are <a href="https://snow.idrc.ocadu.ca/articles/inclusive-design-for-learning-creating-flexible-and-adaptable-content-with-learners/">co-designed with the users</a>. People with disabilities have expertise through lived experience that needs to be recognized, especially when building tools and services for them. &quot;Nothing About Us Without Us!&quot; is a common call in the disability movement, because all too often, people with disabilities are not engaged. <a href="https://medium.com/fwd50/the-three-dimensions-of-inclusive-design-part-one-103cad1ffdc2">Inclusive design</a> is a process which is open and transparent and actively engages a wide diversity of abilities.</p>
+<h2>Checklist</h2>
+<ul>
+<li>Include people with disabilities early in the process and before a product/service is launched</li>
+<li>Build in the costs of accessibility testing into the project budget</li>
+</ul>
+<h2>Key questions</h2>
+<ul>
+<li>Are you building to the Pareto Principle, or the fringe?</li>
+<li>How are you including a range of disabilities into your consultation process?</li>
+</ul>
+<h2>Related</h2>
+<ul>
+<li><a href="https://accessibility.civicactions.com/playbook/manual-testing">Do Manual Testing</a></li>
+<li><a href="https://accessibility.civicactions.com/playbook/AT">Test with Assistive Technology</a></li>
+</ul>
 
         
         
-    </main>
+            </main>
+        </div>
     
     <footer>
         <div class="footer-content">
