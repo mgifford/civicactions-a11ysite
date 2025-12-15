@@ -9,7 +9,7 @@
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    
+
     <header>
         <div class="header-content">
             <div class="site-title">
@@ -25,7 +25,7 @@
             </nav>
         </div>
     </header>
-    
+
         <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
             <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
                 <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
@@ -42,7 +42,7 @@
             <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/about/">About</a> <span aria-hidden="true">›</span> <a href="/about/news/">News</a> <span aria-hidden="true">›</span> <span>Government accessibility and the cms problem</span>
         </nav>
         
-        
+
         <h1>Government Accessibility and the CMS Problem</h1>
 <p>Content Management Systems (CMS) are the backbone of most government websites, but they often create significant barriers to accessibility compliance. Here's how government agencies can address CMS accessibility challenges and create workflows that produce accessible content by default.</p>
 <h2>The CMS Accessibility Challenge</h2>
@@ -117,7 +117,7 @@
 function mymodule_form_alter(&amp;$form, &amp;$form_state, $form_id) {
   if ($form_id == 'node_article_form') {
     $form['field_image']['widget'][0]['alt']['#required'] = TRUE;
-    $form['field_image']['widget'][0]['alt']['#description'] = 
+    $form['field_image']['widget'][0]['alt']['#description'] =
       t('Required: Describe the image for users who cannot see it.');
   }
 }
@@ -142,10 +142,10 @@ function mymodule_form_alter(&amp;$form, &amp;$form_state, $form_id) {
 function government_accessibility_enhancements() {
   // Enforce alt text requirement
   add_filter('wp_handle_upload_prefilter', 'require_alt_text');
-  
+
   // Add accessibility help text
   add_action('media_upload_form', 'add_accessibility_guidance');
-  
+
   // Check color contrast in customizer
   add_action('customize_controls_print_scripts', 'add_contrast_checker');
 }
@@ -176,22 +176,22 @@ function government_accessibility_enhancements() {
 class AccessibilityWorkflow {
   validateContent(content) {
     const issues = [];
-    
+
     // Check for alt text
     if (this.hasImages(content) &amp;&amp; !this.hasAltText(content)) {
       issues.push('Images missing alt text');
     }
-    
-    // Validate heading structure  
+
+    // Validate heading structure
     if (!this.hasProperHeadings(content)) {
       issues.push('Heading structure needs improvement');
     }
-    
+
     // Check color contrast
     if (!this.meetsContrastRequirements(content)) {
       issues.push('Color contrast insufficient');
     }
-    
+
     return issues;
   }
 }
@@ -228,22 +228,22 @@ class AccessibilityWorkflow {
 <h4>Custom CMS Modules/Plugins</h4>
 <pre><code class="language-php">// Example: Drupal accessibility enforcement module
 class AccessibilityEnforcement {
-  
+
   public function validateNode($node) {
     $errors = [];
-    
+
     // Require alt text for images
     foreach ($node-&gt;field_images as $image) {
       if (empty($image-&gt;alt)) {
         $errors[] = 'Alt text required for all images';
       }
     }
-    
+
     // Validate heading structure
     if (!$this-&gt;validateHeadingStructure($node-&gt;body-&gt;value)) {
       $errors[] = 'Heading structure must be hierarchical';
     }
-    
+
     return $errors;
   }
 }
@@ -372,7 +372,7 @@ class AccessibilityEnforcement {
 <li>Provides practical guidance for government agencies struggling with CMS accessibility challenges</li>
 </ul>
 
-        
+
         
         <div class="editorial-notes">
             <h3>Editorial Notes</h3>
@@ -386,7 +386,7 @@ class AccessibilityEnforcement {
                 
             </main>
         </div>
-    
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>

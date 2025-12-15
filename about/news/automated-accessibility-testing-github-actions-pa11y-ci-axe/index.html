@@ -9,7 +9,7 @@
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    
+
     <header>
         <div class="header-content">
             <div class="site-title">
@@ -25,7 +25,7 @@
             </nav>
         </div>
     </header>
-    
+
         <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
             <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
                 <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
@@ -42,7 +42,7 @@
             <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/about/">About</a> <span aria-hidden="true">›</span> <a href="/about/news/">News</a> <span aria-hidden="true">›</span> <span>Automated accessibility testing: leveraging github actions and pa11y ci with axe</span>
         </nav>
         
-        
+
         <h1>Automated Accessibility Testing: Leveraging GitHub Actions and Pa11y-ci with Axe</h1>
 <p>Implementing continuous accessibility integration in government development workflows using GitHub Actions, Pa11y-ci, and Axe-core to catch accessibility issues before they reach production.</p>
 <h2>The Challenge of Manual Testing</h2>
@@ -84,27 +84,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
           cache: 'npm'
-          
+
       - name: Install dependencies
         run: npm ci
-        
+
       - name: Build site
         run: npm run build
-        
+
       - name: Start server
         run: |
           npm run serve &amp;
           sleep 10
-          
+
       - name: Run Pa11y-ci
         run: npx pa11y-ci --sitemap http://localhost:8080/sitemap.xml
-        
+
       - name: Run Axe tests
         run: npm run test:axe
 </code></pre>
@@ -348,7 +348,7 @@ const results = await new AxePuppeteer(page).analyze();
 <li>Author: Daniel Mundra, reflecting his automated testing expertise</li>
 </ul>
 
-        
+
         
         <div class="editorial-notes">
             <h3>Editorial Notes</h3>
@@ -362,7 +362,7 @@ const results = await new AxePuppeteer(page).analyze();
                 
             </main>
         </div>
-    
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>

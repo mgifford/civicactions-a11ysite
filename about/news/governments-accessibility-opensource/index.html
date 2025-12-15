@@ -9,7 +9,7 @@
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    
+
     <header>
         <div class="header-content">
             <div class="site-title">
@@ -25,7 +25,7 @@
             </nav>
         </div>
     </header>
-    
+
         <div style="display:flex; gap: 1rem; align-items:flex-start; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem;">
             <aside aria-label="Section navigation" style="min-width: 260px; border-right: 1px solid #e5e7eb; padding-right: 1rem;">
                 <h2 style="font-size:1.1rem; margin-top:0">Navigation</h2>
@@ -42,7 +42,7 @@
             <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/about/">About</a> <span aria-hidden="true">›</span> <a href="/about/news/">News</a> <span aria-hidden="true">›</span> <span>Government's accessibility and open source: better together</span>
         </nav>
         
-        
+
         <h1>Government's Accessibility and Open Source: Better Together</h1>
 <p>Open source development and accessibility share a common philosophy: creating technology that works for everyone. In government, this alignment creates powerful opportunities to build more accessible digital services while leveraging community expertise and reducing costs. Here's why open source approaches are essential for government accessibility success.</p>
 <h2>The Accessibility-Open Source Connection</h2>
@@ -76,8 +76,8 @@
 </ul>
 <h4>Accessibility Features</h4>
 <pre><code class="language-html">&lt;!-- USWDS accessible button component --&gt;
-&lt;button class=&quot;usa-button usa-button--secondary&quot; 
-        type=&quot;button&quot; 
+&lt;button class=&quot;usa-button usa-button--secondary&quot;
+        type=&quot;button&quot;
         aria-describedby=&quot;button-help&quot;&gt;
   Submit Application
 &lt;/button&gt;
@@ -93,11 +93,11 @@
   &lt;span class=&quot;usa-error-message&quot; id=&quot;email-input-error-message&quot; role=&quot;alert&quot;&gt;
     Enter a valid email address
   &lt;/span&gt;
-  &lt;input class=&quot;usa-input usa-input--error&quot; 
-         id=&quot;email-input-error&quot; 
-         name=&quot;email&quot; 
-         type=&quot;email&quot; 
-         aria-describedby=&quot;email-input-error-message&quot; 
+  &lt;input class=&quot;usa-input usa-input--error&quot;
+         id=&quot;email-input-error&quot;
+         name=&quot;email&quot;
+         type=&quot;email&quot;
+         aria-describedby=&quot;email-input-error-message&quot;
          required&gt;
 &lt;/div&gt;
 </code></pre>
@@ -133,7 +133,7 @@ class AccessibleTwoFactor {
 
     // Keyboard navigation for authentication methods
     this.setupKeyboardNavigation();
-    
+
     // Alternative text for QR codes
     this.addQRCodeAlternatives();
   }
@@ -145,7 +145,7 @@ class AccessibleTwoFactor {
     announcement.className = 'usa-sr-only';
     announcement.textContent = message;
     document.body.appendChild(announcement);
-    
+
     setTimeout(() =&gt; document.body.removeChild(announcement), 1000);
   }
 }
@@ -235,28 +235,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '18'
-      
+
       - name: Install dependencies
         run: npm install
-      
+
       - name: Build application
         run: npm run build
-      
+
       - name: Run axe-core accessibility tests
         run: npm run test:a11y
-      
+
       - name: Run Pa11y accessibility scan
         run: |
           npm install -g pa11y
           pa11y --sitemap http://localhost:3000/sitemap.xml \
                 --standard WCAG2AA \
                 --reporter json &gt; accessibility-report.json
-      
+
       - name: Upload accessibility results
         uses: actions/upload-artifact@v2
         with:
@@ -421,7 +421,7 @@ class GovernmentAccessibilityAI:
             'alt_text_generation': self.load_alt_text_model(),
             'form_accessibility': self.load_form_analysis_model()
         }
-    
+
     def analyze_page_accessibility(self, html_content, context='government'):
         &quot;&quot;&quot;
         Comprehensive accessibility analysis for government web pages
@@ -432,26 +432,26 @@ class GovernmentAccessibilityAI:
             'compliance_status': {},
             'user_impact_assessment': {}
         }
-        
+
         # Content accessibility analysis
         content_issues = self.models['content_analysis'].analyze(
-            html_content, 
+            html_content,
             context=context,
             standards=['WCAG_2.1_AA', 'Section_508', 'Plain_Language_Act']
         )
-        
+
         # Visual accessibility analysis
         visual_issues = self.models['color_contrast'].analyze_contrast(
             html_content,
             government_brand_guidelines=True
         )
-        
+
         # Alternative content analysis
         alt_text_suggestions = self.models['alt_text_generation'].suggest_improvements(
             html_content,
             context='government_services'
         )
-        
+
         return self.compile_accessibility_report(results)
 </code></pre>
 <h3>2. Cross-Agency Innovation</h3>
@@ -556,7 +556,7 @@ Phase 4: Leadership and Innovation (Months 19+)
 <li>Shows understanding of both government procurement processes and open source community dynamics</li>
 </ul>
 
-        
+
         
         <div class="editorial-notes">
             <h3>Editorial Notes</h3>
@@ -570,7 +570,7 @@ Phase 4: Leadership and Innovation (Months 19+)
                 
             </main>
         </div>
-    
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 CivicActions. Content available under CC-BY-SA-4.0 license.</p>
